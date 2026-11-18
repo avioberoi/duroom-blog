@@ -1,0 +1,265 @@
+.q3-fan-demo {
+  font: 15px/1.4 var(--serif);
+  color: var(--ink);
+  text-align: left;
+}
+.q3-fan-demo [hidden] {
+  display: none !important;
+}
+.q3-fan-demo button {
+  font: inherit;
+  color: var(--ink);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  text-align: left;
+}
+.q3-fan-demo button:focus-visible,
+.q3fan-mark:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.q3fan-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .3rem 1.4rem;
+  border-bottom: 1px solid var(--hair);
+  margin-bottom: .6rem;
+}
+.q3fan-controls button {
+  padding: .4rem 0;
+  border-bottom: 2px solid transparent;
+}
+.q3fan-controls [aria-pressed=true] {
+  border-bottom-color: var(--accent);
+  color: var(--accent);
+}
+.q3fan-status {
+  margin: 0 0 .4rem;
+  color: var(--mute);
+  font-size: .93em;
+  min-height: 2.8em;
+}
+.q3-fan-demo svg {
+  display: block;
+  width: 100%;
+  max-width: 470px;
+  height: auto;
+  margin-inline: auto;
+}
+.q3fan-credit-details {
+  margin: .7rem 0;
+}
+.q3fan-credit-details > summary {
+  color: var(--accent);
+  cursor: pointer;
+}
+.q3fan-credit-details[open] > summary {
+  margin-bottom: .6rem;
+}
+.q3-fan-demo svg text {
+  font: 15.5px var(--serif);
+  fill: var(--ink);
+}
+.q3-fan-demo svg .q3fan-note {
+  fill: var(--mute);
+  font-style: italic;
+}
+.q3fan-top {
+  fill: var(--deep);
+  transition: opacity .4s;
+}
+.q3fan-ref line {
+  stroke: var(--ink);
+  stroke-width: 1.2;
+  transition: opacity .4s;
+}
+.q3fan-ref .q3fan-median {
+  stroke-width: 1;
+  stroke-dasharray: 4 4;
+}
+.q3-fan-demo[data-state="1"] .q3fan-ref,
+.q3-fan-demo[data-state="1"] .q3fan-top {
+  opacity: .55;
+}
+.q3fan-axis {
+  stroke: var(--ink);
+  stroke-width: .8;
+}
+.q3fan-arc {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 1.6;
+}
+.q3fan-hyp {
+  stroke: var(--ink);
+  stroke-width: .9;
+}
+.q3fan-leg-a {
+  stroke: var(--ink);
+  stroke-width: 3.4;
+}
+.q3fan-leg-b {
+  stroke: var(--accent);
+  stroke-width: 2.2;
+  stroke-dasharray: 6 4;
+}
+.q3fan-right,
+.q3fan-theta {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: .8;
+}
+.q3-fan-demo svg .q3fan-left {
+  fill: var(--accent);
+}
+.q3fan-leader {
+  stroke: var(--hair);
+  stroke-width: 1.2;
+}
+.q3fan-dot {
+  fill: var(--ink);
+  stroke: var(--paper);
+  stroke-width: 1;
+}
+.q3fan-mark {
+  cursor: pointer;
+}
+.q3fan-frame {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: .8;
+}
+.q3fan-mark.is-selected .q3fan-frame {
+  stroke-width: 2.4;
+}
+.q3fan-mark.is-selected .q3fan-dot {
+  r: 6.5;
+}
+.q3fan-key {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .2rem 1.2rem;
+  margin: .3rem 0 .8rem;
+  padding: 0;
+  color: var(--ink);
+  font-size: .93em;
+}
+.q3fan-key li {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  margin: 0;
+}
+.q3fan-key i {
+  display: inline-block;
+  width: 1.6rem;
+  height: 0;
+  border-top: 1.5px solid var(--ink);
+}
+.q3fan-key .k-median {
+  border-top-style: dashed;
+}
+.q3fan-key .k-top {
+  height: .8rem;
+  border: 0;
+  background: var(--deep);
+  width: 1rem;
+}
+.q3fan-ledger {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .93em;
+  font-variant-numeric: tabular-nums;
+}
+.q3fan-ledger th {
+  font-weight: 400;
+  text-align: left;
+  color: var(--mute);
+  border-bottom: 1px solid var(--hair);
+  padding: .25rem .5rem .25rem 0;
+}
+.q3fan-ledger td {
+  padding: .3rem .5rem .3rem 0;
+  border-bottom: 1px solid var(--hair);
+  vertical-align: top;
+}
+.q3fan-ledger td button {
+  padding: 0;
+  line-height: 1.3;
+}
+.q3fan-ledger tr.is-selected td:first-child button {
+  color: var(--accent);
+}
+.q3fan-ledger [data-col] {
+  color: var(--mute);
+  white-space: nowrap;
+}
+.q3fan-ledger [data-col].is-on {
+  color: var(--ink);
+  font-weight: 700;
+}
+.q3fan-ledger caption {
+  text-align: left;
+  color: var(--mute);
+  padding: 0 0 .25rem;
+}
+.q3fan-def {
+  margin: .7rem 0 0;
+  color: var(--mute);
+  font-size: .88em;
+}
+@media (prefers-reduced-motion: reduce) {
+  .q3-fan-demo * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+@media (max-width: 600px) {
+  .q3-fan-demo svg text {
+    font-size: 29px;
+  }
+  .q3fan-ledger caption {
+    display: block;
+  }
+  .q3fan-ledger {
+    font-size: .9em;
+  }
+  .q3fan-ledger thead {
+    display: none;
+  }
+  .q3fan-ledger,
+  .q3fan-ledger tbody {
+    display: block;
+  }
+  .q3fan-ledger tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid var(--hair);
+    padding: .3rem 0;
+  }
+  .q3fan-ledger td {
+    border: 0;
+    padding: 0 .4rem 0 0;
+  }
+  .q3fan-ledger td:first-child {
+    grid-column: 1 / -1;
+    padding-bottom: .15rem;
+  }
+  .q3fan-ledger [data-col]::before {
+    content: attr(data-label);
+    display: block;
+    font-weight: 400;
+    font-size: .85em;
+    color: var(--mute);
+  }
+}
+@media print {
+  .q3-fan-demo {
+    display: none !important;
+  }
+  .work-fallback {
+    display: block !important;
+  }
+}

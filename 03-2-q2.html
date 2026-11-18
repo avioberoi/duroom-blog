@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Q3 Where did later work go? – DuROOM</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-301992f14ddb7dd383e65fee4e2386cf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked landscape-data fullcontent quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03-data.html">Data</a></li><li class="breadcrumb-item"><a href="./03-2-q2.html">Q3 Where did later work go?</a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">DuROOM</a> 
+    </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Contents</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-related-work.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Related work</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Data</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Which encoders, and which works?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-0-manifold.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q1 How are the works laid out?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-1-q1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q2 Can some works describe others?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-2-q2.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Q3 Where did later work go?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-3-q3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q4 What is left over?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-5-q5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q5 What does far mean?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-1-q9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q6 How do the later works score?</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Methods</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-methods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-0-far-faithful.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q7 What are we looking for?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-1-q7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q8 Does the decoder paint what we ask?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-3-why-search.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q9 Can we get there with no search?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-2-q8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q10 How does the search work?</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Results</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-results.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-2-q10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q11 What did we find?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-3-controls.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q12 What does the search add?</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-discussion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Discussion</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-appendix.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Appendix: what we tested and settled</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+
+    
+
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03-data.html">Data</a></li><li class="breadcrumb-item"><a href="./03-2-q2.html">Q3 Where did later work go?</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Q3 Where did later work go?</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="vp vp-side vp-sbs62 vp-cols2 vp-capr vp-q2geo visual-pair-pin">
+<div class="visual-copy">
+<p>A basis from the works before 1900 misses about 9 points more of the later works than a random basis does. Is what it misses scattered in every direction, like noise, or does it point somewhere? If it points somewhere, that is the direction in which later work moved away from what came before. We look for it in CLIP, in 7 steps, and the other encoders come at the end:</p>
+<ol type="1">
+<li>We take the basis from the works before 1900, i.e., their average and their 32 leading directions, as in <a href="./03-1-q1.html">Q2</a>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
+<li>For each work from 1900 on, we take what that basis misses: the work minus the earlier average, minus its shadow on the 32 directions. We call it the work’s <em>leftover</em>.</li>
+<li>We average the leftovers of the later works and take the direction of that average, the <em>shift</em>, i.e., the way the later works lean on average.</li>
+<li>We also take the directions along which the later works’ leftovers spread the most around that average, <em>axis 1</em> and <em>axis 2</em>. So the shift is about the average later work, and the axes are about how single works differ from it.</li>
+</ol>
+</div>
+<div id="fig-q2-geometry" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" data-mobile-src="figures/q2_geometry-mobile.svg" alt="Top and side views of measured works relative to a plane showing two retained basis directions and one direction outside that basis.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-q2-geometry-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/q2_geometry.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/q2_geometry-mobile.svg" alt="Top and side views of measured works relative to a plane showing two retained basis directions and one direction outside that basis.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-q2-geometry-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Drawn: 2,000 earlier and 2,000 later CLIP works on 2 directions the basis from before 1900 keeps and one it misses (the missed one picked for the later works’ spread). Rotate to see what a flat view hides. This is an illustration from a fit separate from the tests below, not independent evidence.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="vp vp-duo vp-trio vp-q2steps">
+<div class="vp-cell">
+<ol start="5" type="1">
+<li>We find these directions from half of the later artists and measure them on the other half, 5 times with different halves, so a direction only counts if works by artists it never saw move along it too.</li>
+</ol>
+</div>
+<div class="vp-cell">
+<ol start="6" type="1">
+<li>We compare everything with a split into 2 groups of the same sizes drawn at random, i.e., a split with no time in it, the <em>no-time split</em>.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></li>
+</ol>
+</div>
+<div class="vp-cell">
+<ol start="7" type="1">
+<li>Then we follow the decades, i.e., how far each decade’s works sit along these directions.</li>
+</ol>
+</div>
+</div>
+<div class="vp vp-duo vp-q2path">
+<div class="vp-cell">
+<p><strong>A. From 1900 to the 1960s, each decade leaned further in one direction, and then held there.</strong> The leftover of the later works piles up along one direction, the shift, which holds about 30 times more of the leftover than the shift of the no-time split does. Every half of the artists we tried finds it. From the 1960s on, the decades stay at about the same distance along it (<a href="#fig-q1b-humps" class="quarto-xref">Figure&nbsp;3</a>, along the shift).<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+</div>
+<div class="vp-cell">
+<p><strong>B. The decades moved first where Cubism and abstraction sit, then where Minimalism and installation sit.</strong> By the 1910s the decades have moved out along axis 2, where Cubism, Futurism and abstraction sit.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> From the 1930s they move along axis 1, where Minimalism, Light and Space, Color Field, installation and sculpture sit. By 1960 they are about 6 times the earlier works’ spread out along it (1 to 2 times in the 1920s to 1940s). Axis 2 peaks in the 1950s and then fades (<a href="#fig-q1b-path" class="quarto-xref">Figure&nbsp;2</a>).<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
+</div>
+<div id="fig-q1b-path" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" data-mobile-src="figures/q1b_path-mobile.svg" alt="The past decade means cluster near zero inside a grey reference ring. The linked later means rise mainly along axis 2, bend toward positive axis 1, then remain far from the past while axis 2 declines. Selected decades are labelled 1900, 1930, 1950, 1970, 2010. Positive axis 1 is associated with minimal, spatial and installation work; positive axis 2 with Cubism and Futurism.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-q1b-path-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/q1b_path.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/q1b_path-mobile.svg" alt="The past decade means cluster near zero inside a grey reference ring. The linked later means rise mainly along axis 2, bend toward positive axis 1, then remain far from the past while axis 2 declines. Selected decades are labelled 1900, 1930, 1950, 1970, 2010. Positive axis 1 is associated with minimal, spatial and installation work; positive axis 2 with Cubism and Futurism.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-q1b-path-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: The decades move out along axis 2 first, then bend toward axis 1 and stay far from the earlier works (grey ring). Pictures: the works nearest each decade’s average, and the works at each axis end, one per artist. Axes are in units of the earlier works’ spread along axis 1 (0.0321). Directions come from half the later artists (one split), and decade means from all works. Axis 1’s negative end mixes 1910s design and portraits. WikiArt credits beneath images.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="vp vp-side vp-flipfill vp-sbs72 vp-mc vp-cols2 vp-capr vp-q2humps">
+<div class="visual-copy">
+<p>We also notice that along the shift each decade’s works move as one hump, with no empty stretch between decades (<a href="#fig-q1b-humps" class="quarto-xref">Figure&nbsp;3</a>).<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> If we split at 1950, and even more at 2000, the later works lean away from their past less.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> The earlier works already vary a little along this direction, a faint version of the same shift.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></p>
+<p>So from 1900 to the 1960s the corpus moved where the earlier works had gone only a little, and then stayed there.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a></p>
+</div>
+<div id="fig-q1b-humps" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" data-mobile-src="figures/q1b_humps-mobile.svg" alt="Two sets of 17 ridgelines, ordered from earlier decades at the top to later decades below. Along the shift the hump moves right with overlap between decades. Along axis 1, early twentieth-century distributions extend into a right tail before later decades spread farther right. The 1900 ridge alone is red.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-q1b-humps-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/q1b_humps.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/q1b_humps-mobile.svg" alt="Two sets of 17 ridgelines, ordered from earlier decades at the top to later decades below. Along the shift the hump moves right with overlap between decades. Along axis 1, early twentieth-century distributions extend into a right tail before later decades spread farther right. The 1900 ridge alone is red.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-q1b-humps-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Along the shift each decade’s works form one hump that overlaps the next (read by eye, not tested); 1900 in red. Drawn: unscaled positions of all works per decade, with directions from half the later artists (one split).
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="vp vp-duo vp-q2enc">
+<section id="the-other-encoders" class="level2 vp-cell">
+<h2 class="anchored" data-anchor-id="the-other-encoders">The other encoders</h2>
+<p><strong>SigLIP and DINOv3 find the same lean.</strong> In DINOv3, though, the decades’ steps do not pass the random-walk test of keeping one way.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> Its path has no first leg along axis 2.</p>
+</section>
+<div class="vp-cell">
+<details class="visual-supplement">
+<summary>
+Where SigLIP and DINOv3 agree and differ
+</summary>
+<p>The shift holds 15.5% of the leftover in SigLIP and 13.3% in DINOv3, against 14.3% in CLIP, and work by work the three put the later works in nearly the same order along it.<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a></p>
+<p>We also notice that the path’s steps keep pointing the same way in SigLIP as in CLIP, while in DINOv3 that test misses. DINOv3 also has no first leg along axis 2, and from 2000 it finds almost no lean.<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a></p>
+</details>
+<p>The shift is an average over all the later works, and it does not say which single works the past describes worst. So next we ask what is left over for each work (<a href="./03-3-q3.html">Q4</a>).</p>
+</div>
+</div>
+
+
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>In <a href="./03-1-q1.html">Q2</a> the time gap is largest at 32 directions. With 64 or 128 the shift is still there and just as stable across splits. It holds 11.3% and 9.8% of the leftover against 14.3% at 32. The no-time split holds 0.3 to 0.4%. The leftover itself shrinks as directions are added, so its absolute size falls to under 40% by 128.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>In the random split, artists sit on both sides. The real split at 1900 is nearly artist-disjoint. So the random split is a “no time” control, not a “no artist” one.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Measured on the held-out artists, the shift holds 14.3% of the leftover, against 0.5% for the no-time split. The shift’s direction agrees across the five splits: the cosine between two of them is 0.98 on average and 0.97 at the lowest. For the no-time split the average cosine is 0.06. Axis 1 holds 5.5% of the leftover (1.1% in the no-time split), counting only the spread around the average leftover, and lies close to the shift (cosine 0.78). Axis 2 holds 2.8%, counted the same way.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Axis 2’s positive end holds, for example, Picasso 1920, Valmier 1923 and Herbin 1927. Its other end holds installation and performance. Axis 1’s other end holds no clear kind. The ends are the styles and works that sit farthest along each direction on average, over all works from 1900 to 2026. So the names only say what sits there. They do not mean the works of the 1950s were Minimalist.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Within the plane of the shift and the 2 axes, the decade means move mostly along one direction, which holds 83% of their spread, and a second, which holds 12%. In the full space the first holds 78%. A random walk with the data’s own spread is as one-way as the decade path in about 5 of 10,000 tries in CLIP. So is the 19th century’s path. What is new after 1900 is that the steps are larger than noise and keep pointing the same way. The 19th century’s decades hold 5 to 10 times fewer works, so part of this difference comes from the larger samples. The decade of the bend changes with how the works are weighted.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Read by eye; there is no test for an empty stretch. Along axis 1 the 1950s show two humps.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>A later cutoff leaves a shorter window and fewer works, and either could explain the smaller lean. Measured from 1950 the shift holds 5.4% of the leftover, and from 2000 it holds 2.4%. With equal windows, equal numbers of works and equal pasts, the shift after 2000 holds about 4 times less than the shift after 1900.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>Part of the shift lies along directions the earlier works already use a little, just outside the basis. Half of the shift’s weight sits in the earlier works’ directions 33 to 75 (of 768), and 90% by direction 296. A single random direction gives 407 and 695, which is no fair baseline. Any direction outside the basis has a small past spread by construction (a typical one about 0.017, this one 0.032), so a large multiple is partly built in. The earlier works that sit farthest along axis 1 share no style or genre more than chance. One reading is that the shift has a faint version in the earlier works. We have not tested it.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>All of this is linear: a direction in the encoder’s space. It is not a claim about art history. Which recent art WikiArt holds is WikiArt’s own choice, and we do not test it. Places the earlier works never went can lie off this direction. The later works the basis from before 1900 keeps worst (graffiti, conceptual pieces) hint at such places, and finding them is the next question. The direction also lines up with kinds of images. Axis 1 is highest for installation, abstract, sculpture, figurative works and photographs. One reading is that part of it is how such works are photographed. We have not refit it without those genres.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>A random walk with the data’s own spread is as one-way as the decade path in about 6 of 10,000 tries in SigLIP and about 13 of 1,000 in DINOv3. In DINOv3 the decades sit below zero along axis 2 from the 1910s to the 1950s and above it only from the 1960s. From 2000 the shift holds 0.9% of the leftover in DINOv3, against 2.4% in CLIP.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>Each encoder has its own shift, so we compare the order of the works along each one. For works from 1900 on, the rank correlation between 2 encoders is 0.86 to 0.94. Over all dated works it is 0.80 to 0.91.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p>A random walk with the data’s own spread is as one-way as the decade path in about 6 of 10,000 tries in SigLIP and about 13 of 1,000 in DINOv3. In DINOv3 the decades sit below zero along axis 2 from the 1910s to the 1950s and above it only from the 1960s. From 2000 the shift holds 0.9% of the leftover in DINOv3, against 2.4% in CLIP.<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> 
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+</div> 
+<script src="figures/responsive.js" defer=""></script><script src="figures/pixel-demo.js" defer=""></script><script src="figures/direction-demo.js" defer=""></script><script src="figures/work-explorer.js" defer=""></script><script src="figures/evidence-explorer.js" defer=""></script><script src="figures/search-explorer.js" defer=""></script><script src="figures/q2-geometry.js" defer=""></script><script src="figures/intro-support.js" defer=""></script><script src="figures/q3_fan.js" defer=""></script><script src="figures/q4_grid.js" defer=""></script><script src="figures/q5_route.js" defer=""></script><script src="figures/q3-encoders.js" defer=""></script><script src="footnotes.js" defer=""></script>
+
+
+
+
+</body></html>

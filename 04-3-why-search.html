@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Q9 Can we get there with no search? – DuROOM</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-301992f14ddb7dd383e65fee4e2386cf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked landscape-data fullcontent quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04-methods.html">Methods</a></li><li class="breadcrumb-item"><a href="./04-3-why-search.html">Q9 Can we get there with no search?</a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">DuROOM</a> 
+    </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Contents</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-related-work.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Related work</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Data</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Which encoders, and which works?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-0-manifold.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q1 How are the works laid out?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-1-q1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q2 Can some works describe others?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-2-q2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q3 Where did later work go?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-3-q3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q4 What is left over?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-5-q5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q5 What does far mean?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-1-q9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q6 How do the later works score?</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Methods</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-methods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-0-far-faithful.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q7 What are we looking for?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-1-q7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q8 Does the decoder paint what we ask?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-3-why-search.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Q9 Can we get there with no search?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-2-q8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q10 How does the search work?</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Results</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-results.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-2-q10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q11 What did we find?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-3-controls.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q12 What does the search add?</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-discussion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Discussion</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-appendix.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Appendix: what we tested and settled</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+
+    
+
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04-methods.html">Methods</a></li><li class="breadcrumb-item"><a href="./04-3-why-search.html">Q9 Can we get there with no search?</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Q9 Can we get there with no search?</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="vp vp-flow">
+<div class="visual-copy">
+<p>We now have a rule for far and a test for faithful (<a href="./04-0-far-faithful.html">Q7</a>), and a decoder that paints a CLIP vector (<a href="./04-1-q7.html">Q8</a>). A search is one way to choose which vectors to paint. Do we need one? What do simpler requests give?</p>
+<p>Say the decoder paints whatever vector we give it. Then why search, when we could work out requests from the earlier works and paint those?</p>
+<p><strong>The Data pages give us no formula for where art went next.</strong> The later works vary along directions the earlier ones barely used (<a href="./03-1-q1.html">Q2</a>). The lumps fitted on the earlier works explain less of them than of the earlier works themselves (<a href="./03-5-q5.html#q6">Q5</a>). And the corpus’s own trend does not carry over the late nineteenth century.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>So we painted simple requests with no search, and read every picture with the same 2 measures as the search’s pictures: far against the reference, and faithful against its request (<a href="#fig-no-search-geometry" class="quarto-xref">Figure&nbsp;1</a>, <a href="#fig-four-cells-no-search" class="quarto-xref">Figure&nbsp;2</a>).</p>
+</div>
+</div>
+<div class="vp">
+<div id="fig-no-search-geometry" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" data-mobile-src="figures/no_search_geometry_v4-mobile.svg" alt="Eight rows, one per kind of request with no search. Each row has a drawn sketch and measured points: across, the request's angle from where it starts; up, the angle between the request and the reading of its picture; a dashed faithful line at 45.8 degrees; far pictures in red. Pictures, far, and far and faithful: midpoints of 2 works 48, 0, 0; points on the line through 2 regions' centres 36, 0, 0; 35 degree steps past a work 480, 3, 0; lines past a real work or toward the sparse edge 450, 12, 6; random requests inside the region of earlier works 192, 0, 0; random requests anywhere on the sphere 64, 15, 0; a work repainted and read back 6 times 48, 4, faithful not counted; lines toward a real later work 71, 20, 20.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-no-search-geometry-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/no_search_geometry_v4.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/no_search_geometry_v4-mobile.svg" alt="Eight rows, one per kind of request with no search. Each row has a drawn sketch and measured points: across, the request's angle from where it starts; up, the angle between the request and the reading of its picture; a dashed faithful line at 45.8 degrees; far pictures in red. Pictures, far, and far and faithful: midpoints of 2 works 48, 0, 0; points on the line through 2 regions' centres 36, 0, 0; 35 degree steps past a work 480, 3, 0; lines past a real work or toward the sparse edge 450, 12, 6; random requests inside the region of earlier works 192, 0, 0; random requests anywhere on the sphere 64, 15, 0; a work repainted and read back 6 times 48, 4, faithful not counted; lines toward a real later work 71, 20, 20.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-no-search-geometry-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Only lines past a real work or toward a later one give pictures that are both far (red) and faithful (under the dashed line). Each row is one kind of request. A sketch of the request comes first (drawn, not measured geometry). Then comes every picture it gave: across, how far the request sits from where it starts; up, how far the picture’s reading strays from the request. Each row ends with its counts.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="vp">
+<div id="fig-four-cells-no-search" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" data-mobile-src="figures/four_cells_no_search_v4-mobile.svg" alt="Eight scatter panels on shared axes, one per kind of request with no search, each with the 2 bars and a count in each corner. Far and faithful, far and not faithful, near and faithful, near and not faithful: midpoints of 2 works 0, 0, 46, 2; points on the line through 2 regions' centres 0, 0, 36, 0; 35 degree steps past a work 0, 3, 227, 250; lines past a real work 6, 6, 296, 142; random requests inside the region 0, 0, 0, 192; random requests on the sphere 0, 15, 0, 49; round trips at the sixth trip, faithful not counted: far 4, near 44; lines toward a real later work 20, 0, 47, 4.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-four-cells-no-search-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/four_cells_no_search_v4.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/four_cells_no_search_v4-mobile.svg" alt="Eight scatter panels on shared axes, one per kind of request with no search, each with the 2 bars and a count in each corner. Far and faithful, far and not faithful, near and faithful, near and not faithful: midpoints of 2 works 0, 0, 46, 2; points on the line through 2 regions' centres 0, 0, 36, 0; 35 degree steps past a work 0, 3, 227, 250; lines past a real work 6, 6, 296, 142; random requests inside the region 0, 0, 0, 192; random requests on the sphere 0, 15, 0, 49; round trips at the sixth trip, faithful not counted: far 4, near 44; lines toward a real later work 20, 0, 47, 4.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-four-cells-no-search-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Nearly every request with no search comes back near the works before 1900, faithful or not; only lines past or toward real works reach the far and faithful corner. Each corner’s number counts the pictures in that corner; the round trips count only far and near.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="vp">
+<div id="fig-nosearch-pictures" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" data-mobile-src="figures/nosearch_pictures_v2-mobile.svg" alt="Seven strips of pictures the decoder painted with no search, up to 3 per kind of request: midpoints of 2 works; points on the line through 2 regions' centres; 35 degree steps past a work; points on lines past a real work; random requests inside the region of earlier works; random requests anywhere on the sphere; a work repainted and read back. Under each picture its setting and whether it is far and faithful.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-nosearch-pictures-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/nosearch_pictures_v2.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/nosearch_pictures_v2-mobile.svg" alt="Seven strips of pictures the decoder painted with no search, up to 3 per kind of request: midpoints of 2 works; points on the line through 2 regions' centres; 35 degree steps past a work; points on lines past a real work; random requests inside the region of earlier works; random requests anywhere on the sphere; a work repainted and read back. Under each picture its setting and whether it is far and faithful.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-nosearch-pictures-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: What the requests with no search painted: mostly pictures like the works before 1900. Up to 3 pictures for each kind of request, with whether each is far and faithful. The small images are the real works a request was made from. No picture is shown for the lines toward a real later work. Chosen by eye, so they are examples and not a sample. WikiArt reproductions, shown as scholarly commentary.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="vp vp-flow">
+<div class="visual-copy">
+<p><strong>So, with no search, requests not aimed at a later work almost never give a picture that is far and faithful</strong>, 6 in 1,270 pictures, and the few that do lie on lines past real works. Requests between or near the works before 1900 nearly all come back as the past repainted (<a href="#fig-nosearch-pictures" class="quarto-xref">Figure&nbsp;3</a>). Random points inside their region never come back faithful.</p>
+<p>Why does a midpoint of 2 works not land far? A midpoint is the average of 2 works’ vectors, brought back to unit length. Averaging pulls it toward the middle of the corpus, 34 degrees from its centre against 42 for a real work, and it sits as close to its neighbours as a real work does. So the decoder paints it as a typical picture from before 1900: the median score of the 48 midpoints is 0.65 in DINOv3, where the bar is 0.96.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<p>A 35 degree step past a work seldom lands far, and more than half of its pictures are not faithful. Random requests anywhere on the sphere are never faithful, so their far pictures say nothing of the places asked for. And works repainted and read back, with no step at all, drift: by the sixth round trip a few are far.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+<p><strong>Lines aimed at a real later work do give far and faithful pictures.</strong> We drew 9 lines from the free search’s 3 starts (<a href="./04-2-q8.html">Q10</a>) toward 7 works of 1900 to 1969 whose own repaintings are far and faithful. Of the 9, 5 gave some far and faithful pictures, most of them near the target or past it.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> Halfway along such a line, at 30 degrees, 2 of 9 pictures are far and faithful, and nearer the start none of 18. But each line is drawn toward a later work we already know, and a search has to get there without knowing it.</p>
+<p>So simple requests do not get there, except along lines to works we already know. <a href="./04-2-q8.html">Q10</a> builds a search that has to get there without knowing them.</p>
+</div>
+</div>
+
+
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>A basis from before 1900 keeps about 9 points less of the later works than a random basis does (<a href="./03-1-q1.html">Q2</a>). Up to 3 lumps fitted on the earlier works explain about a fifth of a later work against a third of an earlier one (<a href="./03-5-q5.html#q6">Q5</a>).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>For 2 consecutive 40-year windows we take the cosine, without sign, between the corpus’s move over one and its move over the next (<a href="./03-1-q1.html">Q2</a>, CLIP). Its median over pairs that do not overlap is about 0.40. For the pairs that pivot on the late nineteenth century it runs 0.16 to 0.31. Its two lowest, 0.16 and 0.17, share 30 of their 40 years and count as one observation. For moves 60 or more years apart the median is 0.09.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>The 2 works of a midpoint are drawn at random from 2 different regions of the reference, and sit 44 to 76 degrees apart, about as far as any 2 works before 1900. No midpoint scores over the bar in either observer; the highest sits at the 98th percentile of the reference’s own scores. We have not painted a midpoint of 2 far pictures.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>The round trips are left out of the count of 6 in 1,270, as each trip’s request is the last picture’s own reading, so faithful is not counted for them.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Along each line we painted requests at 10 to 70 degrees and one at the target itself, which sits 59.4 to 61.9 degrees from its start: 71 pictures on the 9 lines, as on one line the target sits at 60 degrees. Of the 20 far and faithful pictures, 16 were asked 50 degrees or more, which is within about 11 degrees of their target or past it.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> 
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+</div> 
+<script src="figures/responsive.js" defer=""></script><script src="figures/pixel-demo.js" defer=""></script><script src="figures/direction-demo.js" defer=""></script><script src="figures/work-explorer.js" defer=""></script><script src="figures/evidence-explorer.js" defer=""></script><script src="figures/search-explorer.js" defer=""></script><script src="figures/q2-geometry.js" defer=""></script><script src="figures/intro-support.js" defer=""></script><script src="figures/q3_fan.js" defer=""></script><script src="figures/q4_grid.js" defer=""></script><script src="figures/q5_route.js" defer=""></script><script src="figures/q3-encoders.js" defer=""></script><script src="footnotes.js" defer=""></script>
+
+
+
+
+</body></html>

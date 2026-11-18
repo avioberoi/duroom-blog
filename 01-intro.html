@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Introduction – DuROOM</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-301992f14ddb7dd383e65fee4e2386cf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar docked landscape-data consistent-measure fullcontent quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-intro.html">Introduction</a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">DuROOM</a> 
+    </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Contents</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-intro.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-related-work.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Related work</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Data</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Which encoders, and which works?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-0-manifold.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q1 How are the works laid out?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-1-q1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q2 Can some works describe others?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-2-q2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q3 Where did later work go?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-3-q3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q4 What is left over?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-5-q5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q5 What does far mean?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-1-q9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q6 How do the later works score?</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Methods</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-methods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-0-far-faithful.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q7 What are we looking for?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-1-q7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q8 Does the decoder paint what we ask?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-3-why-search.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q9 Can we get there with no search?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-2-q8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q10 How does the search work?</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Results</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-results.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-2-q10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q11 What did we find?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-3-controls.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q12 What does the search add?</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-discussion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Discussion</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-appendix.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Appendix: what we tested and settled</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+
+    
+
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Introduction</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="visual-pair visual-pair-pin">
+<div class="visual-copy">
+<p>The problem we are defining below lies at the heart of novel discovery, or discovery for that matter, because the definition of novelty can be subjective and vary from field to field. It is often argued that “novel” is not a property of an artifact in isolation. It is a relational claim: new relative to an observer, a context, and what has already been seen <span class="citation" data-cites="itti2009bayesian">(<a href="#ref-itti2009bayesian" role="doc-biblioref">Itti and Baldi 2009</a>)</span>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> This paper takes a pragmatic stance and operationalizes novel discovery as a search problem in representational space, using foundation models<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> as learned representation spaces whose distances track some human judgments of similarity.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<p>We started with the question of finding undiscovered artifacts, given the archive of all artifacts produced and known to humans. We do not have examples of what we seek, but we can make some by stopping the archive at an earlier date. Say it stops at 1900, a round year inside the stretch where the corpus changes fastest (<a href="./03-1-q1.html">Q2</a>). Alexander Calder’s <em>Polygons on Triangles</em> (1963) is then an undiscovered artifact. Its <em>leftover</em>, the share the earlier works leave undescribed, is larger against the works before 1900 than against the whole corpus (<a href="#fig-intro-reference" class="quarto-xref">Figure&nbsp;1</a>). So we freeze the corpus at 1900 and ask: <em>Can the works a culture has already made tell us where it has not been, when all we measure is how far a candidate sits from them?</em> We call this distance <em>far</em>, a second measure beside the leftover.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+<p>If the works a culture has made carry a signal of where it could go next, a search is a way to read it, and the works after 1900 let us test that reading on a future we already know.</p>
+</div>
+<div id="fig-intro-reference" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="One credited artwork beside two measured leftover shares. Changing the comparison corpus changes the leftover without changing the image." data-mobile-src="figures/intro_reference_v2-mobile.svg">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-intro-reference-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/intro_reference_v2.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/intro_reference_v2-mobile.svg" alt="One credited artwork beside two measured leftover shares. Changing the comparison corpus changes the leftover without changing the image.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-intro-reference-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Calder’s leftover is 87% against the works before 1900 and 69% against the whole corpus (<a href="./03-3-q3.html">Q4</a> says how). Alexander Calder, <em>Polygons on Triangles</em>, 1963; WikiArt reproduction.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="visual-pair visual-pair-pin">
+<div class="visual-copy">
+<p>To measure how far a candidate sits from the works, we need a space where distance means something a viewer would agree with. We take that space from a foundation model’s image encoder, which turns each work into a point on a sphere, and how different 2 works are is the angle between them (<a href="#fig-intro-encoding" class="quarto-xref">Figure&nbsp;2</a>; <a href="./03-data.html">Encoders and corpus</a>).</p>
+</div>
+<div id="fig-intro-encoding" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="The actual network input crop and measured end vector of The Great Wave. Normalization changes vector length, not the picture. The sphere view contains the artwork and mean direction exactly." data-mobile-src="figures/intro_encoding-mobile.svg">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-intro-encoding-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/intro_encoding.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/intro_encoding-mobile.svg" alt="The actual network input crop and measured end vector of The Great Wave. Normalization changes vector length, not the picture. The sphere view contains the artwork and mean direction exactly.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-intro-encoding-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Each work becomes one point on the unit sphere, as CLIP turns it into a vector of 768 numbers and scales it to length one. An actual encoding of Katsushika Hokusai, <em>The Great Wave off Kanagawa</em>, 1830–1832 (public domain); Wikimedia Commons derivative.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="visual-pair visual-pair-pin">
+<div class="visual-copy">
+<p>The works do not fill this sphere, they sit inside one <em>cone</em> of it, and that holds in all 3 encoders we use, CLIP, DINOv3 and SigLIP. By the <em>manifold</em> we mean the art we have, as an encoder reads it (<a href="#fig-manifold-definition" class="quarto-xref">Figure&nbsp;3</a>; <a href="./03-0-manifold.html">Q1</a> maps it, and <a href="./04-0-far-faithful.html">Q7</a> says when a picture is on or off it).</p>
+</div>
+<div id="fig-manifold-definition" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Drawn unit sphere and works cone beside three thick clumps linked by thinner stretches. Two example vectors each have a dashed ring, as large as the typical spacing between nearby works, and a line to their nearest work; one ring holds a work and the other, still inside the cone, does not. Geometry is illustrative, not measured." data-mobile-src="figures/manifold_definition_v3-mobile.svg">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-manifold-definition-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/manifold_definition_v3.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/manifold_definition_v3-mobile.svg" alt="Drawn unit sphere and works cone beside three thick clumps linked by thinner stretches. Two example vectors each have a dashed ring, as large as the typical spacing between nearby works, and a line to their nearest work; one ring holds a work and the other, still inside the cone, does not. Geometry is illustrative, not measured.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-manifold-definition-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Inside the cone the works fill a lumpy region, the manifold, so a point can sit inside the cone with no work close to it. The dashed ring around each example vector marks what is close to it, and only one ring holds a work. <a href="./04-0-far-faithful.html">Q7</a> sets the rule for on and off the manifold. The solid box on the sphere marks the closer view. Drawn, not measured.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="visual-pair visual-pair-pin">
+<div class="visual-copy">
+<p>With such a space, what does it mean to search it? This is not new, people working on classical search algorithms in Artificial Intelligence used hand-crafted heuristics to guide the search toward a specified goal, as in A* and related goal-directed methods <span class="citation" data-cites="hart1968formal newell1959report">(<a href="#ref-hart1968formal" role="doc-biblioref">Hart et al. 1968</a>; <a href="#ref-newell1959report" role="doc-biblioref">Newell et al. 1959</a>)</span> (<a href="#fig-intro-search-rules" class="quarto-xref">Figure&nbsp;4</a>). We take the same basic idea, that one can represent a domain in an appropriate state space and guide exploration within that space by a heuristic. Our state space is the embedding space of a foundation model, and our search has a heuristic but no target that can be specified in advance. The heuristic is how far a picture sits from its nearest works from before 1900, and we call a place <em>unexplored</em> when it is far (<a href="./04-0-far-faithful.html">Q7</a>). Search by distance from what has already been found was later proposed as <em>novelty search</em> <span class="citation" data-cites="lehman2011abandoning">(<a href="#ref-lehman2011abandoning" role="doc-biblioref">Lehman and Stanley 2011</a>)</span>. Our motivation is natural evolution, which has no goal and still produced new forms.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> We search with CMA-ES, an evolution strategy that each round tries variations and moves toward the farthest (<a href="./04-2-q8.html">Q10</a>).</p>
+</div>
+<div id="fig-intro-search-rules" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Two panels on the same lattice of states with the same start. Left: explored states in a band from the start toward a goal, the frontier as open rings, the path found, and a dashed line marked h for the estimated distance to the goal. Right: an archive branching out from the start, candidates as open rings each joined to its nearest archive point, and the farthest one marked as added next. No plotted location is a measurement." data-mobile-src="figures/intro_search_rules_v2-mobile.svg">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-intro-search-rules-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/intro_search_rules_v2.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/intro_search_rules_v2-mobile.svg" alt="Two panels on the same lattice of states with the same start. Left: explored states in a band from the start toward a goal, the frontier as open rings, the path found, and a dashed line marked h for the estimated distance to the goal. Right: an archive branching out from the start, candidates as open rings each joined to its nearest archive point, and the farthest one marked as added next. No plotted location is a measurement.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-intro-search-rules-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: A search with a goal heads toward it, and a search with none spreads out from what it has met. Left, A* ranks each state by its cost so far plus the heuristic’s estimate of the cost left to the goal <span class="citation" data-cites="hart1968formal">(<a href="#ref-hart1968formal" role="doc-biblioref">Hart et al. 1968</a>)</span>. Right, novelty search ranks each candidate by its distance from what it has met <span class="citation" data-cites="lehman2011abandoning">(<a href="#ref-lehman2011abandoning" role="doc-biblioref">Lehman and Stanley 2011</a>)</span>. A conceptual diagram.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="vp-run">
+<p>Our framing also poses a practical question: how should the search be steered so that novelty does not collapse into noise? We try to resolve this by searching over the CLIP embeddings of images and using a pretrained image generator as the <em>decoder</em>, which paints every point we visit, so every point is judged as a picture (<a href="./04-1-q7.html">Q8</a>). Steering matters because unconstrained novelty maximization can drift toward degenerate solutions, much like the “noisy TV” failure mode in curiosity-driven exploration <span class="citation" data-cites="burda2018exploration">(<a href="#ref-burda2018exploration" role="doc-biblioref">Burda et al. 2019</a>)</span>, where statistically surprising states are not necessarily meaningful <span class="citation" data-cites="pathak2017curiosity">(<a href="#ref-pathak2017curiosity" role="doc-biblioref">Pathak et al. 2017</a>)</span>. So for every picture we also check that it is <em>faithful</em>, i.e., still a picture of what we asked for (<a href="./04-0-far-faithful.html">Q7</a>).</p>
+</div>
+<div class="visual-pair visual-pair-pin">
+<div class="visual-copy">
+<p><strong>So the goal of this paper is its title: to discover unexplored regions, on and off the manifold, with a novelty search in a foundation model’s embedding space</strong> (<a href="#fig-intro-loop" class="quarto-xref">Figure&nbsp;5</a>). We ground our exploration in the WikiArt dataset.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> Artworks provide a well-defined domain where novelty is meaningful, as art history is precisely concerned with what is new relative to what came before. So a search is given only works from before 1900, and the works made after are held back to check what it brings back, and the search never aims at them. The freeze holds for the corpus only.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></p>
+<p>We can use early expeditions as a metaphor to put the problem into perspective. Our ocean is the embedding space, our instruments are distances in it, our boat is the decoder, and the artworks are the ports we know, on a chart frozen at 1900. The works made after 1900 are ports we know were built later. They are one future among those the past allowed. So they show us that there were places off the chart of 1900, and we can ask whether our instruments would recognise them.</p>
+</div>
+<div id="fig-intro-loop" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="A four-stage loop: request, paint, compare, remember. Two other encoders compare decoded pictures with repainted works from before 1900 and with pictures already kept; the search then updates." data-mobile-src="figures/intro_loop_v5-mobile.svg">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-intro-loop-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/intro_loop_v7.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/intro_loop_v5-mobile.svg" alt="A four-stage loop: request, paint, compare, remember. Two other encoders compare decoded pictures with repainted works from before 1900 and with pictures already kept; the search then updates.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-intro-loop-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Each round the search tries a batch of CLIP vectors, paints them, and keeps the pictures that 2 other encoders read as far from the works before 1900 and not too close to what it has kept. In DuROOM search, only faithful pictures can be kept. A diagram; <a href="./04-2-q8.html">Q10</a> gives the full loop.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="visual-pair visual-pair-pin">
+<div class="visual-copy">
+<p><strong>So can the works tell us where a culture has not been? Yes.</strong> A <em>bar</em>, i.e., a cut-off on distance, built only from the works before 1900 notices the works that came after. A search that only follows distance goes far, but what it brings back is not faithful. When we hold it to faithful pictures, from 5 works painted before 1900 it paints 4,380 pictures that are far and faithful.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> 4,049 of them are on the manifold, 3,850 close to a real work dated 1900 or later and to none dated before 1900 (<a href="#fig-find-pair-intro" class="quarto-xref">Figure&nbsp;6</a> shows one such picture), and from different starts the search arrives at the same later works. 331 are off the manifold (<a href="./05-2-q10.html">Q11</a>). We could not show a place off the manifold where pictures from 3 or more starts meet. How much of this is discovery, and how much is the decoder recalling later art, is the <a href="./06-discussion.html">Discussion</a>’s question.</p>
+</div>
+<div id="fig-find-pair-intro" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Three pictures in a row, each with its credit beneath: the starting work by Edgar Degas, a picture the search painted in round 15, and Gene Davis's Black Dahlia." data-mobile-src="figures/search_find_pair_v2-mobile.svg">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-find-pair-intro-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/search_find_pair_v2.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/search_find_pair_v2-mobile.svg" alt="Three pictures in a row, each with its credit beneath: the starting work by Edgar Degas, a picture the search painted in round 15, and Gene Davis's Black Dahlia.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-find-pair-intro-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: A picture the search painted from a work of 1890 (middle) sits as close to a real work of 1971 as nearly every repainted real work sits to its nearest real work. No work dated before 1900 lies that close to it (<a href="./04-0-far-faithful.html">Q7</a>). Left, the start, Edgar Degas, <em>Seated Woman pulling her glove</em>; right, Gene Davis, <em>Black Dahlia</em>. I chose it by eye with a second viewer, so it is an example and not a sample. WikiArt reproductions, shown as scholarly commentary.
+</figcaption>
+</figure>
+</div>
+</div>
+<p>In the following pages, we review related work (<a href="./02-related-work.html">Related work</a>). We then look at the data and its geometry (<a href="./03-data.html">Encoders and corpus</a>, Q1 to Q6), present our methodology in detail (the <a href="./04-methods.html">Methods overview</a>, Q7 to Q10), followed by experiments and results (the <a href="./05-results.html">Results overview</a>, Q11 and Q12). We conclude with discussion of limitations and future directions (<a href="./06-discussion.html">Discussion</a>).</p>
+
+
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-bommasani2021opportunities" class="csl-entry" role="listitem">
+<span class="nocase">Bommasani, Rishi, Drew A Hudson, Ehsan Adeli, et al.</span> 2021. <span>“On the Opportunities and Risks of Foundation Models.”</span> <em>arXiv Preprint arXiv:2108.07258</em>. <a href="https://arxiv.org/abs/2108.07258">https://arxiv.org/abs/2108.07258</a>.
+</div>
+<div id="ref-burda2018exploration" class="csl-entry" role="listitem">
+Burda, Yuri, Harrison Edwards, Amos Storkey, and Oleg Klimov. 2019. <span>“Exploration by Random Network Distillation.”</span> <em>International Conference on Learning Representations (ICLR)</em>. <a href="https://openreview.net/forum?id=H1lJJnR5Ym">https://openreview.net/forum?id=H1lJJnR5Ym</a>.
+</div>
+<div id="ref-davis2023memory" class="csl-entry" role="listitem">
+Davis, Trent, and Wilma A Bainbridge. 2023. <span>“Memory for Artwork Is Predictable.”</span> <em>Proceedings of the National Academy of Sciences</em> 120 (28): e2302389120.
+</div>
+<div id="ref-fini2024multimodal" class="csl-entry" role="listitem">
+Fini, Enrico, Mustafa Shukor, Xiujun Li, et al. 2025. <span>“Multimodal Autoregressive Pre-Training of Large Vision Encoders.”</span> <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 9641–54.
+</div>
+<div id="ref-hart1968formal" class="csl-entry" role="listitem">
+Hart, Peter E, Nils J Nilsson, and Bertram Raphael. 1968. <span>“A Formal Basis for the Heuristic Determination of Minimum Cost Paths.”</span> <em>IEEE Transactions on Systems Science and Cybernetics</em> 4 (2): 100–107.
+</div>
+<div id="ref-itti2009bayesian" class="csl-entry" role="listitem">
+Itti, Laurent, and Pierre Baldi. 2009. <span>“Bayesian Surprise Attracts Human Attention.”</span> <em>Vision Research</em> 49 (10): 1295–306.
+</div>
+<div id="ref-jacob2021qualitative" class="csl-entry" role="listitem">
+Jacob, Georgin, RT Pramod, Harish Katti, and SP Arun. 2021. <span>“Qualitative Similarities and Differences in Visual Object Representations Between Brains and Deep Networks.”</span> <em>Nature Communications</em> 12 (1): 1872.
+</div>
+<div id="ref-kozlowski2019geometry" class="csl-entry" role="listitem">
+Kozlowski, Austin C, Matt Taddy, and James A Evans. 2019. <span>“The Geometry of Culture: Analyzing the Meanings of Class Through Word Embeddings.”</span> <em>American Sociological Review</em> 84 (5): 905–49.
+</div>
+<div id="ref-lehman2010revising" class="csl-entry" role="listitem">
+Lehman, Joel, and Kenneth O Stanley. 2010. <span>“Revising the Evolutionary Computation Abstraction: Minimal Criteria Novelty Search.”</span> <em>Proceedings of the 12th Annual Conference on Genetic and Evolutionary Computation</em>, 103–10.
+</div>
+<div id="ref-lehman2011abandoning" class="csl-entry" role="listitem">
+Lehman, Joel, and Kenneth O Stanley. 2011. <span>“Abandoning Objectives: Evolution Through the Search for Novelty Alone.”</span> <em>Evolutionary Computation</em> 19 (2): 189–223.
+</div>
+<div id="ref-ma2025scflow" class="csl-entry" role="listitem">
+Ma, Pingchuan, Xiaopei Yang, Yusong Li, et al. 2025. <span>“SCFlow: Implicitly Learning Style and Content Disentanglement with Flow Models.”</span> <em>Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)</em>, 14919–29.
+</div>
+<div id="ref-needell2022embracing" class="csl-entry" role="listitem">
+Needell, Coen D, and Wilma A Bainbridge. 2022. <span>“Embracing New Techniques in Deep Learning for Estimating Image Memorability.”</span> <em>Computational Brain &amp; Behavior</em> 5 (2): 168–84.
+</div>
+<div id="ref-newell1959report" class="csl-entry" role="listitem">
+Newell, Allen, John C. Shaw, and Herbert A. Simon. 1959. <span>“Report on a General Problem-Solving Program.”</span> <em>Proceedings of the International Conference on Information Processing (IFIP Congress 1959)</em>, 256–64.
+</div>
+<div id="ref-pathak2017curiosity" class="csl-entry" role="listitem">
+Pathak, Deepak, Pulkit Agrawal, Alexei A Efros, and Trevor Darrell. 2017. <span>“Curiosity-Driven Exploration by Self-Supervised Prediction.”</span> <em>Proceedings of the 34th International Conference on Machine Learning</em>, Proceedings of machine learning research, vol. 70: 2778–87.
+</div>
+<div id="ref-radford2021clip" class="csl-entry" role="listitem">
+<span class="nocase">Radford, Alec, Jong Wook Kim, Chris Hallacy, et al.</span> 2021. <span>“Learning Transferable Visual Models from Natural Language Supervision.”</span> <em>International Conference on Machine Learning</em>, 8748–63.
+</div>
+<div id="ref-simeoni2025dinov3" class="csl-entry" role="listitem">
+<span class="nocase">Sim’eoni, Oriane, Huy V Vo, Maximilian Seitzer, et al.</span> 2026. <span>“<span>DINO</span>v3.”</span> <em>Transactions on Machine Learning Research</em>. <a href="https://openreview.net/forum?id=2NlGyqNjns">https://openreview.net/forum?id=2NlGyqNjns</a>.
+</div>
+<div id="ref-wu2023notonly" class="csl-entry" role="listitem">
+Wu, Yankun, Yuta Nakashima, and Noa Garcia. 2023. <span>“Not Only Generative Art: <span>Stable Diffusion</span> for Content-Style Disentanglement in Art Analysis.”</span> <em>Proceedings of the 2023 ACM International Conference on Multimedia Retrieval (ICMR ’23)</em>, 199–208. <a href="https://doi.org/10.1145/3591106.3592262">https://doi.org/10.1145/3591106.3592262</a>.
+</div>
+<div id="ref-zhai2023siglip" class="csl-entry" role="listitem">
+Zhai, Xiaohua, Basil Mustafa, Alexander Kolesnikov, and Lucas Beyer. 2023. <span>“Sigmoid Loss for Language Image Pre-Training.”</span> <em>Proceedings of the IEEE/CVF International Conference on Computer Vision</em>, 11975–86.
+</div>
+<div id="ref-zhang2018unreasonable" class="csl-entry" role="listitem">
+Zhang, Richard, Phillip Isola, Alexei A Efros, Eli Shechtman, and Oliver Wang. 2018. <span>“The Unreasonable Effectiveness of Deep Features as a Perceptual Metric.”</span> <em>Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition</em>, 586–95.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Bayesian surprise formalizes this observer-dependence: it measures the shift in beliefs when data is observed, <span class="math inline">\(S(D,M) = D_{KL}[P(M|D) \| P(M)]\)</span>, the Kullback-Leibler (KL) divergence from prior to posterior over a model space.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Foundation models are models “trained on broad data (generally using self-supervision at scale) that can be adapted (e.g., fine-tuned) to a wide range of downstream tasks” <span class="citation" data-cites="bommasani2021opportunities">(<a href="#ref-bommasani2021opportunities" role="doc-biblioref"><span class="nocase">Bommasani et al.</span> 2021</a>)</span>. The search moves among CLIP image embeddings <span class="citation" data-cites="radford2021clip">(<a href="#ref-radford2021clip" role="doc-biblioref"><span class="nocase">Radford et al.</span> 2021</a>)</span>; 2 other encoders, DINOv3 <span class="citation" data-cites="simeoni2025dinov3">(<a href="#ref-simeoni2025dinov3" role="doc-biblioref"><span class="nocase">Sim’eoni et al.</span> 2026</a>)</span> and SigLIP <span class="citation" data-cites="zhai2023siglip">(<a href="#ref-zhai2023siglip" role="doc-biblioref">Zhai et al. 2023</a>)</span>, read the pictures it makes, and a fourth, AIMv2 <span class="citation" data-cites="fini2024multimodal">(<a href="#ref-fini2024multimodal" role="doc-biblioref">Fini et al. 2025</a>)</span>, is kept out of the loop.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Distances between deep features agree with people on how alike two small photographic patches look under low-level distortions, for supervised, self-supervised and unsupervised networks alike, and in that paper’s tests they do so better than the metrics that came before them <span class="citation" data-cites="zhang2018unreasonable">(<a href="#ref-zhang2018unreasonable" role="doc-biblioref">Zhang et al. 2018</a>)</span>. Distances inside networks trained to classify objects reproduce some well-known effects of human vision and miss others, 3D shape and occlusion among them <span class="citation" data-cites="jacob2021qualitative">(<a href="#ref-jacob2021qualitative" role="doc-biblioref">Jacob et al. 2021</a>)</span>. A network trained mostly on photographs predicts which paintings people remember, though it is a regression on memory scores and not a distance <span class="citation" data-cites="needell2022embracing davis2023memory">(<a href="#ref-needell2022embracing" role="doc-biblioref">Needell and Bainbridge 2022</a>; <a href="#ref-davis2023memory" role="doc-biblioref">Davis and Bainbridge 2023</a>)</span>. Directions in word embeddings carry cultural meanings that track what people report in surveys <span class="citation" data-cites="kozlowski2019geometry">(<a href="#ref-kozlowski2019geometry" role="doc-biblioref">Kozlowski et al. 2019</a>)</span>. None of these tested CLIP, DINOv3 or SigLIP on paintings, so for art we assume the agreement and have not shown it; what image encoders have shown about how art moved in time is in <a href="./02-related-work.html">Related work</a>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>The two rank repainted works alike when both are read in DINOv3 and SigLIP (rank correlation 0.78, <a href="./07-appendix.html#which-far">appendix</a>); the leftover of <a href="#fig-intro-reference" class="quarto-xref">Figure&nbsp;1</a> is read in CLIP, with 32 directions.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Evolution has been described as a passive kind of novelty search subject to minimal criteria <span class="citation" data-cites="lehman2010revising lehman2011abandoning">(<a href="#ref-lehman2010revising" role="doc-biblioref">Lehman and Stanley 2010</a>, <a href="#ref-lehman2011abandoning" role="doc-biblioref">2011</a>)</span>; <a href="./02-related-work.html">Related work</a> says what a minimal criterion is.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>WikiArt contains over 173,000 artworks spanning a wide range of styles and periods, of which we keep 172,171 (<a href="./03-data.html">Encoders and corpus</a>), and it has been used to evaluate style and content representations built on CLIP <span class="citation" data-cites="wu2023notonly ma2025scflow">(<a href="#ref-wu2023notonly" role="doc-biblioref">Wu et al. 2023</a>; <a href="#ref-ma2025scflow" role="doc-biblioref">Ma et al. 2025</a>)</span>. Other corpora are left for future work.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>The encoders and the decoder were trained, as far as we know, on images from after 1900 too, so the models are not frozen at 1900. The <a href="./06-discussion.html">Discussion</a> comes back to this.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>A <em>hit</em> is a kept picture that is far, faithful and covered by later works. The search has more hits than its 2 controls at every start, 120 against 65 and 40 in all. Both controls are told random scores, the random-score loop with the search’s step and the no-step loop with none (<a href="./05-3-controls.html">Q12</a>).<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> 
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+</div> 
+<script src="figures/responsive.js" defer=""></script><script src="figures/pixel-demo.js" defer=""></script><script src="figures/direction-demo.js" defer=""></script><script src="figures/work-explorer.js" defer=""></script><script src="figures/evidence-explorer.js" defer=""></script><script src="figures/search-explorer.js" defer=""></script><script src="figures/q2-geometry.js" defer=""></script><script src="figures/intro-support.js" defer=""></script><script src="figures/q3_fan.js" defer=""></script><script src="figures/q4_grid.js" defer=""></script><script src="figures/q5_route.js" defer=""></script><script src="figures/q3-encoders.js" defer=""></script><script src="footnotes.js" defer=""></script>
+
+
+
+
+</body></html>

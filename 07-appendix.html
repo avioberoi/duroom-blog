@@ -1,0 +1,3583 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Appendix: what we tested and settled – DuROOM</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-301992f14ddb7dd383e65fee4e2386cf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked landscape-data fullcontent quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./07-appendix.html">Appendix: what we tested and settled</a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">DuROOM</a> 
+    </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Contents</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-related-work.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Related work</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Data</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Which encoders, and which works?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-0-manifold.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q1 How are the works laid out?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-1-q1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q2 Can some works describe others?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-2-q2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q3 Where did later work go?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-3-q3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q4 What is left over?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-5-q5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q5 What does far mean?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-1-q9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q6 How do the later works score?</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Methods</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-methods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-0-far-faithful.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q7 What are we looking for?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-1-q7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q8 Does the decoder paint what we ask?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-3-why-search.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q9 Can we get there with no search?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-2-q8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q10 How does the search work?</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Results</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-results.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-2-q10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q11 What did we find?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-3-controls.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q12 What does the search add?</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-discussion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Discussion</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-appendix.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Appendix: what we tested and settled</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+
+    
+
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Appendix: what we tested and settled</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="vp vp-flow">
+<div class="visual-copy">
+<p>This appendix holds the tables and figures behind the main pages, grouped by the question each answers. Unless another run is named, counts come from the 15 runs that start at 5 works painted before 1900 (5 starts, 3 loops, 1,920 pictures a run). A cell with 3 numbers reads the search / the random-score loop / the no-step loop.</p>
+</div>
+</div>
+<section id="three-tables-the-rest-refers-to" class="level2">
+<h2 class="anchored" data-anchor-id="three-tables-the-rest-refers-to">Three tables the rest refers to</h2>
+<div class="vp-tbl">
+<div id="tbl-four-cases" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-four-cases-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: DuROOM search has 4,380 far and faithful pictures of 9,600, and the free search none of 5,760. The groups of the first figure of <a href="./04-0-far-faithful.html">Q7</a> in the 4 cases, with DuROOM search’s 2 controls beside the search. Far is against the reference alone, and faithful is read on the stored CLIP reading (a fidelity at or under 0.7785).
+</figcaption>
+<div aria-describedby="tbl-four-cases-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Group</th>
+<th>Pictures</th>
+<th>Far and faithful</th>
+<th>Far, not faithful</th>
+<th>Near, faithful</th>
+<th>Near, not faithful</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Works before 1900, repainted from their own vectors</td>
+<td>1,000</td>
+<td>2</td>
+<td>1</td>
+<td>988</td>
+<td>9</td>
+</tr>
+<tr class="even">
+<td>Works from 1900 to 1969, repainted</td>
+<td>512</td>
+<td>26</td>
+<td>2</td>
+<td>474</td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td>Works from 1970 on, repainted</td>
+<td>663</td>
+<td>94</td>
+<td>18</td>
+<td>520</td>
+<td>31</td>
+</tr>
+<tr class="even">
+<td>Random requests inside the cone of the works before 1900</td>
+<td>192</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>192</td>
+</tr>
+<tr class="odd">
+<td>Random requests anywhere on the sphere</td>
+<td>64</td>
+<td>0</td>
+<td>15</td>
+<td>0</td>
+<td>49</td>
+</tr>
+<tr class="even">
+<td>Requests read from noise images</td>
+<td>160</td>
+<td>32</td>
+<td>7</td>
+<td>96</td>
+<td>25</td>
+</tr>
+<tr class="odd">
+<td>The free search, three runs, pictures</td>
+<td>5,760</td>
+<td>0</td>
+<td>4,094</td>
+<td>79</td>
+<td>1,587</td>
+</tr>
+<tr class="even">
+<td>The search, pictures</td>
+<td>9,600</td>
+<td>4,380</td>
+<td>93</td>
+<td>4,972</td>
+<td>155</td>
+</tr>
+<tr class="odd">
+<td>The random-score loop, pictures</td>
+<td>9,600</td>
+<td>1,534</td>
+<td>20</td>
+<td>7,992</td>
+<td>54</td>
+</tr>
+<tr class="even">
+<td>The no-step loop, pictures</td>
+<td>9,600</td>
+<td>2,708</td>
+<td>2</td>
+<td>6,889</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+<div class="vp-tbl">
+<div id="tbl-down-to-hits" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-down-to-hits-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: DuROOM search has 120 hits, against 65 and 40 for its controls. The pictures of DuROOM search and its 2 controls, followed down to the hits. Not feasible is on the loop’s own reading (a fidelity over 0.7788), and the faithful and far rows use the stored reading.
+</figcaption>
+<div aria-describedby="tbl-down-to-hits-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Count</th>
+<th>The search</th>
+<th>Random-score loop</th>
+<th>No-step loop</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>All pictures</td>
+<td>9,600</td>
+<td>9,600</td>
+<td>9,600</td>
+</tr>
+<tr class="even">
+<td>Faithful pictures</td>
+<td>9,352</td>
+<td>9,526</td>
+<td>9,597</td>
+</tr>
+<tr class="odd">
+<td>Pictures not feasible (the loop’s reading)</td>
+<td>245</td>
+<td>72</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>Not feasible and far pictures</td>
+<td>92</td>
+<td>19</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>Far pictures</td>
+<td>4,473</td>
+<td>1,554</td>
+<td>2,710</td>
+</tr>
+<tr class="even">
+<td>Far and faithful pictures</td>
+<td>4,380</td>
+<td>1,534</td>
+<td>2,708</td>
+</tr>
+<tr class="odd">
+<td>Far pictures that pass the 0.575 minimum-gap rule alone</td>
+<td>1,081</td>
+<td>581</td>
+<td>297</td>
+</tr>
+<tr class="even">
+<td>Admitted (every one faithful)</td>
+<td>142</td>
+<td>74</td>
+<td>47</td>
+</tr>
+<tr class="odd">
+<td>Hits (admitted pictures that are far, faithful and covered by later works)</td>
+<td>120</td>
+<td>65</td>
+<td>40</td>
+</tr>
+<tr class="even">
+<td>Hits that sit as near a real work as a repainted work does</td>
+<td>64</td>
+<td>35</td>
+<td>18</td>
+</tr>
+<tr class="odd">
+<td>Of those, the ones that pass the decoder’s safety filter</td>
+<td>47</td>
+<td>30</td>
+<td>14</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+<div class="vp-tbl">
+<div id="tbl-per-start" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-per-start-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3: The search admits more pictures than the random-score loop at 4 starts and as many at Degas, and more than the no-step loop at all 5. Counts per start, named by the start work; the last column is the search minus each control.
+</figcaption>
+<div aria-describedby="tbl-per-start-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Start work</th>
+<th>Admitted</th>
+<th>Far pictures, of 1,920</th>
+<th>Hits’ lean along the shift, search minus each control</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Jan Cossiers, 1641</td>
+<td>30 / 21 / 14</td>
+<td>708 / 319 / 547</td>
+<td>+0.053 / +0.081</td>
+</tr>
+<tr class="even">
+<td>Fra Angelico, 1419</td>
+<td>41 / 21 / 8</td>
+<td>907 / 391 / 666</td>
+<td>+0.006 / +0.055</td>
+</tr>
+<tr class="odd">
+<td>Alfred Sisley, 1885</td>
+<td>36 / 12 / 5</td>
+<td>901 / 305 / 214</td>
+<td>+0.044 / +0.022</td>
+</tr>
+<tr class="even">
+<td>Vincent van Gogh, 1890</td>
+<td>24 / 9 / 10</td>
+<td>843 / 149 / 1,010</td>
+<td>-0.004 / +0.003</td>
+</tr>
+<tr class="odd">
+<td>Edgar Degas, 1890</td>
+<td>11 / 11 / 10</td>
+<td>1,114 / 390 / 273</td>
+<td>+0.067 / +0.073</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="far-and-whether-later-art-went-there" class="level2">
+<h2 class="anchored" data-anchor-id="far-and-whether-later-art-went-there">Far, and whether later art went there</h2>
+<section id="did-later-art-go-where-earlier-art-was-sparse" class="level3">
+<h3 class="anchored" data-anchor-id="did-later-art-go-where-earlier-art-was-sparse">Did later art go where earlier art was sparse?</h3>
+<div class="vp-tbl">
+<div id="tbl-later-far" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-later-far-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4: Later works are far more often than held-out earlier works, in each observer alone. We fit on half of the artists before 1900 (28,404 works), hold out the other half (24,627 works), and score every work by its mean distance to its 15 nearest works of the first half, on the stored vectors, with no decoder. The later works are 69,468, by artists not in the first half. It is one split, and medium and date are not separated.
+</figcaption>
+<div aria-describedby="tbl-later-far-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Works</th>
+<th>AUC, DINOv3</th>
+<th>AUC, SigLIP</th>
+<th>Beyond the bar, DINOv3</th>
+<th>Far in both observers</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>All later works</td>
+<td>0.901</td>
+<td>0.904</td>
+<td>26.8% (SigLIP 26.5%)</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1900 to 1959</td>
+<td>0.846</td>
+<td>0.854</td>
+<td>11.2%</td>
+<td>1,651 of 35,874</td>
+</tr>
+<tr class="odd">
+<td>From 1960 on</td>
+<td>0.959</td>
+<td>0.956</td>
+<td>43.5%</td>
+<td>9,530 of 33,594</td>
+</tr>
+<tr class="even">
+<td>Other media</td>
+<td>0.979</td>
+<td>0.981</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Held-out works before 1900</td>
+<td></td>
+<td></td>
+<td>1.0%</td>
+<td>71 of 24,627</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="does-it-hold-through-the-decoder" class="level3">
+<h3 class="anchored" data-anchor-id="does-it-hold-through-the-decoder">Does it hold through the decoder?</h3>
+<div class="vp-tbl">
+<div id="tbl-through-decoder" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-through-decoder-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;5: Through the decoder too, works from 1900 to 1969 are far and faithful more often than earlier ones, about 1 in 20. We repaint each work from its own CLIP vector and score it against the 2,048 repainted works of the reference.
+</figcaption>
+<div aria-describedby="tbl-through-decoder-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Repainted works</th>
+<th>Far and faithful, 1900 to 1969</th>
+<th>Far and faithful, before 1900</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>All</td>
+<td>26 of 512</td>
+<td>2 of 1,000</td>
+</tr>
+<tr class="even">
+<td>With the reference’s artists removed</td>
+<td>26 of 405</td>
+<td>0 of 161</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+<div id="round-trips" class="vp-tbl">
+<div id="tbl-round-trips" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-round-trips-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;6: By trip 6 the median lean reaches 0.10 and the median year of the 10 nearest real works is 1905. With no search, 48 works from before 1900 are repainted and read back 6 times (<a href="./04-3-why-search.html">Q9</a>).
+</figcaption>
+<div aria-describedby="tbl-round-trips-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Trip</th>
+<th>Median year of the 10 nearest real works</th>
+<th>Median lean</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>1856</td>
+<td>-0.01</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>1856</td>
+<td>-0.01</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>1851</td>
+<td>-0.01</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>1857</td>
+<td>0.01</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>1870</td>
+<td>0.02</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>1878</td>
+<td>0.04</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td>1905</td>
+<td>0.10</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="which-distance-and-how-many-neighbours" class="level3">
+<h3 class="anchored" data-anchor-id="which-distance-and-how-many-neighbours">Which distance, and how many neighbours?</h3>
+<div class="vp-tbl">
+<div id="tbl-which-score" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-which-score-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;7: In DINOv3 and SigLIP the mean distance to the 15 nearest tells later art from earlier art best of these. On stored vectors the number of neighbours does not matter. The AUC of each score on the split of <a href="#tbl-later-far">the first table of this section</a>, run with 5, 10, 15 and 30 neighbours and with 5 other scores. We have not tested the number of neighbours inside the loop.
+</figcaption>
+<div aria-describedby="tbl-which-score-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Score</th>
+<th>AUC, DINOv3</th>
+<th>AUC, SigLIP</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mean chord to the 15 nearest (5, 10 and 30 within 0.003 of it)</td>
+<td>0.901</td>
+<td>0.904</td>
+</tr>
+<tr class="even">
+<td>Distance to the centre</td>
+<td>0.864</td>
+<td>0.849</td>
+</tr>
+<tr class="odd">
+<td>Leftover outside 32 directions (loners give the same AUC by construction)</td>
+<td>0.826</td>
+<td>0.879</td>
+</tr>
+<tr class="even">
+<td>Outside 32 regions</td>
+<td>0.743</td>
+<td>0.853</td>
+</tr>
+<tr class="odd">
+<td>Local ratio</td>
+<td>0.742</td>
+<td>0.783</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+<div id="which-far" class="vp-tbl">
+<div id="tbl-which-far" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-which-far-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;8: The score tells the repainted later works from the earlier ones best, with an AUC of 0.85 against 0.74 for the scaled bar and 0.79 for the leftover. The score and the leftover rank the works alike (rank correlation 0.78). The 3 kinds of far are each read in the observers on the repainted works: the score, a bar scaled to each picture’s neighbourhood (<a href="./03-5-q5.html">Q5</a>) and the leftover (<a href="./03-3-q3.html">Q4</a>). The counts are for one render: repainted twice more with fresh noise, about 1 in 50 later works is far and faithful every time.
+</figcaption>
+<div aria-describedby="tbl-which-far-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Kind of far</th>
+<th>Later works that pass, of 512</th>
+<th>Earlier works that pass, of 1,000</th>
+<th>AUC</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>The score</td>
+<td>28 (26 faithful)</td>
+<td>3 (2 faithful)</td>
+<td>0.85</td>
+</tr>
+<tr class="even">
+<td>A bar scaled to the neighbourhood</td>
+<td>4 far and faithful</td>
+<td>1 far and faithful</td>
+<td>0.74</td>
+</tr>
+<tr class="odd">
+<td>The leftover</td>
+<td>5</td>
+<td>0</td>
+<td>0.79</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="a-search-scored-by-the-leftover" class="level3">
+<h3 class="anchored" data-anchor-id="a-search-scored-by-the-leftover">A search scored by the leftover</h3>
+<div class="vp-tbl">
+<div id="tbl-leftover-search" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-leftover-search-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;9: The leftover search picks 679 pictures where the search has 290 by the same rule, and it does not have more at every start. The leftover search is Algorithm 1 of <a href="./04-2-q8.html">Q10</a> with a picture’s leftover share (<a href="./04-0-far-faithful.html">Q7</a>) as its novelty in place of its distance. It has one run per start, and faithful, near art and the safety filter are not counted for it.
+</figcaption>
+<div aria-describedby="tbl-leftover-search-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Count</th>
+<th>The leftover search</th>
+<th>The search</th>
+<th>Random-score loop</th>
+<th>No-step loop</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Picked, Jan Cossiers, 1641</td>
+<td>59</td>
+<td>59</td>
+<td>18</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Picked, Fra Angelico, 1419</td>
+<td>220</td>
+<td>138</td>
+<td>11</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>Picked, Alfred Sisley, 1885</td>
+<td>48</td>
+<td>35</td>
+<td>14</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>Picked, Vincent van Gogh, 1890</td>
+<td>331</td>
+<td>30</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>Picked, Edgar Degas, 1890</td>
+<td>21</td>
+<td>28</td>
+<td>18</td>
+<td>9</td>
+</tr>
+<tr class="even">
+<td>Picked, all 5 starts</td>
+<td>679</td>
+<td>290</td>
+<td>64</td>
+<td>22</td>
+</tr>
+<tr class="odd">
+<td>Pictures with a large leftover share, of 9,600</td>
+<td>3,955</td>
+<td>1,750</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Far pictures, of 9,600</td>
+<td>5,995</td>
+<td>4,473</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="where-do-the-far-later-works-sit" class="level3">
+<h3 class="anchored" data-anchor-id="where-do-the-far-later-works-sit">Where do the far later works sit?</h3>
+<div class="vp-tbl">
+<div id="tbl-far-regions" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-far-regions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;10: Far later works sit mostly where the past is sparse, one observer at a time. We fit 32 regions per observer (spherical k-means, one seed, on the past and the later works together) and count far later works by the share of the region the past holds. The regions were fitted on the later works too, so part of this is by construction.
+</figcaption>
+<div aria-describedby="tbl-far-regions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Share of the region the past holds</th>
+<th>Far later works, DINOv3</th>
+<th>Far later works, SigLIP</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Under 1 percent</td>
+<td>12,607 of 18,626</td>
+<td>15,223 of 18,392</td>
+</tr>
+<tr class="even">
+<td>Half or more</td>
+<td>58</td>
+<td>107</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="why-two-observers-and-the-smaller-of-the-two" class="level3">
+<h3 class="anchored" data-anchor-id="why-two-observers-and-the-smaller-of-the-two">Why 2 observers, and the smaller of the two?</h3>
+<div class="vp-tbl">
+<div id="tbl-two-observers" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-two-observers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;11: The second observer changes which pictures count as far. Works before 1900 that are far in each observer by itself; those far in both are in <a href="#tbl-later-far">the first table of this section</a>. On the held-out past the 2 observers’ scores have a rank correlation of 0.67. We have not run the loop with one observer, or with the mean of the two in place of the smaller.
+</figcaption>
+<div aria-describedby="tbl-two-observers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Count</th>
+<th>DINOv3</th>
+<th>SigLIP</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Held-out works before 1900 far in the observer by itself</td>
+<td>247</td>
+<td>247</td>
+</tr>
+<tr class="even">
+<td>Repainted works before 1900 far in the observer by itself, of 1,000 (the 3 far in both included)</td>
+<td>9</td>
+<td>12</td>
+</tr>
+<tr class="odd">
+<td>Repainted works before 1900 far in this observer only</td>
+<td>6</td>
+<td>9</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</section>
+</section>
+<section id="faithful-and-what-a-bar-says" class="level2">
+<h2 class="anchored" data-anchor-id="faithful-and-what-a-bar-says">Faithful, and what a bar says</h2>
+<section id="why-check-faithfulness-at-all" class="level3">
+<h3 class="anchored" data-anchor-id="why-check-faithfulness-at-all">Why check faithfulness at all?</h3>
+<div class="vp-tbl">
+<div id="tbl-faithful-condition" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-faithful-condition-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;12: Replayed on the saved pictures without the faithful condition in the admission step, the search is still ahead of both controls on hits at all 5 starts. Counts over the 5 starts, in the runs and in the replay. No run separates the restart from the faithful condition.
+</figcaption>
+<div aria-describedby="tbl-faithful-condition-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Count</th>
+<th>The search</th>
+<th>Random-score loop</th>
+<th>No-step loop</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pictures the faithful condition made not feasible</td>
+<td>245</td>
+<td>72</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>Far pictures the condition removed</td>
+<td>92</td>
+<td>19</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>Of those, covered</td>
+<td>85</td>
+<td>19</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>Of those, covered and also near a real work</td>
+<td>66</td>
+<td>16</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>Hits, in the runs</td>
+<td>120</td>
+<td>65</td>
+<td>40</td>
+</tr>
+<tr class="even">
+<td>Hits, replayed without the faithful condition in the admission step</td>
+<td>112</td>
+<td>64</td>
+<td>40</td>
+</tr>
+<tr class="odd">
+<td>Pictures that enter the admitted pictures in the replay</td>
+<td>18</td>
+<td>3</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>Pictures that leave them in the replay</td>
+<td>17</td>
+<td>3</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>Admitted in the replay (the runs gave 142)</td>
+<td>143</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Share of hits near art and past the filter, in the replay (the runs gave 0.392)</td>
+<td>0.393</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="can-a-model-say-whether-a-picture-looks-like-a-picture" class="level3">
+<h3 class="anchored" data-anchor-id="can-a-model-say-whether-a-picture-looks-like-a-picture">Can a model say whether a picture looks like a picture?</h3>
+<div id="coherence" class="vp">
+<div id="fig-sphere-points" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Eleven of twelve pictures decoded from random vectors are shown and one is withheld, each labelled with its gate score between 0.86 and 1.03, beside a strip of gate scores for all 476 test pictures and for 8 noise, 8 flat-colour and 4 text images, all above a line at 0.6." data-mobile-src="figures/q7_sphere_points_v2-mobile.svg">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sphere-points-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/q7_sphere_points_v2.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/q7_sphere_points_v2-mobile.svg" alt="Eleven of twelve pictures decoded from random vectors are shown and one is withheld, each labelled with its gate score between 0.86 and 1.03, beside a strip of gate scores for all 476 test pictures and for 8 noise, 8 flat-colour and 4 text images, all above a line at 0.6.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sphere-points-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Everything passes the coherence gate. Its score is 1 minus the cosine of a picture’s SigLIP vector to the words noise, static, random pixels and distorted. Pictures painted from random points on the sphere, all 476 pictures the gate scored, and noise, flat-colour and text images made to fail it all score above its 0.6 cut-off. One of the 12 random points is not shown, as it is of an unclothed figure.
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="what-can-fidelity-not-say" class="level3">
+<h3 class="anchored" data-anchor-id="what-can-fidelity-not-say">What can fidelity not say?</h3>
+<div class="vp-tbl">
+<div id="tbl-fidelity-medians" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-fidelity-medians-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;13: The faithful line, 0.7785, is harder on later art: on the 2,048 repainted works of today’s reference it fails 6 of 593 from before 1900, 20 of 792 from 1900 to 1969 and 49 of 663 from 1970 on. Median fidelity of each group, read without the line.
+</figcaption>
+<div aria-describedby="tbl-fidelity-medians-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Group</th>
+<th>Median fidelity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>The no-step loop</td>
+<td>0.359</td>
+</tr>
+<tr class="even">
+<td>Today’s reference, repainted works before 1900 (593)</td>
+<td>0.526</td>
+</tr>
+<tr class="odd">
+<td>Today’s reference, repainted works from 1900 to 1969 (792)</td>
+<td>0.539</td>
+</tr>
+<tr class="even">
+<td>The random-score loop</td>
+<td>0.558</td>
+</tr>
+<tr class="odd">
+<td>Today’s reference, repainted works from 1970 on (663)</td>
+<td>0.581</td>
+</tr>
+<tr class="even">
+<td>The search</td>
+<td>0.589</td>
+</tr>
+<tr class="odd">
+<td>Requests read from noise images</td>
+<td>0.700</td>
+</tr>
+<tr class="even">
+<td>Random requests inside the cone</td>
+<td>0.885</td>
+</tr>
+<tr class="odd">
+<td>Random requests on the sphere</td>
+<td>1.378</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="each-check-on-requests-whose-origin-we-know" class="level3">
+<h3 class="anchored" data-anchor-id="each-check-on-requests-whose-origin-we-know">Each check, on requests whose origin we know</h3>
+<div class="vp-tbl">
+<div id="tbl-checks-by-origin" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-checks-by-origin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;14: Faithful is the only check that rejects both kinds of random request. Passes of the faithful check and of near a real work, and the DINOv3 median of nearness to a real work, for requests read from real works, drawn at random, or read from noise images. The noise set is 5 kinds of 32, with one painting per request.
+</figcaption>
+<div aria-describedby="tbl-checks-by-origin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Check</th>
+<th>Repainted real works</th>
+<th>Random requests</th>
+<th>Random requests inside the cone</th>
+<th>Requests read from noise images</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Faithful, passes</td>
+<td>3,463 of 3,560</td>
+<td>0 of 256</td>
+<td>0 of 192</td>
+<td>128 of 160</td>
+</tr>
+<tr class="even">
+<td>Near a real work, passes</td>
+<td></td>
+<td></td>
+<td>189 of 192</td>
+<td>153 of 160</td>
+</tr>
+<tr class="odd">
+<td>Nearness to a real work, DINOv3 median</td>
+<td>0.583</td>
+<td></td>
+<td></td>
+<td>0.593</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="what-does-a-bar-say-and-why-a-bar" class="level3">
+<h3 class="anchored" data-anchor-id="what-does-a-bar-say-and-why-a-bar">What does a bar say, and why a bar?</h3>
+<div class="vp-tbl">
+<div id="tbl-bar-two-references" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-bar-two-references-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;15: 5 of the 2,048 reference pictures pass both bars of <a href="./04-0-far-faithful.html">Q7</a>, and none of today’s reference’s own 2,048 passes both of its bars. The bar in each observer and the reference pictures over it in both. The counting bar is at 99 in 100, our choice over 95 or 90, and we have not counted the hits at another level.
+</figcaption>
+<div aria-describedby="tbl-bar-two-references-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Bar</th>
+<th>DINOv3</th>
+<th>SigLIP</th>
+<th>Of 2,048 reference pictures, pass both</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>The bar of <a href="./04-0-far-faithful.html">Q7</a></td>
+<td>0.9614</td>
+<td>0.9001</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>A bar from today’s reference</td>
+<td>1.0449</td>
+<td>0.9577</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="the-coherence-gate" class="level3">
+<h3 class="anchored" data-anchor-id="the-coherence-gate">The coherence gate</h3>
+<div class="vp-tbl">
+<div id="tbl-gate-medians" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-gate-medians-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;16: The gate removed nothing in these runs: its cut-off was 0 in every run of the test, and at the 0.6 cut-off every group passes too (the lowest score is 0.819).
+</figcaption>
+<div aria-describedby="tbl-gate-medians-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Group</th>
+<th>Gate score, median</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Real works</td>
+<td>1.014</td>
+</tr>
+<tr class="even">
+<td>Pictures painted from noise</td>
+<td>0.913</td>
+</tr>
+<tr class="odd">
+<td>The search</td>
+<td>0.924</td>
+</tr>
+<tr class="even">
+<td>The random-score loop</td>
+<td>0.968</td>
+</tr>
+<tr class="odd">
+<td>The no-step loop</td>
+<td>0.963</td>
+</tr>
+<tr class="even">
+<td>A pure noise image (a range, not a median)</td>
+<td>0.8203 to 0.8488</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</section>
+</section>
+<section id="what-the-search-and-its-controls-did" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-search-and-its-controls-did">What the search and its controls did</h2>
+<section id="what-does-the-real-score-do-with-no-step" class="level3">
+<h3 class="anchored" data-anchor-id="what-does-the-real-score-do-with-no-step">What does the real score do with no step?</h3>
+<div class="vp-tbl">
+<div id="tbl-real-score-no-step" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-real-score-no-step-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;17: Told the real score in place of random ones, the no-step loop admits more pictures at every start on both types of graphics card, and on one type it also has more far pictures at every start. Admitted pictures and far pictures (faithful or not, on the loop’s own readings) by start, on the type of card the search ran on and on another type. One run per start on each type.
+</figcaption>
+<div aria-describedby="tbl-real-score-no-step-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Count, type of graphics card and loop</th>
+<th>Jan Cossiers, 1641</th>
+<th>Fra Angelico, 1419</th>
+<th>Alfred Sisley, 1885</th>
+<th>Vincent van Gogh, 1890</th>
+<th>Edgar Degas, 1890</th>
+<th>All 5 starts</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Admitted, another type of card: the no-step loop told the real score</td>
+<td>22</td>
+<td>47</td>
+<td>28</td>
+<td>33</td>
+<td>16</td>
+<td>146</td>
+</tr>
+<tr class="even">
+<td>Admitted, another type of card: the no-step loop</td>
+<td>17</td>
+<td>8</td>
+<td>7</td>
+<td>12</td>
+<td>10</td>
+<td>54</td>
+</tr>
+<tr class="odd">
+<td>Far pictures, another type of card: the no-step loop told the real score</td>
+<td>1,492</td>
+<td>1,313</td>
+<td>685</td>
+<td>1,126</td>
+<td>822</td>
+<td>5,438</td>
+</tr>
+<tr class="even">
+<td>Far pictures, another type of card: the no-step loop</td>
+<td>1,062</td>
+<td>602</td>
+<td>155</td>
+<td>147</td>
+<td>268</td>
+<td>2,234</td>
+</tr>
+<tr class="odd">
+<td>Admitted, the search’s type of card: the no-step loop told the real score</td>
+<td>34</td>
+<td>22</td>
+<td>22</td>
+<td>23</td>
+<td>16</td>
+<td>117</td>
+</tr>
+<tr class="even">
+<td>Admitted, the search’s type of card: the no-step loop</td>
+<td>14</td>
+<td>8</td>
+<td>5</td>
+<td>10</td>
+<td>10</td>
+<td>47</td>
+</tr>
+<tr class="odd">
+<td>Admitted, the search’s type of card: the search</td>
+<td>30</td>
+<td>41</td>
+<td>36</td>
+<td>24</td>
+<td>11</td>
+<td>142</td>
+</tr>
+<tr class="even">
+<td>Far pictures, the search’s type of card: the no-step loop told the real score</td>
+<td>1,000</td>
+<td>530</td>
+<td>745</td>
+<td>1,333</td>
+<td>722</td>
+<td>4,330</td>
+</tr>
+<tr class="odd">
+<td>Far pictures, the search’s type of card: the no-step loop</td>
+<td>547</td>
+<td>666</td>
+<td>214</td>
+<td>1,010</td>
+<td>273</td>
+<td>2,710</td>
+</tr>
+<tr class="even">
+<td>Far pictures, the search’s type of card: the search</td>
+<td>708</td>
+<td>907</td>
+<td>901</td>
+<td>843</td>
+<td>1,114</td>
+<td>4,473</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="why-does-the-restart-use-four-pictures" class="level3">
+<h3 class="anchored" data-anchor-id="why-does-the-restart-use-four-pictures">Why does the restart use 4 pictures?</h3>
+<div class="vp-tbl">
+<div id="tbl-restart-number" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-restart-number-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;18: Restarted from 1 picture the loop admits more pictures than the search with 4 at every start, and from 16 or 32 it admits fewer; from 32 it also has fewer far pictures at every start. Admitted pictures and far pictures (faithful or not) are on the loop’s own readings; hits, far and faithful pictures and those of them off the manifold are counted for 1 and 4 only. One run per number and start.
+</figcaption>
+<div aria-describedby="tbl-restart-number-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Count and number of pictures the restart uses</th>
+<th>Jan Cossiers, 1641</th>
+<th>Fra Angelico, 1419</th>
+<th>Alfred Sisley, 1885</th>
+<th>Vincent van Gogh, 1890</th>
+<th>Edgar Degas, 1890</th>
+<th>All 5 starts</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Admitted, restart from 1</td>
+<td>57</td>
+<td>101</td>
+<td>103</td>
+<td>90</td>
+<td>74</td>
+<td>425</td>
+</tr>
+<tr class="even">
+<td>Admitted, restart from 4 (the search)</td>
+<td>30</td>
+<td>41</td>
+<td>36</td>
+<td>24</td>
+<td>11</td>
+<td>142</td>
+</tr>
+<tr class="odd">
+<td>Admitted, restart from 16</td>
+<td>22</td>
+<td>18</td>
+<td>8</td>
+<td>10</td>
+<td>6</td>
+<td>64</td>
+</tr>
+<tr class="even">
+<td>Admitted, restart from 32</td>
+<td>7</td>
+<td>11</td>
+<td>8</td>
+<td>11</td>
+<td>6</td>
+<td>43</td>
+</tr>
+<tr class="odd">
+<td>Far pictures, restart from 1</td>
+<td>969</td>
+<td>1,108</td>
+<td>1,083</td>
+<td>1,044</td>
+<td>857</td>
+<td>5,061</td>
+</tr>
+<tr class="even">
+<td>Far pictures, restart from 4 (the search)</td>
+<td>708</td>
+<td>907</td>
+<td>901</td>
+<td>843</td>
+<td>1,114</td>
+<td>4,473</td>
+</tr>
+<tr class="odd">
+<td>Far pictures, restart from 16</td>
+<td>674</td>
+<td>1,257</td>
+<td>698</td>
+<td>1,112</td>
+<td>278</td>
+<td>4,019</td>
+</tr>
+<tr class="even">
+<td>Far pictures, restart from 32</td>
+<td>80</td>
+<td>578</td>
+<td>116</td>
+<td>228</td>
+<td>123</td>
+<td>1,125</td>
+</tr>
+<tr class="odd">
+<td>Hits, read again, restart from 1</td>
+<td>37</td>
+<td>65</td>
+<td>58</td>
+<td>63</td>
+<td>60</td>
+<td>283</td>
+</tr>
+<tr class="even">
+<td>Hits, restart from 4 (the search)</td>
+<td>23</td>
+<td>27</td>
+<td>35</td>
+<td>24</td>
+<td>11</td>
+<td>120</td>
+</tr>
+<tr class="odd">
+<td>Far and faithful, read again, restart from 1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4,367</td>
+</tr>
+<tr class="even">
+<td>Far and faithful, restart from 4 (the search)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4,380</td>
+</tr>
+<tr class="odd">
+<td>Far and faithful and off the manifold, read again, restart from 1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>1,004</td>
+</tr>
+<tr class="even">
+<td>Far and faithful and off the manifold, restart from 4 (the search)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>331</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="a-single-walk-with-selection" class="level3">
+<h3 class="anchored" data-anchor-id="a-single-walk-with-selection">A single walk with selection</h3>
+<div class="vp-tbl">
+<div id="tbl-single-walk" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-single-walk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;19: The search is ahead of the single walk on far and faithful pictures, on those with a work dated 1900 or later within the manifold line and none dated before 1900, and on those of them with a large leftover share. On admitted pictures and off the manifold neither is ahead. Counts by start for the search and the single walk, at 1,920 pictures a start. One walk per start, one seed.
+</figcaption>
+<div aria-describedby="tbl-single-walk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Count and procedure</th>
+<th>Jan Cossiers, 1641</th>
+<th>Fra Angelico, 1419</th>
+<th>Alfred Sisley, 1885</th>
+<th>Vincent van Gogh, 1890</th>
+<th>Edgar Degas, 1890</th>
+<th>All 5 starts</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Admitted: the search</td>
+<td>30</td>
+<td>41</td>
+<td>36</td>
+<td>24</td>
+<td>11</td>
+<td>142</td>
+</tr>
+<tr class="even">
+<td>Admitted: the single walk</td>
+<td>35</td>
+<td>25</td>
+<td>55</td>
+<td>23</td>
+<td>49</td>
+<td>187</td>
+</tr>
+<tr class="odd">
+<td>Far and faithful: the search</td>
+<td>679</td>
+<td>864</td>
+<td>896</td>
+<td>840</td>
+<td>1,101</td>
+<td>4,380</td>
+</tr>
+<tr class="even">
+<td>Far and faithful: the single walk</td>
+<td>442</td>
+<td>341</td>
+<td>527</td>
+<td>108</td>
+<td>1,028</td>
+<td>2,446</td>
+</tr>
+<tr class="odd">
+<td>With a work dated 1900 or later within the manifold line and none dated before 1900: the search</td>
+<td>601</td>
+<td>599</td>
+<td>728</td>
+<td>828</td>
+<td>1,094</td>
+<td>3,850</td>
+</tr>
+<tr class="even">
+<td>With a work dated 1900 or later within the manifold line and none dated before 1900: the single walk</td>
+<td>418</td>
+<td>323</td>
+<td>396</td>
+<td>81</td>
+<td>847</td>
+<td>2,065</td>
+</tr>
+<tr class="odd">
+<td>Of those, with a large leftover share: the search</td>
+<td>124</td>
+<td>206</td>
+<td>176</td>
+<td>276</td>
+<td>532</td>
+<td>1,314</td>
+</tr>
+<tr class="even">
+<td>Of those, with a large leftover share: the single walk</td>
+<td>47</td>
+<td>120</td>
+<td>22</td>
+<td>8</td>
+<td>215</td>
+<td>412</td>
+</tr>
+<tr class="odd">
+<td>Off the manifold: the search</td>
+<td>60</td>
+<td>227</td>
+<td>43</td>
+<td>1</td>
+<td>0</td>
+<td>331</td>
+</tr>
+<tr class="even">
+<td>Off the manifold: the single walk</td>
+<td>10</td>
+<td>13</td>
+<td>100</td>
+<td>23</td>
+<td>131</td>
+<td>277</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="does-the-search-reach-more-pictures-that-lie-apart" class="level3">
+<h3 class="anchored" data-anchor-id="does-the-search-reach-more-pictures-that-lie-apart">Does the search reach more pictures that lie apart?</h3>
+<div class="vp-tbl">
+<div id="tbl-lie-apart" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-lie-apart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;20: On the pictures of the case that lie apart the search is ahead of both controls, and neither the search nor the single walk is ahead; off the manifold neither is ahead in any of the 3 comparisons. The case is the far and faithful pictures with a large leftover share, a work dated 1900 or later within the manifold line and none dated before 1900; within each start, in the order painted, a picture counts when it lies more than 0.575 in DINOv3 from every picture counted before it. One minimum gap, in DINOv3 only, and pictures from different starts were never compared.
+</figcaption>
+<div aria-describedby="tbl-lie-apart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Count and procedure</th>
+<th>Jan Cossiers, 1641</th>
+<th>Fra Angelico, 1419</th>
+<th>Alfred Sisley, 1885</th>
+<th>Vincent van Gogh, 1890</th>
+<th>Edgar Degas, 1890</th>
+<th>All 5 starts</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pictures of the case that lie apart: the search</td>
+<td>43</td>
+<td>65</td>
+<td>28</td>
+<td>28</td>
+<td>23</td>
+<td>187</td>
+</tr>
+<tr class="even">
+<td>Pictures of the case that lie apart: the single walk</td>
+<td>16</td>
+<td>25</td>
+<td>12</td>
+<td>7</td>
+<td>157</td>
+<td>217</td>
+</tr>
+<tr class="odd">
+<td>Pictures of the case that lie apart: the random-score loop</td>
+<td>11</td>
+<td>8</td>
+<td>10</td>
+<td>2</td>
+<td>5</td>
+<td>36</td>
+</tr>
+<tr class="even">
+<td>Pictures of the case that lie apart: the no-step loop</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>3</td>
+<td>3</td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td>Far and faithful pictures off the manifold that lie apart: the search</td>
+<td>45</td>
+<td>105</td>
+<td>23</td>
+<td>1</td>
+<td>0</td>
+<td>174</td>
+</tr>
+<tr class="even">
+<td>Far and faithful pictures off the manifold that lie apart: the single walk</td>
+<td>8</td>
+<td>10</td>
+<td>65</td>
+<td>18</td>
+<td>104</td>
+<td>205</td>
+</tr>
+<tr class="odd">
+<td>Far and faithful pictures off the manifold that lie apart: the random-score loop</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>89</td>
+</tr>
+<tr class="even">
+<td>Far and faithful pictures off the manifold that lie apart: the no-step loop</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>49</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="the-three-loops-compared-without-a-bar" class="level3">
+<h3 class="anchored" data-anchor-id="the-three-loops-compared-without-a-bar">The 3 loops compared without a bar</h3>
+<div class="vp-tbl">
+<div id="tbl-no-bar" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-no-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;21: Pooled, the search is farthest at every level from the 50th to the 99.9th, and the 2 controls swap order twice as the level rises. Every picture is ranked against the reference’s own far scores, and each cell is the share of a loop’s pictures beyond that percentile in both observers. By start the order changes (Sisley, van Gogh).
+</figcaption>
+<div aria-describedby="tbl-no-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Share of pictures beyond the reference’s own percentile, in both observers</th>
+<th>50th</th>
+<th>90th</th>
+<th>99th</th>
+<th>99.9th</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>The search</td>
+<td>0.962</td>
+<td>0.917</td>
+<td>0.466</td>
+<td>0.028</td>
+</tr>
+<tr class="even">
+<td>The random-score loop</td>
+<td>0.951</td>
+<td>0.895</td>
+<td>0.162</td>
+<td>0.0006</td>
+</tr>
+<tr class="odd">
+<td>The no-step loop</td>
+<td>0.953</td>
+<td>0.856</td>
+<td>0.282</td>
+<td>0.0007</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="what-counted-as-a-hit-and-how-many-hits-are-near-art" class="level3">
+<h3 class="anchored" data-anchor-id="what-counted-as-a-hit-and-how-many-hits-are-near-art">What counted as a hit, and how many hits are near art</h3>
+<p><span id="hits-near-art"></span></p>
+<div id="hits-by-start" class="vp-tbl">
+<div id="tbl-hits" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-hits-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;22: On hits the search is ahead of both controls, with more at all 5 starts. By loop and start: the hits as <a href="./05-3-controls.html">Q12</a> defines them, those near art, those past the decoder’s published filter for explicit images, and those that are both. A hit is near art when its distance to its nearest dated real work is within the distance that 99% of the 3,048 repainted reference and calibration pictures lie within, in both observers (0.782 in DINOv3, 0.813 in SigLIP). Covered passes nearly every far and faithful picture and 160 of 160 raw noise and plain images. Without it the hit count at Degas is a tie (11 against 11).
+</figcaption>
+<div aria-describedby="tbl-hits-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Loop and start work</th>
+<th>Hits</th>
+<th>Near art</th>
+<th>Past filter</th>
+<th>Both</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>The search: Jan Cossiers, 1641</td>
+<td>23</td>
+<td>15</td>
+<td>21</td>
+<td>13</td>
+</tr>
+<tr class="even">
+<td>The search: Fra Angelico, 1419</td>
+<td>27</td>
+<td>9</td>
+<td>24</td>
+<td>7</td>
+</tr>
+<tr class="odd">
+<td>The search: Alfred Sisley, 1885</td>
+<td>35</td>
+<td>13</td>
+<td>30</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td>The search: Vincent van Gogh, 1890</td>
+<td>24</td>
+<td>18</td>
+<td>19</td>
+<td>14</td>
+</tr>
+<tr class="odd">
+<td>The search: Edgar Degas, 1890</td>
+<td>11</td>
+<td>9</td>
+<td>7</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>The search: All 5 starts</td>
+<td>120</td>
+<td>64</td>
+<td>101</td>
+<td>47</td>
+</tr>
+<tr class="odd">
+<td>Random-score loop: Jan Cossiers, 1641</td>
+<td>19</td>
+<td>8</td>
+<td>16</td>
+<td>6</td>
+</tr>
+<tr class="even">
+<td>Random-score loop: Fra Angelico, 1419</td>
+<td>18</td>
+<td>13</td>
+<td>13</td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td>Random-score loop: Alfred Sisley, 1885</td>
+<td>12</td>
+<td>5</td>
+<td>11</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Random-score loop: Vincent van Gogh, 1890</td>
+<td>9</td>
+<td>7</td>
+<td>9</td>
+<td>7</td>
+</tr>
+<tr class="odd">
+<td>Random-score loop: Edgar Degas, 1890</td>
+<td>7</td>
+<td>2</td>
+<td>5</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>Random-score loop: All 5 starts</td>
+<td>65</td>
+<td>35</td>
+<td>54</td>
+<td>30</td>
+</tr>
+<tr class="odd">
+<td>No-step loop: Jan Cossiers, 1641</td>
+<td>13</td>
+<td>8</td>
+<td>12</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td>No-step loop: Fra Angelico, 1419</td>
+<td>6</td>
+<td>2</td>
+<td>6</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>No-step loop: Alfred Sisley, 1885</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>No-step loop: Vincent van Gogh, 1890</td>
+<td>10</td>
+<td>6</td>
+<td>8</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>No-step loop: Edgar Degas, 1890</td>
+<td>7</td>
+<td>1</td>
+<td>3</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>No-step loop: All 5 starts</td>
+<td>40</td>
+<td>18</td>
+<td>33</td>
+<td>14</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="the-blind-rating" class="level3">
+<h3 class="anchored" data-anchor-id="the-blind-rating">The blind rating</h3>
+<div id="rating" class="vp">
+<div id="fig-rating" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="A unit chart, one square per rated picture, filled where I answered yes to the question: Does this look like something a person made (a work of art, design or craft of any period), rather than an image a computer generated? The search: 21 of 33. The random-score loop: 23 of 33. The no-step loop: 16 of 33. Real works, repainted, shown for scale: 17 of 17. One rater, blind to loop, on my own criterion." data-mobile-src="figures/search_rating_v4-mobile.svg">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rating-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/search_rating_v4.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/search_rating_v4-mobile.svg" alt="A unit chart, one square per rated picture, filled where I answered yes to the question: Does this look like something a person made (a work of art, design or craft of any period), rather than an image a computer generated? The search: 21 of 33. The random-score loop: 23 of 33. The no-step loop: 16 of 33. Real works, repainted, shown for scale: 17 of 17. One rater, blind to loop, on my own criterion.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rating-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: My blind rating does not tell the search’s hits from the random-score loop’s. Of 33 hits from each loop I said yes to 21 of the search’s, 23 of the random-score loop’s and 16 of the no-step loop’s, and to 17 of 17 repainted real works. One square is one picture, filled where I answered yes to the question above the chart. One rater, blind to loop, on my own criterion.
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="do-the-loops-lean-along-the-shift-of-q3" class="level3">
+<h3 class="anchored" data-anchor-id="do-the-loops-lean-along-the-shift-of-q3">Do the loops lean along the shift of Q3?</h3>
+<div id="shift-medians" class="vp-tbl">
+<div id="tbl-shift-hits" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-shift-hits-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;23: On hits the search’s lead is a mean 0.033 over the random-score loop and 0.047 over the no-step loop (by start in <a href="#tbl-per-start" class="quarto-xref">Table&nbsp;3</a>), both under the floor of 0.05, so no difference is shown. The hits’ median lean by start, for the 3 loops. The median lean of real works is +0.197 for works from 1900 to 1969, +0.334 for works from 1950 to 1969, and +0.319 for the 26 later works that pass when repainted.
+</figcaption>
+<div aria-describedby="tbl-shift-hits-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Start work</th>
+<th>The search</th>
+<th>Random-score loop</th>
+<th>No-step loop</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Jan Cossiers, 1641</td>
+<td>+0.25</td>
+<td>+0.20</td>
+<td>+0.17</td>
+</tr>
+<tr class="even">
+<td>Fra Angelico, 1419</td>
+<td>+0.25</td>
+<td>+0.24</td>
+<td>+0.19</td>
+</tr>
+<tr class="odd">
+<td>Alfred Sisley, 1885</td>
+<td>+0.23</td>
+<td>+0.18</td>
+<td>+0.20</td>
+</tr>
+<tr class="even">
+<td>Vincent van Gogh, 1890</td>
+<td>+0.22</td>
+<td>+0.23</td>
+<td>+0.22</td>
+</tr>
+<tr class="odd">
+<td>Edgar Degas, 1890</td>
+<td>+0.26</td>
+<td>+0.20</td>
+<td>+0.19</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+<div id="shift-loading" class="vp-tbl">
+<div id="tbl-shift-free" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-shift-free-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;24: Over all its pictures the free search loads more on the after-1900 shift than its runs told random scores (gap 0.05 to 0.09 by run, pooled 0.056), and matched on displacement from the start the pooled gap is 0.00. The median loading by run; a vector orthogonal to the shift loads 0.18 on this measure. Random directions at the search’s own angles load on the shift as much as the search does (gap 0.00 over all pictures).
+</figcaption>
+<div aria-describedby="tbl-shift-free-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Run</th>
+<th>The free search</th>
+<th>Its run told random scores</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>0.16</td>
+<td>0.07</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>0.15</td>
+<td>0.09</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>0.12</td>
+<td>0.07</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="are-the-far-pictures-far-from-all-art-or-only-from-art-before-1900" class="level3">
+<h3 class="anchored" data-anchor-id="are-the-far-pictures-far-from-all-art-or-only-from-art-before-1900">Are the far pictures far from all art, or only from art before 1900?</h3>
+<div class="vp-tbl">
+<div id="tbl-today-not-far" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-today-not-far-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;25: Nearly every far and faithful picture of the 3 loops is not far from today’s reference, 4,221 of the search’s 4,380. The far and faithful pictures of the 3 loops, scored against today’s 2,048 repainted works at the 1900 bars.
+</figcaption>
+<div aria-describedby="tbl-today-not-far-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Far and faithful pictures, against today’s reference</th>
+<th>The search</th>
+<th>Random-score loop</th>
+<th>No-step loop</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Not far from today’s reference</td>
+<td>4,221 of 4,380</td>
+<td>1,493 of 1,534</td>
+<td>2,664 of 2,708</td>
+</tr>
+<tr class="even">
+<td>Covered (also over half of the 15 nearest dated 1900 on, averaged over the two observers)</td>
+<td>4,221</td>
+<td>1,492</td>
+<td>2,660</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+<div id="today-counts" class="vp-tbl">
+<div id="tbl-today-bars" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-today-bars-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;26: Under today’s own bar, 1 of the 26 far and faithful later works, 0 calibration works and 343, 126 and 403 of the free search’s admitted pictures are still far against today’s reference. Pictures that are still far against today’s reference, under 3 bars. None of the free search’s admitted pictures is faithful.
+</figcaption>
+<div aria-describedby="tbl-today-bars-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pictures</th>
+<th>Today’s own bar</th>
+<th>The matched bar</th>
+<th>The 1900 bar on the distance from today’s reference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>The 26 far and faithful later works</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>Calibration works</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>The free search’s admitted pictures, first run (of 749)</td>
+<td>343</td>
+<td>530</td>
+<td>642</td>
+</tr>
+<tr class="even">
+<td>second run (of 604)</td>
+<td>126</td>
+<td>300</td>
+<td>428</td>
+</tr>
+<tr class="odd">
+<td>third run (of 830)</td>
+<td>403</td>
+<td>588</td>
+<td>713</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+<div id="dated-counts" class="vp-tbl">
+<div id="tbl-dated-by-start" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-dated-by-start-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;27: 3,850 of the search’s 4,380 far and faithful pictures, 1,247 of the random-score loop’s 1,534 and 1,714 of the no-step loop’s 2,708 have a work dated 1900 or later within the manifold line and none dated before 1900. The same count by start, with the work within the manifold line in at least one observer. The single walk’s count is 2,065.
+</figcaption>
+<div aria-describedby="tbl-dated-by-start-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Start work</th>
+<th>The search</th>
+<th>Random-score loop</th>
+<th>No-step loop</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Jan Cossiers, 1641</td>
+<td>601</td>
+<td>281</td>
+<td>524</td>
+</tr>
+<tr class="even">
+<td>Fra Angelico, 1419</td>
+<td>599</td>
+<td>336</td>
+<td>334</td>
+</tr>
+<tr class="odd">
+<td>Alfred Sisley, 1885</td>
+<td>728</td>
+<td>299</td>
+<td>192</td>
+</tr>
+<tr class="even">
+<td>Vincent van Gogh, 1890</td>
+<td>828</td>
+<td>120</td>
+<td>551</td>
+</tr>
+<tr class="odd">
+<td>Edgar Degas, 1890</td>
+<td>1,094</td>
+<td>211</td>
+<td>113</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+<div class="vp-tbl">
+<div id="tbl-dated-readings" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-dated-readings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;28: A work dated before 1900 lies within the manifold line of 180 of the search’s far and faithful pictures, 66 of the random-score loop’s and 834 of the no-step loop’s. The far and faithful pictures of each loop under each reading of the dates. Rows 3 and 4 are counted among the pictures of row 2, and rows 5 and 6 are the count of row 2 under the other readings of the undated works.
+</figcaption>
+<div aria-describedby="tbl-dated-readings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Reading of the dates</th>
+<th>The search</th>
+<th>Random-score loop</th>
+<th>No-step loop</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A work dated before 1900 within the manifold line</td>
+<td>180</td>
+<td>66</td>
+<td>834</td>
+</tr>
+<tr class="even">
+<td>A work dated 1900 or later within the manifold line, none dated before 1900</td>
+<td>3,850</td>
+<td>1,247</td>
+<td>1,714</td>
+</tr>
+<tr class="odd">
+<td>Of those, in both observers, and none dated before 1900 in either</td>
+<td>3,192</td>
+<td>782</td>
+<td>1,033</td>
+</tr>
+<tr class="even">
+<td>Of those, an undated work also within the line</td>
+<td>3,519</td>
+<td>963</td>
+<td>1,446</td>
+</tr>
+<tr class="odd">
+<td>With undated works dated by their artist</td>
+<td>3,810</td>
+<td>1,265</td>
+<td>1,640</td>
+</tr>
+<tr class="even">
+<td>With undated works dated by their artist, and the pictures that have a still-undated work within the line also set aside</td>
+<td>1,312</td>
+<td>1,054</td>
+<td>1,515</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+<div class="vp-tbl">
+<div id="tbl-real-work-observers" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-real-work-observers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;29: Counting a real work, dated or not, 331 of the search’s far and faithful pictures, 187 of the random-score loop’s and 107 of the no-step loop’s have none within the manifold line in either observer. The far and faithful pictures by the observers in which a real work lies within the manifold line. Leaving out the start work changes none of these counts.
+</figcaption>
+<div aria-describedby="tbl-real-work-observers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>A real work lies within the manifold line</th>
+<th>The search</th>
+<th>Random-score loop</th>
+<th>No-step loop</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>in both observers</td>
+<td>3,348</td>
+<td>857</td>
+<td>1,860</td>
+</tr>
+<tr class="even">
+<td>in exactly one</td>
+<td>701</td>
+<td>490</td>
+<td>741</td>
+</tr>
+<tr class="odd">
+<td>in neither</td>
+<td>331</td>
+<td>187</td>
+<td>107</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="why-this-rule-for-on-and-off-the-manifold" class="level3">
+<h3 class="anchored" data-anchor-id="why-this-rule-for-on-and-off-the-manifold">Why this rule for on and off the manifold?</h3>
+<div class="vp-tbl">
+<div id="tbl-rule-readings" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-rule-readings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;30: The nearest original work within the manifold line is the only one of the 3 readings that keeps nearly every real work on and can still say a picture is off. Each cell is on : off among the pictures of that set with a large leftover share, their number in the heading.
+</figcaption>
+<div aria-describedby="tbl-rule-readings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Reading of “a real work is near”</th>
+<th>Works from 1970 on, repainted (41)</th>
+<th>Works from 1900 to 1969, repainted (5)</th>
+<th>Requests read from noise images (8)</th>
+<th>Random requests (5)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sparseness: not far from today’s reference</td>
+<td>41 : 0</td>
+<td>5 : 0</td>
+<td>8 : 0</td>
+<td>no count</td>
+</tr>
+<tr class="even">
+<td>The test of <a href="./03-3-q3.html">Q4</a>, carried to the observers: one of the 10 nearest reference pictures also has a large leftover share</td>
+<td>25 : 16</td>
+<td>0 : 5</td>
+<td>2 : 6</td>
+<td>no count</td>
+</tr>
+<tr class="odd">
+<td>The nearest of the 172,171 original works within the manifold line, a repaint’s own original left out</td>
+<td>35 : 6</td>
+<td>4 : 1</td>
+<td>8 : 0</td>
+<td>3 : 2</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+<div class="vp-tbl">
+<div id="tbl-rule-sets" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-rule-sets-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;31: The nearest original work within the manifold line says nearly all the pictures of a set are on, real works, noise pictures and random requests alike, and off for only a few. The pictures of 4 sets with a real work within the manifold line in both observers, in 1 and in neither, with nothing left out.
+</figcaption>
+<div aria-describedby="tbl-rule-sets-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pictures, with nothing left out</th>
+<th>In both observers</th>
+<th>In one observer</th>
+<th>In neither</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Held-out works from before 1900, repainted (1,000)</td>
+<td>985</td>
+<td>14</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Works from 1970 on, repainted (663)</td>
+<td>541</td>
+<td>112</td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td>Requests read from noise images (160)</td>
+<td>151</td>
+<td>9</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>Random requests (256)</td>
+<td>207</td>
+<td>41</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+<div id="dated-directions" class="vp-tbl">
+<div id="tbl-leftover-directions" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-leftover-directions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;32: Read by dates or with undated works dated by their artist, the search has more of this count than both controls at every start, at each of the 5 numbers of directions for the leftover. The count is the far and faithful pictures with a large leftover share and a work dated 1900 or later within the manifold line, none dated before 1900.
+</figcaption>
+<div aria-describedby="tbl-leftover-directions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Directions</th>
+<th>Read by dates</th>
+<th>Undated works dated by their artist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>16</td>
+<td>119 / 15 / 2</td>
+<td>117 / 15 / 5</td>
+</tr>
+<tr class="even">
+<td>24</td>
+<td>611 / 93 / 6</td>
+<td>612 / 93 / 10</td>
+</tr>
+<tr class="odd">
+<td>32</td>
+<td>1,314 / 69 / 13</td>
+<td>1,309 / 70 / 23</td>
+</tr>
+<tr class="even">
+<td>48</td>
+<td>1,734 / 84 / 55</td>
+<td>1,708 / 88 / 74</td>
+</tr>
+<tr class="odd">
+<td>64</td>
+<td>1,702 / 87 / 61</td>
+<td>1,681 / 90 / 90</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+<div class="vp-tbl">
+<div id="tbl-leftover-by-start" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-leftover-by-start-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;33: With the pictures that have a still-undated work within the manifold line also set aside, the count at 32 directions is 232 / 36 / 22. The count of the table above by start, in the same order of loops, at 16, 32 and 64 directions and, in the last column, at 32 directions with undated works dated by their artist and those pictures set aside.
+</figcaption>
+<div aria-describedby="tbl-leftover-by-start-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Start work</th>
+<th>16 directions</th>
+<th>32 directions</th>
+<th>64 directions</th>
+<th>32, dated by artist, still-undated set aside</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Jan Cossiers, 1641</td>
+<td>11 / 7 / 1</td>
+<td>124 / 33 / 5</td>
+<td>127 / 36 / 7</td>
+<td>32 / 12 / 4</td>
+</tr>
+<tr class="even">
+<td>Fra Angelico, 1419</td>
+<td>25 / 1 / 0</td>
+<td>206 / 13 / 1</td>
+<td>284 / 12 / 15</td>
+<td>112 / 5 / 1</td>
+</tr>
+<tr class="odd">
+<td>Alfred Sisley, 1885</td>
+<td>12 / 6 / 0</td>
+<td>176 / 15 / 0</td>
+<td>206 / 23 / 12</td>
+<td>16 / 12 / 0</td>
+</tr>
+<tr class="even">
+<td>Vincent van Gogh, 1890</td>
+<td>29 / 0 / 0</td>
+<td>276 / 3 / 3</td>
+<td>351 / 6 / 8</td>
+<td>58 / 1 / 4</td>
+</tr>
+<tr class="odd">
+<td>Edgar Degas, 1890</td>
+<td>42 / 1 / 1</td>
+<td>532 / 5 / 4</td>
+<td>734 / 10 / 19</td>
+<td>14 / 6 / 13</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="against-todays-reference-do-pictures-from-different-starts-meet-in-a-place-off-the-manifold" class="level3">
+<h3 class="anchored" data-anchor-id="against-todays-reference-do-pictures-from-different-starts-meet-in-a-place-off-the-manifold">Against today’s reference, do pictures from different starts meet in a place off the manifold?</h3>
+<div class="vp-tbl">
+<div id="tbl-today-places" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-today-places-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;34: No place off the manifold holds eligible pictures from 3 or more starts in any of the 3 loops (0 / 0 / 0). Of the 663 repainted works from 1970 on, measured against the art before 1970 alone, 12 are eligible, and they do not lie close together in one place either. Counts by start for the 15 runs against today’s reference, 1,920 pictures a run.
+</figcaption>
+<div aria-describedby="tbl-today-places-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Start</th>
+<th>Eligible</th>
+<th>Off the manifold</th>
+<th>Far from today’s reference by its own bar</th>
+<th>Over today’s leftover line</th>
+<th>Admitted</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Start 1</td>
+<td>465 / 0 / 0</td>
+<td>555 / 3 / 5</td>
+<td>31 / 0 / 0</td>
+<td>2 / 0 / 0</td>
+<td>4 / 0 / 0</td>
+</tr>
+<tr class="even">
+<td>Start 2</td>
+<td>50 / 1 / 1</td>
+<td>148 / 1 / 10</td>
+<td>1 / 0 / 0</td>
+<td>1 / 0 / 0</td>
+<td>1 / 0 / 0</td>
+</tr>
+<tr class="odd">
+<td>Start 3</td>
+<td>238 / 0 / 0</td>
+<td>498 / 0 / 0</td>
+<td>27 / 0 / 0</td>
+<td>44 / 0 / 0</td>
+<td>5 / 0 / 0</td>
+</tr>
+<tr class="even">
+<td>Start 4</td>
+<td>48 / 3 / 62</td>
+<td>86 / 12 / 94</td>
+<td>0 / 0 / 0</td>
+<td>0 / 0 / 0</td>
+<td>0 / 0 / 0</td>
+</tr>
+<tr class="odd">
+<td>Start 5</td>
+<td>246 / 3 / 0</td>
+<td>429 / 41 / 26</td>
+<td>452 / 0 / 0</td>
+<td>796 / 0 / 0</td>
+<td>7 / 0 / 0</td>
+</tr>
+<tr class="even">
+<td>All 5, of 9,600 pictures each</td>
+<td>1,047 / 7 / 63</td>
+<td>1,716 / 57 / 135</td>
+<td>511 / 0 / 0</td>
+<td>843 / 0 / 0</td>
+<td>17 / 0 / 0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="why-a-decoder-and-why-a-continuous-space" class="level3">
+<h3 class="anchored" data-anchor-id="why-a-decoder-and-why-a-continuous-space">Why a decoder, and why a continuous space?</h3>
+<div id="decoder-plan" class="vp-tbl">
+<div id="tbl-decoder-size" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-decoder-size-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;35: Downsampled to 128 pixels and re-embedded, 33 of the 512 real later works and 2 of the 1,000 calibration works are far and faithful under recomputed bars. At 64 pixels the faithful line is too close to the unrelated level to be useful. A decoder trained from scratch on the 53,031 dated works from before 1900, at 128 pixels, is specified and has not been built.
+</figcaption>
+<div aria-describedby="tbl-decoder-size-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Size the works are downsampled to</th>
+<th>Real later works far and faithful, of 512</th>
+<th>Calibration works far and faithful, of 1,000</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>128 pixels</td>
+<td>33</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>64 pixels</td>
+<td>36</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</section>
+</section>
+<section id="the-loop-as-it-runs" class="level2">
+<h2 class="anchored" data-anchor-id="the-loop-as-it-runs">The loop as it runs</h2>
+<section id="who-moves-the-centre-and-why-four" class="level3">
+<h3 class="anchored" data-anchor-id="who-moves-the-centre-and-why-four">Who moves the centre, and why four?</h3>
+<div class="vp-tbl">
+<div id="tbl-centre-angles" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-centre-angles-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;36: The restart sets the centre in 60 of 60 rounds of every run. The angle of CMA-ES’s own update and of the restart, each round, from pycma replayed on the saved told values. Restarting from 4 pictures is our choice, and we have not tried the loop with the restart off.
+</figcaption>
+<div aria-describedby="tbl-centre-angles-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>In degrees</th>
+<th>The search</th>
+<th>Random-score loop</th>
+<th>No-step loop</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CMA-ES’s own update, median per round</td>
+<td>7.1</td>
+<td>7.0</td>
+<td>0.005</td>
+</tr>
+<tr class="even">
+<td>The restart, median per round</td>
+<td>17.9</td>
+<td>15.3</td>
+<td>13.5</td>
+</tr>
+<tr class="odd">
+<td>The centre’s angle from its start after the last round (median over the five runs)</td>
+<td>58.5</td>
+<td>59.3</td>
+<td>61.3</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="the-admitted-pictures-and-the-minimum-gap-rule" class="level3">
+<h3 class="anchored" data-anchor-id="the-admitted-pictures-and-the-minimum-gap-rule">The admitted pictures and the minimum-gap rule</h3>
+<div id="crowd" class="vp-tbl">
+<div id="tbl-crowd-gap" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-crowd-gap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;37: In run 1 of the free search, 628 of the 1,377 pictures that exceed the bar against the reference alone failed only because earlier admitted pictures sat in their neighbourhood. The minimum-gap rule’s 0.575, the distances among the free search’s admitted pictures, and the calibration works that pass. We have not checked 0.575 on today’s reference, and the calibration works are not a denominator for the admissions of the free search’s runs told random scores.
+</figcaption>
+<div aria-describedby="tbl-crowd-gap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Measure</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>The minimum-gap rule: the median chord, in DINOv3, from a reference repaint to its nearest, with its own artist left out</td>
+<td>0.575</td>
+</tr>
+<tr class="even">
+<td>The free search’s admitted pictures, nearest-neighbour distance in DINOv3, median (runs 1 and 3)</td>
+<td>0.909</td>
+</tr>
+<tr class="odd">
+<td>The same, minimum</td>
+<td>0.656</td>
+</tr>
+<tr class="even">
+<td>Run 1 of the free search, pictures that exceed the bar against the reference alone</td>
+<td>1,377</td>
+</tr>
+<tr class="odd">
+<td>Of those, failed only because earlier admitted pictures sat in their neighbourhood</td>
+<td>628</td>
+</tr>
+<tr class="even">
+<td>Calibration works that pass</td>
+<td>3 of 1,000</td>
+</tr>
+<tr class="odd">
+<td>Calibration works by artists the reference does not hold that pass</td>
+<td>0 of 161</td>
+</tr>
+<tr class="even">
+<td>Of the 3 that pass, among the 990 faithful calibration works</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>The 3 passers’ median distance</td>
+<td>0.772</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="checks-of-the-loop-as-it-runs" class="level3">
+<h3 class="anchored" data-anchor-id="checks-of-the-loop-as-it-runs">Checks of the loop as it runs</h3>
+<div id="clip-reading-check" class="vp-tbl">
+<div id="tbl-loop-checks" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-loop-checks-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;38: The count’s replay of the admission rule admits the same pictures as every run did, and the loop’s CLIP reading has a median cosine of 1.0000 to the stored one in all 15 runs. Each check of the loop as it runs and what it gave.
+</figcaption>
+<div aria-describedby="tbl-loop-checks-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Check</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>The loop’s CLIP reading against the stored one, cosine</td>
+<td>Median 1.0000 in all 15 runs; minimum 0.9998 or more in 14, 0.98916 in 1</td>
+</tr>
+<tr class="even">
+<td>DINOv3 and SigLIP in the run against their stored readings, cosine</td>
+<td>1.000000 in all 15</td>
+</tr>
+<tr class="odd">
+<td>Median rank told for a picture that is not feasible</td>
+<td>17</td>
+</tr>
+<tr class="even">
+<td>The search’s pictures that are not feasible among the best 16 of a round</td>
+<td>81; none sets the centre or is admitted</td>
+</tr>
+<tr class="odd">
+<td>Saved requests’ distance from the centre, in step sizes, at the 2 coordinates the sphere stretches (644 and 413) and elsewhere</td>
+<td>1.8 to 3.3 and 0.59 to 0.64 (asked: 0.69 to 1.51 and 0.67)</td>
+</tr>
+<tr class="even">
+<td>The count’s replay of the admission rule</td>
+<td>The same pictures admitted as in every run; bars equal within 10<sup>-6</sup></td>
+</tr>
+<tr class="odd">
+<td>The loop’s CLIP reading against the exact one, pictures more than 2.6 degrees apart</td>
+<td>2 of one no-step run’s 1,920 (up to 8.4 degrees); none is a hit</td>
+</tr>
+<tr class="even">
+<td>DINOv3, SigLIP and AIMv2 on 3 types of graphics card</td>
+<td>Within 0.00013</td>
+</tr>
+<tr class="odd">
+<td>The 16-bit CLIP reading between the reference’s card type and the runs’ type, chord</td>
+<td>Median 0.00130, at most 0.0079</td>
+</tr>
+<tr class="even">
+<td>The 16-bit CLIP reading between a third card type and the runs’ type, chord</td>
+<td>Median 0.00138, at most 0.0113</td>
+</tr>
+<tr class="odd">
+<td>8 known-answer pictures re-read on the reference’s card type</td>
+<td>Exact match</td>
+</tr>
+<tr class="even">
+<td>Nearest picture of the search and of the random-score loop to the faithful line</td>
+<td>0.000015 to 0.000028</td>
+</tr>
+<tr class="odd">
+<td>The same command from the same start on another type of card (a pair of runs outside the 15)</td>
+<td>66 admitted against 30; far pictures 1,272 against 489 of 1,920</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</section>
+</section>
+<section id="what-we-set-aside-and-what-we-have-not-tested" class="level2">
+<h2 class="anchored" data-anchor-id="what-we-set-aside-and-what-we-have-not-tested">What we set aside, and what we have not tested</h2>
+<div class="vp vp-flow">
+<div class="visual-copy">
+<p>The first runs of DuROOM search are not reported.</p>
+</div>
+</div>
+<div id="free-search-runs" class="vp-tbl">
+<div id="tbl-free-search-runs" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-free-search-runs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;39: In the free search the requests move away from the reference’s requests over a run. The cosine of the requests to the nearest reference request, the rounds in which sigma hit its cap, and the ratios and the fidelity per angle bin at other angles than <a href="./05-3-controls.html">Q12</a> has. The free search differs from DuROOM search in 3 ways at once (every picture is feasible, CMA-ES moves the centre, and its first step is about 30 degrees).
+</figcaption>
+<div aria-describedby="tbl-free-search-runs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>The free search</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cosine of the requests to the nearest reference request, run 1, round 0</td>
+<td>0.70</td>
+</tr>
+<tr class="even">
+<td>The same, round 10</td>
+<td>0.36</td>
+</tr>
+<tr class="odd">
+<td>The same, round 58</td>
+<td>0.08</td>
+</tr>
+<tr class="even">
+<td>The same, last round, all 6 free runs (the 3 of <a href="./05-3-controls.html">Q12</a> and the 3 with new seeds)</td>
+<td>0.09 to 0.13</td>
+</tr>
+<tr class="odd">
+<td>The same cosine between reference works</td>
+<td>0.53</td>
+</tr>
+<tr class="even">
+<td>Rounds, of 60, in which sigma hit its cap</td>
+<td>8, 4 and 0</td>
+</tr>
+<tr class="odd">
+<td>The ratios of <a href="./05-3-controls.html">Q12</a> (there at 80 to 90 degrees) against random directions, at 55 to 80 degrees, on smaller bins</td>
+<td>about 2 to 10</td>
+</tr>
+<tr class="even">
+<td>The ratios against its runs told random scores, at 45 to 75 degrees</td>
+<td>3 to 35</td>
+</tr>
+<tr class="odd">
+<td>Median exact fidelity per bin, the search against random directions, at 75 to 95 degrees</td>
+<td>equal within 0.03</td>
+</tr>
+<tr class="even">
+<td>The same, at 50 to 70 degrees (run 3)</td>
+<td>the search’s renders up to 0.09 less faithful</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+<div class="vp-tbl">
+<div id="tbl-observers-real-works" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-observers-real-works-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;40: With each measure cut so that it calls far 71 of 24,627 held-out works before 1900, far in both observers calls far 11,181 of 69,468 later works. Later works called far by each measure, on real works. In a new run we have not tested one observer, the mean of the two or the larger of the two in place of the smaller.
+</figcaption>
+<div aria-describedby="tbl-observers-real-works-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Measure</th>
+<th>Later works called far, of 69,468</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Far in both observers</td>
+<td>11,181</td>
+</tr>
+<tr class="even">
+<td>DINOv3 alone</td>
+<td>8,381</td>
+</tr>
+<tr class="odd">
+<td>SigLIP alone</td>
+<td>8,513</td>
+</tr>
+<tr class="even">
+<td>CLIP alone</td>
+<td>4,912</td>
+</tr>
+<tr class="odd">
+<td>One cut on the smaller of the 2 rescaled scores</td>
+<td>11,297</td>
+</tr>
+<tr class="even">
+<td>One cut on their mean</td>
+<td>12,002</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+<div class="vp-tbl">
+<div id="tbl-not-tested" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-not-tested-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;41: What we have not tested in a new run, and what we have not counted on data we already have. The leftover was tried only as the score.
+</figcaption>
+<div aria-describedby="tbl-not-tested-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Not tested</th>
+<th>On</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A single walk tuned or restarting from several pictures, and the walk again with other seeds</td>
+<td>A new run</td>
+</tr>
+<tr class="even">
+<td>The batch alone</td>
+<td>A new run</td>
+</tr>
+<tr class="odd">
+<td>The restart off with the faithful condition kept</td>
+<td>A new run</td>
+</tr>
+<tr class="even">
+<td>Hits at a bar of 95 or 90 in 100, or with admitted pictures that do not join the set measured against</td>
+<td>A new run</td>
+</tr>
+<tr class="odd">
+<td>one observer, the mean of the two or the larger of the two in place of the smaller</td>
+<td>A new run</td>
+</tr>
+<tr class="even">
+<td>Controls for the restart from 1 picture</td>
+<td>A new run</td>
+</tr>
+<tr class="odd">
+<td>A second decoder on the same requests</td>
+<td>A new run</td>
+</tr>
+<tr class="even">
+<td>A first spread bounded to the shift</td>
+<td>A new run</td>
+</tr>
+<tr class="odd">
+<td>More than 1 run per loop per start</td>
+<td>A new run</td>
+</tr>
+<tr class="even">
+<td>Directions built from the works before 1900 alone (the basis before 1900, the leftover, the last 40-year move) as a direction for the step</td>
+<td>The loop</td>
+</tr>
+<tr class="odd">
+<td>The split of the drop from the minimum-gap rule alone to admitted</td>
+<td>Data we already have</td>
+</tr>
+<tr class="even">
+<td>Covered on pictures painted from noise</td>
+<td>Data we already have</td>
+</tr>
+<tr class="odd">
+<td>The single walk with undated works dated by their artist or set aside, and at other numbers of directions for the leftover</td>
+<td>Data we already have</td>
+</tr>
+<tr class="even">
+<td>The told score taken as the smaller of distance over bar in place of the smaller of the 2 distances on the reference’s scale</td>
+<td>Data we already have</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+
+
+</section>
+
+</main> 
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+</div> 
+<script src="figures/responsive.js" defer=""></script><script src="figures/pixel-demo.js" defer=""></script><script src="figures/direction-demo.js" defer=""></script><script src="figures/work-explorer.js" defer=""></script><script src="figures/evidence-explorer.js" defer=""></script><script src="figures/search-explorer.js" defer=""></script><script src="figures/q2-geometry.js" defer=""></script><script src="figures/intro-support.js" defer=""></script><script src="figures/q3_fan.js" defer=""></script><script src="figures/q4_grid.js" defer=""></script><script src="figures/q5_route.js" defer=""></script><script src="figures/q3-encoders.js" defer=""></script><script src="footnotes.js" defer=""></script>
+
+
+
+
+</body></html>

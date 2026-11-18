@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Q2 How well does a basis from some artworks describe other ones? – DuROOM</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-301992f14ddb7dd383e65fee4e2386cf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked landscape-data fullcontent quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03-data.html">Data</a></li><li class="breadcrumb-item"><a href="./03-1-q1.html">Q2 Can some works describe others?</a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto" aria-label="Site">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">DuROOM</a> 
+    </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Contents</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-related-work.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Related work</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Data</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Which encoders, and which works?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-0-manifold.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q1 How are the works laid out?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-1-q1.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Q2 Can some works describe others?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-2-q2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q3 Where did later work go?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-3-q3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q4 What is left over?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-5-q5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q5 What does far mean?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-1-q9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q6 How do the later works score?</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">Methods</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-methods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-0-far-faithful.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q7 What are we looking for?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-1-q7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q8 Does the decoder paint what we ask?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-3-why-search.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q9 Can we get there with no search?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-2-q8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q10 How does the search work?</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Results</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-results.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-2-q10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q11 What did we find?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-3-controls.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Q12 What does the search add?</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-discussion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Discussion</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-appendix.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Appendix: what we tested and settled</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+
+    
+
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03-data.html">Data</a></li><li class="breadcrumb-item"><a href="./03-1-q1.html">Q2 Can some works describe others?</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Q2 How well does a basis from some artworks describe other ones?</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="vp vp-split vp-q1demo visual-pair-pin">
+<div class="visual-copy">
+<p><a href="./03-0-manifold.html">Q1</a> asked whether the works around one artwork share directions, and now we ask it of whole groups. Say we only had the artworks made before 1900, as our search will.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> How much of a painting made after 1900 could we describe with the ways the earlier works vary? If a lot, the later work varies in the same ways as the earlier works. If little, it varies along directions the earlier works barely used, or in the same ways around an average off to one side. We can ask the same of any two groups of works, an artist, a style, a genre or a time, and we measure it in 7 steps:</p>
+<ol type="1">
+<li>We take every work in the corpus and its vector from an encoder, scaled to length 1, i.e., each work is a point on a sphere.</li>
+<li>We split the corpus into two groups, for e.g., works before 1900 and works from 1900 on.</li>
+<li>From the first group we take its average, and the k directions along which its works spread the most around that average (its principal components). The group’s average and these k directions are its <em>basis</em>, and the flat space the directions span is the group’s subspace. In <a href="./03-0-manifold.html">Q1</a> we fitted such a subspace around one work’s neighbours, and here we fit it around a whole group. We always measure from the group’s average along these directions. We go from k = 1 to 512, as at 768 (CLIP’s size) a basis keeps all of every work and there is nothing left to compare.</li>
+<li>Then for each work in the second group, we subtract the first group’s average from it and project that difference onto the k directions, i.e., we keep only its position along them (its shadow). The work is now k numbers instead of 768.</li>
+<li>What the basis keeps of the work is the share of its squared distance from the average that lands in the shadow, and the rest is what it misses. We use squared distance because it splits exactly into kept + missed (Pythagoras), which plain distance doesn’t.</li>
+<li>We sum the squared shadows and the squared distances from the average over all the works of the second group, and divide, so a work far from the average counts more than one close to it.</li>
+<li>Any basis keeps less of works it never saw than of its own, so we compare it with a <em>random basis</em> of the same size. We fit the random basis as in step 3, on works drawn at random from the whole corpus, so the works are random and the directions are still their principal components. We leave out only the works we test on (so it can still hold other works of the group, e.g., those past the 20-per-artist cap). The <em>gap</em> is how much less the group’s basis keeps than the random basis does. The figures print it with a minus sign.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></li>
+</ol>
+</div>
+<div id="fig-code-fit" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Left: each point pairs the same held-out work under the pre-1900 and random bases. The diagonal is equal share kept. Right: full-test-group shares sum squared shadow lengths and divide by summed squared offsets, separately for each basis. Their difference is the group gap. The interactive pixel analogy uses held-out patches from The Great Wave. Changing the number of retained patch directions changes the reconstruction and signed residual. Its energy shares are pixel-space results. The static comparison shows paired measured per-work CLIP shares and group ratios of sums, not a difference of raw drop lengths." data-mobile-src="figures/code_fit-mobile.svg">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-code-fit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/code_fit.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/code_fit-mobile.svg" alt="Left: each point pairs the same held-out work under the pre-1900 and random bases. The diagonal is equal share kept. Right: full-test-group shares sum squared shadow lengths and divide by summed squared offsets, separately for each basis. Their difference is the group gap. The interactive pixel analogy uses held-out patches from The Great Wave. Changing the number of retained patch directions changes the reconstruction and signed residual. Its energy shares are pixel-space results. The static comparison shows paired measured per-work CLIP shares and group ratios of sums, not a difference of raw drop lengths.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-code-fit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Follow one vector through subtracting the average, choosing a direction, and measuring its shadow, kept and missed. The pixel tab fits the left half of The Great Wave and reconstructs the unseen right half; it is not CLIP. Compare bases shows measured CLIP shares, with a gap of −9.0 points in one fit (seed 0). Artwork: <a href="https://commons.wikimedia.org/wiki/File:Katsushika_Hokusai_-_Thirty-Six_Views_of_Mount_Fuji-_The_Great_Wave_Off_the_Coast_of_Kanagawa_-_Google_Art_Project.jpg#Licensing">Katsushika Hokusai, <em>The Great Wave off Kanagawa</em>, 1830–1832</a> (public domain).
+</figcaption>
+</figure>
+</div>
+<div class="vp-cell">
+<p>We ran this in CLIP on 100 groups of works, from styles and genres to time (<a href="#fig-q1-gap-all" class="quarto-xref">Figure&nbsp;2</a>).<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<p><strong>A. Time is one of the 2 biggest splits in the corpus.</strong> A basis from the works before 1900 keeps 9 points less of the later works than a random basis does, i.e., a fifth less. Going backward, a basis from the later works keeps about 9 points less of the earlier ones. Leave the artists who work on both sides of 1900 out of the basis from before 1900 and the gap grows to 11.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+<p><strong>B. East Asian prints and ink sit apart, mostly off to one side.</strong> Of the 16 groups the encoder forms on its own in one clustering run, this one has a gap about as large as time’s. The next 2, Renaissance religious painting and the portraits of the 18th and 19th centuries, have about half of it.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
+<p>We also notice that who made a work matters little. A basis that never saw an artist describes their works about as well as one that saw their other works.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> Most styles and genres don’t matter much either, with Ukiyo-e and religious painting standing out a little.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></p>
+</div>
+</div>
+<div class="vp vp-capr vp-q1gap">
+<div id="fig-q1-gap-all" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Five rows compare time, the encoder’s clusters, styles, genres, then artists. Most style and genre gaps lie near zero. Half the artists: −0.2 points. After 1900: −9.1. East Asian prints and ink: −10.9. After 1900 with no shared artists: −11.2." data-mobile-src="figures/q1_gap_all-mobile.svg">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-q1-gap-all-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/q1_gap_all.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/q1_gap_all-mobile.svg" alt="Five rows compare time, the encoder’s clusters, styles, genres, then artists. Most style and genre gaps lie near zero. Half the artists: −0.2 points. After 1900: −9.1. East Asian prints and ink: −10.9. After 1900 with no shared artists: −11.2.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-q1-gap-all-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: The gap for all 100 groups: time and the East Asian prints have the largest gaps, artists and most styles and genres small ones. Below zero, the basis without the group keeps less than a random one.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="vp vp-side vp-flipfill vp-sbs72 vp-mc vp-lead vp-q1kept">
+<div class="visual-copy">
+<p>With enough directions every basis keeps almost all of every work, whoever it was fitted on, so the gap shrinks to under a point (<a href="#fig-q1-kept-k" class="quarto-xref">Figure&nbsp;3</a>).<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></p>
+</div>
+<div id="fig-q1-kept-k" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Three matched line charts from 1 to 512 directions on a doubling scale. The artist curves almost coincide. The time and East Asian prints curves run below their random controls, with gaps of −9.1 and −10.9 points at 32 directions. Each gap narrows as more directions are kept." data-mobile-src="figures/q1_kept_k-mobile.svg">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-q1-kept-k-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/q1_kept_k.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/q1_kept_k-mobile.svg" alt="Three matched line charts from 1 to 512 directions on a doubling scale. The artist curves almost coincide. The time and East Asian prints curves run below their random controls, with gaps of −9.1 and −10.9 points at 32 directions. Each gap narrows as more directions are kept.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-q1-kept-k-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: With enough directions the gap narrows. CLIP share kept: the basis without the group (red), a random basis (grey), shuffled data (dashed); gap marked at 32 directions.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="vp vp-lead vp-q1move">
+<div class="visual-copy">
+<p>The 2 biggest gaps are different kinds of miss (<a href="#fig-move-vs-reorder" class="quarto-xref">Figure&nbsp;4</a>). Measure the later works from their own average instead of the earlier works’ average, and the gap after 1900 stays, even grows. So <strong>the later works spread differently from the earlier ones</strong>, along directions the earlier works used only a little (<a href="./03-2-q2.html">Q3</a>). For the East Asian prints the gap almost disappears. So <strong>they mostly sit off to one side</strong> of the rest of the corpus. Around their own average they vary more like the rest.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a></p>
+</div>
+<div id="fig-move-vs-reorder" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Two charts compare whole-group CLIP gaps before and after centring, for works after 1900 and for East Asian prints. Whiskers span five draws. Interactive views add changing pixel images and measured works along one retained direction and a residual direction fitted on other artists. A matched held-out control is available. Interactive controls construct a shift of patch means or a rotation of patch variation in The Great Wave. Subtracting the new mean removes the constructed shift exactly but does not undo the changed spread. The separate chart shows measured group-level CLIP gaps." data-mobile-src="figures/move_vs_reorder-mobile.svg">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-move-vs-reorder-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/move_vs_reorder.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/move_vs_reorder-mobile.svg" alt="Two charts compare whole-group CLIP gaps before and after centring, for works after 1900 and for East Asian prints. Whiskers span five draws. Interactive views add changing pixel images and measured works along one retained direction and a residual direction fitted on other artists. A matched held-out control is available. Interactive controls construct a shift of patch means or a rotation of patch variation in The Great Wave. Subtracting the new mean removes the constructed shift exactly but does not undo the changed spread. The separate chart shows measured group-level CLIP gaps.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-move-vs-reorder-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Measured from each group’s own average, the gap after 1900 grows (−9.1 → −12.6 points) and the East Asian prints’ almost closes (−10.9 → −0.8). CLIP, 32 directions; the cloud uses a separate fit, and the pixel analogy is not CLIP. Artwork: <a href="https://commons.wikimedia.org/wiki/File:Katsushika_Hokusai_-_Thirty-Six_Views_of_Mount_Fuji-_The_Great_Wave_Off_the_Coast_of_Kanagawa_-_Google_Art_Project.jpg#Licensing">Katsushika Hokusai, <em>The Great Wave off Kanagawa</em>, 1830–1832</a> (public domain).
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="vp">
+<section id="the-other-encoders" class="level2 visual-copy">
+<h2 class="anchored" data-anchor-id="the-other-encoders">The other encoders</h2>
+<p><strong>Time has a gap in SigLIP and DINOv3 too</strong>, about 11 and 8 points against 9 in CLIP, though in DINOv3 the gap barely holds going backward.</p>
+</section>
+</div>
+<details class="visual-supplement">
+<summary>
+Where SigLIP and DINOv3 agree and differ, with figures
+</summary>
+<div class="vp vp-cols2 vp-figs2 vp-q1enc">
+<div class="visual-copy">
+<p>The basis from before 1900 keeps 10.8 points less of the later works in SigLIP and 7.7 in DINOv3, against 9.1 in CLIP, and in all three the gap grows when measured from the later works’ own average (<a href="#fig-q1-encoders" class="quarto-xref">Figure&nbsp;5</a>). DINOv3 never saw a caption, so the gap does not need captions to appear.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a></p>
+<p>The East Asian prints sit apart in all three, with the largest gap of each encoder’s own clusters. In all three they mostly sit off to one side.<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a></p>
+<p>We also notice that in DINOv3 the gap for time goes mostly one way. A basis from the later works describes the earlier ones almost as well as a random basis does (measured from the earlier works’ own average the gap is back to −6.8). For DINOv3 the named periods, Rococo, Baroque and the Northern Renaissance, have no gap.<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> The later works the basis from before 1900 keeps worst differ too: graffiti and conceptual pieces in CLIP; minimalism, street art and recent work in SigLIP; photorealism and a few early modern works in DINOv3 (<a href="#fig-q1-worst" class="quarto-xref">Figure&nbsp;6</a>).<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a></p>
+</div>
+<div id="fig-q1-encoders" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Two equal-scale scatterplots compare the same label groups: CLIP against DINOv3 and CLIP against SigLIP. The diagonal means equal gaps. Time and named periods are highlighted, with exact period and still-life gaps in a table below. Encoder-specific clusters are excluded." data-mobile-src="figures/q1_encoders-mobile.svg">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-q1-encoders-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/q1_encoders.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/q1_encoders-mobile.svg" alt="Two equal-scale scatterplots compare the same label groups: CLIP against DINOv3 and CLIP against SigLIP. The diagonal means equal gaps. Time and named periods are highlighted, with exact period and still-life gaps in a table below. Encoder-specific clusters are excluded.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-q1-encoders-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: The encoders agree on which groups have the largest gaps: points near the diagonal have equal gaps. 84 matched label groups, 32 directions, at most 20 works per artist, means of 5 draws. The unlabelled time point excludes shared artists.
+</figcaption>
+</figure>
+</div>
+<div id="fig-q1-worst" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Three original artworks per encoder, with visible artist, title, year and measured share kept. The examples are the first three distinct artists in each worst-ranked list, from a separate single fit. They are not reconstructed images." data-mobile-src="figures/q1_worst-mobile.svg">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-q1-worst-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/q1_worst.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/q1_worst-mobile.svg" alt="Three original artworks per encoder, with visible artist, title, year and measured share kept. The examples are the first three distinct artists in each worst-ranked list, from a separate single fit. They are not reconstructed images.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-q1-worst-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: The later works that the basis from before 1900 keeps worst, 3 distinct artists per encoder, from one fit (seed 1900) with 32 directions and at most 20 works per artist. Kept shares are not comparable across encoders. CLIP’s and SigLIP’s full top-eight lists overlap on graffiti (Dondi, Tracy 168). WikiArt credits beneath the works.
+</figcaption>
+</figure>
+</div>
+</div>
+</details>
+<div class="vp">
+<div class="visual-copy">
+<p>So the later works vary in ways the earlier ones barely did, and where they went is the next question (<a href="./03-2-q2.html">Q3</a>).</p>
+</div>
+</div>
+
+
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>1900 is a round point the data tolerate, not a single break. In CLIP, with 40-year windows, the works of 40 years describe the next 40 years worst for cutoffs from about 1880 to 1910, the stretch of fastest change, and 1900 falls in it. Going forward, cutoffs of 1890 and 1910 give nearly the same gap as 1900, while 1850 and 1950 give a much smaller one. Going backward, from the later works to the earlier, the gap is about as large at cutoffs 1850 to 1860 as at 1910 to 1940, with a dip near 1900 between them. The direction in which the corpus moves turns most a little earlier, around 1880, as 40-year windows read it.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Two random bases of the same size differ by 0.01 to about 1 point (one standard deviation, depending on the group). That is the size of a gap luck alone gives. The random basis has also seen more of some groups than others. For the time split about 3 in 10 of its works are later works (and over a third are undated), and for the East Asian prints about 1%.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>The 100 groups are half of the artists, three time groups (works before 1900, works after 1900, and works after 1900 with no artist on both sides), 52 styles, 28 genres and 16 clusters. We read a cluster by its most common styles and years. All use CLIP, 32 directions, at most 20 works per artist and 5 random draws. Except for the time groups, each group draws on all named works, dated or not. The random basis always draws on all named works, for the time groups too.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>The basis from before 1900 keeps 9.1 points less of the later works than a random basis does, and the basis from after 1900 keeps 8.7 points less of the earlier ones. With no artist on both sides the gap is 11.2. The gap holds whether each artist brings 5 works or 50, and for bases from 1,000 works to all of them.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>East Asian prints and ink (Ukiyo-e, ink and wash, shin-hanga) have a gap of 10.9 points, Renaissance religious painting 6.3 and portraits 5.4. The other 13 clusters are within 1.7.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Leaving half of the artists out of the basis gives a gap of 0.2 points. A basis from before 1900 holds fewer artists than its random basis (1,075 against 2,344), but that is not why the gap for time is so large: losing half of the artists gives 0.2 points, not 9. This holds for the 32-direction basis. Up close the artist is there: a third of a work’s 15 nearest works in CLIP are by the same artist (<a href="./03-0-manifold.html">Q1</a>). Style and genre are shared far above chance too, century about twice as often as chance.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>73 of the 80 styles and genres have a gap within 1.5 points. Ukiyo-e has a gap of 5.3 points and religious painting 4.4. The other five, Rococo, abstract, portrait, Baroque and Northern Renaissance, have 1.8 to 2.7.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>With 512 directions the bases keep 97 to 98% of the later works. The gap is largest around 32 directions for time and around 64 for the East Asian prints. After 1900 the basis misses from the very first direction. For the East Asian prints the first few directions do fine, and the basis misses only after that.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>Measuring from a group’s own average tends to close a gap anyway. So the East Asian result goes with that tendency, while the time result goes against it.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>At 32 directions the gap after 1900 is −20% of what a random basis keeps in CLIP, −23% in SigLIP and −14% in DINOv3 (−9.1, −10.8 and −7.7 points). Measured from the later works’ own average it is −12.6, −13.3 and −11.9 points. Across the 84 groups the gaps correlate 0.99 between CLIP and SigLIP and 0.88 to 0.90 with DINOv3. Over the 80 styles and genres alone they correlate 0.73 to 0.74 with DINOv3, so the big gaps carry the correlation.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>For the prints the gap is −10.9 in CLIP, −10.6 in SigLIP and −15.6 in DINOv3. Measured from their own average, the gap closes by 88 to 93% in all three. So most of the gap is where the prints sit.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p>Rococo, Baroque and the Northern Renaissance cost 1.8 to 2.7 points in CLIP and SigLIP and about zero in DINOv3. A group costs something when its gap is more than half a point and 3 times the noise. We have not tested whether DINOv3 can tell these periods apart at all.<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p>DINOv3’s worst include photorealist works (Estes, Register, Danby) and works by Leon Kroll, Cyril Power and Blek le Rat.<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> 
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+</div> 
+<script src="figures/responsive.js" defer=""></script><script src="figures/pixel-demo.js" defer=""></script><script src="figures/direction-demo.js" defer=""></script><script src="figures/work-explorer.js" defer=""></script><script src="figures/evidence-explorer.js" defer=""></script><script src="figures/search-explorer.js" defer=""></script><script src="figures/q2-geometry.js" defer=""></script><script src="figures/intro-support.js" defer=""></script><script src="figures/q3_fan.js" defer=""></script><script src="figures/q4_grid.js" defer=""></script><script src="figures/q5_route.js" defer=""></script><script src="figures/q3-encoders.js" defer=""></script><script src="footnotes.js" defer=""></script>
+
+
+
+
+</body></html>

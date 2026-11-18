@@ -1,0 +1,265 @@
+.q5-route-demo {
+  font: 15px/1.4 var(--serif);
+  color: var(--ink);
+  text-align: left;
+}
+.q5-route-demo [hidden] {
+  display: none !important;
+}
+.q5-route-demo svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+.q5-route-demo svg text {
+  font: 21px var(--serif);
+  fill: var(--mute);
+}
+.q5-route-demo .q5r-band {
+  fill: var(--pale);
+  stroke: none;
+}
+.q5-route-demo .q5r-path {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+.q5-route-demo .q5r-straight {
+  stroke: var(--accent);
+  stroke-width: 2.4;
+}
+.q5-route-demo .q5r-tick.path {
+  fill: var(--ink);
+}
+.q5-route-demo .q5r-tick.straight {
+  fill: var(--accent);
+}
+.q5-route-demo .q5r-centre {
+  fill: var(--paper);
+  stroke: var(--ink);
+  stroke-width: 1.6;
+}
+.q5-route-demo .q5r-end {
+  fill: var(--ink);
+}
+.q5-route-demo svg .q5r-endlabel {
+  fill: var(--ink);
+  font-size: 23px;
+}
+.q5-route-demo .q5r-link {
+  stroke: var(--hair);
+  stroke-width: 1.6;
+  stroke-dasharray: 6 5;
+}
+.q5-route-demo .q5r-dot {
+  transition: transform .55s ease;
+}
+.q5-route-demo .q5r-dot-straight circle {
+  fill: var(--accent);
+  stroke: var(--paper);
+  stroke-width: 3;
+}
+.q5-route-demo .q5r-dot-path circle {
+  fill: var(--ink);
+  stroke: var(--paper);
+  stroke-width: 3;
+}
+.q5-route-demo svg .q5r-dot-straight text {
+  fill: var(--accent);
+}
+.q5-route-demo svg .q5r-dot-path text {
+  fill: var(--ink);
+}
+.q5-route-demo.q5r-still .q5r-dot {
+  transition: none;
+}
+.q5-route-demo .q5r-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .2rem 1.2rem;
+  margin: .3rem 0 .6rem;
+  font-size: .9em;
+  color: var(--mute);
+}
+.q5-route-demo .q5r-key i {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: .4em;
+}
+.q5-route-demo .q5r-key .straight {
+  width: 1.5em;
+  height: 0;
+  border-top: 2px solid var(--accent);
+}
+.q5-route-demo .q5r-key .path {
+  width: 1.5em;
+  height: 0;
+  border-top: 2px solid var(--ink);
+}
+.q5-route-demo .q5r-key .band {
+  width: .7em;
+  height: 1.1em;
+  background: var(--pale);
+}
+.q5-route-demo .q5r-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .4rem 1.4rem;
+  border-top: 1px solid var(--hair);
+  padding-top: .6rem;
+}
+.q5-route-demo button {
+  font: inherit;
+  color: var(--accent);
+  background: transparent;
+  border: 0;
+  padding: .4rem 0;
+  cursor: pointer;
+  min-width: 3.6em;
+  text-align: left;
+}
+.q5-route-demo button:focus-visible,
+.q5-route-demo input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.q5-route-demo .q5r-slider {
+  flex: 1 1 14rem;
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  color: var(--mute);
+}
+.q5-route-demo .q5r-slider input {
+  flex: 1;
+  min-width: 6rem;
+  accent-color: var(--accent);
+}
+.q5-route-demo .q5r-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.4rem;
+  margin: .8rem 0 .4rem;
+}
+.q5-route-demo .q5r-card {
+  margin: 0;
+  min-width: 0;
+}
+.q5-route-demo .q5r-card img {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: contain;
+  object-position: left bottom;
+  margin: 0 0 .6rem;
+}
+.q5-route-demo .q5r-card figcaption {
+  display: flex;
+  flex-direction: column;
+  font: inherit;
+  color: var(--ink);
+  text-align: left;
+  margin: 0;
+}
+.q5-route-demo .q5r-route {
+  color: var(--ink);
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: .15rem;
+  margin-bottom: .3rem;
+}
+.q5-route-demo .q5r-card.straight .q5r-route {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.q5-route-demo .q5r-n {
+  font-variant-numeric: tabular-nums;
+}
+.q5-route-demo .q5r-where,
+.q5-route-demo .q5r-year {
+  color: var(--mute);
+  font-size: .9em;
+}
+.q5-route-demo .q5r-artist {
+  margin-top: .3rem;
+}
+.q5-route-demo .q5r-title {
+  font-style: italic;
+  font-size: .93em;
+}
+.q5-route-demo .q5r-note {
+  color: var(--mute);
+  font-size: .86em;
+  margin: .6rem 0 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .q5-route-demo * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+@media (max-width: 600px) {
+  .q5-route-demo svg text {
+    font-size: 34px;
+  }
+  .q5-route-demo svg .q5r-endlabel {
+    font-size: 36px;
+  }
+  .q5-route-demo svg .q5r-dlabel {
+    display: none;
+  }
+  .q5-route-demo .q5r-cards {
+    gap: .8rem;
+  }
+  .q5-route-demo .q5r-card img {
+    height: 150px;
+  }
+  .q5-route-demo .q5r-card figcaption {
+    font-size: .93em;
+  }
+}
+@media print {
+  .q5-route-demo {
+    display: none !important;
+  }
+  .work-fallback {
+    display: block !important;
+  }
+}
+@media (min-width: 1200px) {
+  .q5-route-demo {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    gap: .5rem 2rem;
+    align-items: start;
+  }
+  .q5-route-demo > svg {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    width: 100%;
+    height: auto;
+  }
+  .q5-route-demo > .q5r-key {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .q5-route-demo > .q5r-controls {
+    grid-column: 2;
+    grid-row: 1;
+    flex-wrap: wrap;
+  }
+  .q5-route-demo > .q5r-cards {
+    grid-column: 2;
+    grid-row: 2 / span 3;
+    margin: 0;
+  }
+  .q5-route-demo .q5r-card img {
+    height: 180px;
+  }
+  .q5-route-demo > .q5r-note {
+    grid-column: 1 / -1;
+    grid-row: 5;
+  }
+}
