@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-301992f14ddb7dd383e65fee4e2386cf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-9ee501170c19247828e23d73032166cb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -199,7 +199,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./04-3-why-search.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Q9 Can we get there with no search?</span></a>
+ <span class="menu-text">Q9 Can we get far and faithful pictures with no search?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -278,16 +278,16 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="vp vp-cols2 vp-methopen">
 <div class="visual-copy">
-<p>The Data pages gave us a map of the art we have: how the works are laid out (<a href="./03-0-manifold.html">Q1</a>), where later work went (<a href="./03-2-q2.html">Q3</a>), what each work leaves over (<a href="./03-3-q3.html">Q4</a>) and what being far means (<a href="./03-5-q5.html">Q5</a>). They gave us no formula. Nothing in them says which vector will give a far picture, as the directions shared around a work change from region to region (<a href="./03-0-manifold.html">Q1</a>), and nothing says whether a vector is on or off the manifold (<a href="./03-5-q5.html">Q5</a>). What they did give us is a kind of far, the distance from a work to its nearest neighbours (<a href="./03-5-q5.html">Q5</a>). From it we take a heuristic: a picture’s <em>score</em>, i.e., its mean distance to its 15 nearest works before 1900. Real works after 1900 score higher on it than earlier works do (<a href="./05-1-q9.html">Q6</a>).</p>
+<p>The Data pages gave us a map of the art we have: how the works are laid out (<a href="./03-0-manifold.html">Q1</a>), where later work went (<a href="./03-2-q2.html">Q3</a>), what each work leaves over (<a href="./03-3-q3.html">Q4</a>) and what being far means (<a href="./03-5-q5.html">Q5</a>). They gave us no reliable rule for where a far picture will come from, as the directions shared around a work change from region to region (<a href="./03-0-manifold.html">Q1</a>), and nothing says whether a vector is on or off the manifold (<a href="./03-5-q5.html">Q5</a>). What they did give us is a kind of far, the distance from a work to its nearest neighbours (<a href="./03-5-q5.html">Q5</a>). From it we take a heuristic: a picture’s <em>score</em>, i.e., its mean distance to its 15 nearest works before 1900. Real works after 1900 score higher on it than earlier works do (<a href="./05-1-q9.html">Q6</a>).</p>
 <p><strong>So we cannot work out in advance where a far picture will come from, but we can paint a place and measure how far the picture lands.</strong> A <em>search</em> does that over and over, and moves to where its farthest tries landed.</p>
 <p>A search here could aim at 3 things: the farthest pictures that could have come after 1900, set against the farthest that did; the direction art would move in after 1900; or the regions the works have not reached. We test the third, the title’s: <strong>the search looks for <em>unexplored</em> places</strong>, i.e., far from the works before 1900, on or off the manifold, and we check what it finds against the works that came after. We never tell the search which way art moved after 1900. We check afterwards whether its pictures moved that way.</p>
 </div>
 </div>
 <div class="vp vp-methpair">
 <div class="vp-cell">
-<p>To build the search, the next 4 pages each answer one question.</p>
+<p>So to build the search, the next 4 pages each answer one question.</p>
 <ol type="1">
-<li>What are we looking for? Pictures far from the works before 1900 that are still pictures of what we asked for. Afterwards we read whether each is on or off the manifold (<a href="./04-0-far-faithful.html">Q7</a>).</li>
+<li>What are we looking for? Pictures far from the works before 1900 that come back near what we asked for. Afterwards we read whether each is on or off the manifold (<a href="./04-0-far-faithful.html">Q7</a>).</li>
 <li>Can a place become a picture? A decoder paints a vector, and we ask whether it paints what we ask and how big a step it follows (<a href="./04-1-q7.html">Q8</a>).</li>
 <li>Do we need a search at all, or do simple requests get there (<a href="./04-3-why-search.html">Q9</a>)?</li>
 <li>How does DuROOM search work, and what do we compare it with (<a href="./04-2-q8.html">Q10</a>)?</li>
@@ -297,10 +297,10 @@ ul.task-list li input[type="checkbox"] {
 <p>The method has 5 parts, each fitted to this corpus. <strong>Nothing in it is tied to art, though we have run it only here.</strong></p>
 <ol type="1">
 <li>A <em>reference</em> of what exists. Here, the works before 1900, each repainted by the decoder so that we compare pictures with pictures.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> </li>
-<li>A <em>rule for far</em>. Each picture gets its score against the reference. The <em>bar</em> is the score that 99% of the reference pictures lie below. The bar gives the search its yes or no on each picture.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Here, the score is read by 2 <em>observers</em>, DINOv3 and SigLIP, encoders the search does not move in, and a picture is <em>far</em> when its score is over the bar in both.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> </li>
-<li>A <em>decoder</em> that paints a vector, and a check of whether each picture is <em>faithful</em>, i.e., a picture of the vector we asked for. Here, it paints CLIP vectors,<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> and how well it follows the Data pages’ directions sets the size of a <em>step</em>, i.e., the angle between a vector the search tries and the one it stands on (<a href="./04-1-q7.html">Q8</a>). </li>
+<li>A <em>rule for far</em>. Each picture gets its score against the reference. The <em>bar</em> is the score that 99% of the reference pictures lie below. The bar gives the search its yes or no on each picture.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Here, the score is read by 2 <em>observers</em> (DINOv3 and SigLIP, encoders the search does not move in), and a picture is <em>far</em> when its score is over the bar in both.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> </li>
+<li>A <em>decoder</em> that paints a vector, and a check of whether each picture is <em>faithful</em>, i.e., comes back near the vector we asked for. Here, it paints CLIP vectors.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> How well it follows the Data pages’ directions sets the size of a <em>step</em>, i.e., the angle between a vector the search tries and the one it stands on (<a href="./04-1-q7.html">Q8</a>). </li>
 <li>A <em>search</em> that proposes vectors and <em>admits</em>, i.e., keeps, the pictures that pass the rule. Here, it moves through CLIP vectors, trying steps all around where it stands.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a><a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></li>
-<li>A <em>held-out future</em> to check the finds against, as we cannot check them against art that has not been made. Here, we freeze the corpus at 1900, and the future is the works after it and their shift (<a href="./03-2-q2.html">Q3</a>).<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></li>
+<li>A <em>held-out future</em> to check the finds against, as we cannot check them against art that has not been made. Here, we freeze the corpus at 1900, and the future is the works after it and their shift (<a href="./03-2-q2.html">Q3</a>).<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> The search never uses the later works, but our choices do: the score was chosen on them (<a href="./05-1-q9.html">Q6</a>), and <a href="./04-0-far-faithful.html">Q7</a> uses them to justify the one bar and the 2 observers.</li>
 </ol>
 </div>
 <div class="vp-cell vp-methlast">
@@ -315,7 +315,7 @@ ul.task-list li input[type="checkbox"] {
 
 <ol>
 <li id="fn1"><p>The encoders that read far read pictures and not CLIP vectors, so every vector the search tries is painted before it is read. The reference is painted too, so that each picture is set against pictures made the same way: in DINOv3 a repaint lands a median 0.56 from its original, and an original 0.62 from its nearest original by another artist.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Take the works of half of the artists before 1900 as the past: a later work then sits farther from its nearest works of that past than a work by the other half’s artists does about 90 times in 100, in DINOv3 and SigLIP (<a href="./05-1-q9.html">Q6</a>). Most later works are still not far (<a href="./04-0-far-faithful.html">Q7</a>).<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Take the works of half of the artists before 1900 as the past: a later work then sits farther from its nearest works of that past than a work by the other half’s artists does, about 90% of the time, in DINOv3 and SigLIP (<a href="./05-1-q9.html">Q6</a>). Most later works are still not far (<a href="./04-0-far-faithful.html">Q7</a>).<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>The search moves in CLIP, and CLIP’s reading of each picture decides whether it is faithful and where the centre moves next, so CLIP, as a judge of far, would score each picture against the vector it was painted from. Why 2 observers and not 1, with the counts, is in <a href="./04-0-far-faithful.html">Q7</a>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn4"><p>The decoder paints from a CLIP image vector alone, 768 numbers and no prompt, so the search moves among CLIP vectors. In pixels a search would reward noise: of 160 synthetic images, 64 of them pixel noise, read as they are in DINOv3 and SigLIP, 159 are far. We have not tried a search among text prompts, as this decoder takes none.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn5"><p>The search is CMA-ES, an evolution strategy. It needs only the score at each vector it tries and no slope of it (<a href="./02-related-work.html">Related work</a>). Its own move of the centre is replaced by the loop’s restart (Algorithm 1 of <a href="./04-2-q8.html">Q10</a>), and it still sets the size of the step and the spread along each of the 768 coordinates.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>

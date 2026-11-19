@@ -65,7 +65,7 @@ div.csl-indent {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-301992f14ddb7dd383e65fee4e2386cf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-9ee501170c19247828e23d73032166cb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -218,7 +218,7 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./04-3-why-search.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Q9 Can we get there with no search?</span></a>
+ <span class="menu-text">Q9 Can we get far and faithful pictures with no search?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -307,8 +307,8 @@ Figure&nbsp;1: The works fill a lumpy region of the cone, the manifold (the art 
 </figure>
 </div>
 <div class="visual-copy">
-<p>Earlier we saw all the works sit inside one cone, now let’s look at how they are laid out inside it. A distance would not mean much until we know that, so this page is our rough model of the layout.</p>
-<p>A search needs this model, as it starts at a work and moves away from it (<a href="#fig-data-manifold" class="quarto-xref">Figure&nbsp;1</a>). If the works around one work spread mainly along a few directions, a search could move along them. If those directions change from place to place, no one map of directions can guide it, and it has to try steps all around.</p>
+<p>Earlier we saw all the works sit inside one cone, now let’s look at how they are laid out inside it. A distance would not mean much until we know that, so here we build a rough model of the layout.</p>
+<p>A search needs this model, as it starts at a work and moves away from it (<a href="#fig-data-manifold" class="quarto-xref">Figure&nbsp;1</a>). If the works around one work spread mainly along a few directions, a search could move along them. If those directions change from place to place, no one map of directions can guide it, which is a reason to try steps all around.</p>
 <p>So, around one work, do the works spread mainly along a few shared directions, or more broadly across many? And are those directions the same elsewhere in the corpus? We ask both in CLIP, and only of works by artists other than the work’s own, for a reason we give below.</p>
 </div>
 </div>
@@ -316,8 +316,8 @@ Figure&nbsp;1: The works fill a lumpy region of the cone, the manifold (the art 
 <h2 class="anchored" data-anchor-id="one-work-and-its-neighbours">One work and its neighbours</h2>
 <div class="vp vp-side vp-sbs92 vp-cols2 vp-capr vp-walk">
 <div class="visual-copy">
-<p>Say we stand at one work, the <em>anchor</em> (<a href="#fig-shape-walk" class="quarto-xref">Figure&nbsp;2</a>). Its neighbours are the works whose vectors are closest to its own.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> We leave out the works by the anchor’s own artist. A third of a work’s 15 nearest works are by the same artist (interesting, right? just kidding),<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> so the nearest works would otherwise describe one artist’s series, and we want the layout of art around the work. The search’s rule for admitting a picture leaves the artist out too (<a href="./04-0-far-faithful.html">Q7</a>). Among the 100 nearest, the artist’s own works are about a tenth, and keeping them in barely moves the first two findings below (D).</p>
-<p>Each neighbour sits at some <em>offset</em> from the anchor, i.e., the step from the anchor to that neighbour, measured along the sphere. To see whether the offsets share directions, we look for the directions along which they spread the most. The flat space those directions span is the <em>local subspace</em>, and we take 39 directions for it (finding C, below, says why).<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<p>Say we stand at one work, the <em>anchor</em> (<a href="#fig-shape-walk" class="quarto-xref">Figure&nbsp;2</a>). Its neighbours are the works whose vectors are closest to its own.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> We leave out the works by the anchor’s own artist. A third of a work’s 15 nearest works are by the same artist (interesting, right? just kidding),<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> so the nearest works would otherwise describe one artist’s series, and we want the layout of art around the work. The search’s rule for admitting a picture leaves the artist out too (<a href="./04-0-far-faithful.html">Q7</a>). Among the 100 nearest, the artist’s own works are about a tenth, and keeping them in barely moves the first two findings below (<a href="#finding-d">finding D</a>).</p>
+<p>Each neighbour sits at some <em>offset</em> from the anchor, i.e., the step from the anchor to that neighbour, measured along the sphere. To see whether the offsets share directions, we look for the directions along which they spread the most (their principal components, as in PCA). The flat space those directions span is the <em>local subspace</em>, and we take 39 directions for it (finding C, below, says why).<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
 <p>A fit like this always finds directions, though. On the points it was fitted on, its 39 directions hold most of their spread, even where the points have no local structure, as in the Gaussian cloud below.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> So we ask whether they also hold for works the fit has not seen.</p>
 </div>
 <div id="fig-shape-walk" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Four drawn panels. First, an anchor work with its nearest works inside a dashed ring, and crosses for works by its own artist, which are left out. Second, the same works split into a fit half and a test half by artist, each with its own ring. Third, a line fitted through the mean of the fit works, with the anchor off the line. Fourth, the test works with each offset split into a part held along the fitted line and a part not held. Share held is the spread along the fitted directions divided by all the spread." data-mobile-src="figures/shape_walk_s-mobile.svg">
@@ -335,17 +335,17 @@ Figure&nbsp;2: Directions fitted around the anchor on one half of the other arti
 <div class="vp vp-duo vp-capr vp-clouds">
 <section id="testing-on-artists-the-fit-has-not-seen" class="level2 vp-cell">
 <h2 class="anchored" data-anchor-id="testing-on-artists-the-fit-has-not-seen">Testing on artists the fit has not seen</h2>
-<p>We split all the artists into two random halves,<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> and around each of 2,000 random works, at most one from each of the 2,958 artists, the test runs in 4 steps (<a href="#fig-shape-walk" class="quarto-xref">Figure&nbsp;2</a>):</p>
+<p>We split all the artists into two random halves,<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> and around each of 2,000 random works (at most one from each of the 2,958 artists) the test runs in 4 steps (<a href="#fig-shape-walk" class="quarto-xref">Figure&nbsp;2</a>):</p>
 <ol type="1">
 <li>Take the work as the anchor, and leave its own artist out of both halves.</li>
-<li>From each half, take the anchor’s 100 nearest works and their offsets (100 is a choice, so we repeat the test with 300 beside it, A).</li>
+<li>From each half, take the anchor’s 100 nearest works and their offsets (100 is a choice, so finding A repeats the test with 300).</li>
 <li>Fit the local subspace on the offsets of one half.</li>
 <li>Measure the <em>share held</em>, i.e., the share of the other half’s spread that lies inside the fitted subspace.</li>
 </ol>
 <p>The share held is 1 if the other half’s works spread only along the fitted directions, and it falls as they spread along others.</p>
 </section>
-<section id="what-would-other-kinds-of-region-give" class="level2 vp-cell">
-<h2 class="anchored" data-anchor-id="what-would-other-kinds-of-region-give">What would other kinds of region give?</h2>
+<section id="what-share-held-would-other-kinds-of-region-give" class="level2 vp-cell">
+<h2 class="anchored" data-anchor-id="what-share-held-would-other-kinds-of-region-give">What share held would other kinds of region give?</h2>
 <p>Say the share held comes out at one half. Is that high or low? To tell, we build artificial clouds of points with the corpus’s size and its <em>spacing</em>, and put each through the same test (<a href="#fig-shape-clouds" class="quarto-xref">Figure&nbsp;3</a>). For each work we take its distance to its 10th nearest work by another artist, and the spacing is the median of these distances, about 36 degrees in CLIP.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> The spacing is our unit of distance on this page, and neither it nor these tests give a line between on and off the manifold (<a href="./04-0-far-faithful.html">Q7</a> sets one, as a convention).</p>
 <ol type="1">
 <li>A <em>flat sheet</em> spanning 39 directions. Its share held is 1.</li>
@@ -380,11 +380,11 @@ Figure&nbsp;4: At both 100 and 300 neighbours the works hold about what a sheet 
 </figure>
 </div>
 </div>
-<section id="are-they-the-same-directions-elsewhere" class="level2">
-<h2 class="anchored" data-anchor-id="are-they-the-same-directions-elsewhere">Are they the same directions elsewhere?</h2>
+<section id="are-the-directions-around-a-work-the-same-elsewhere" class="level2">
+<h2 class="anchored" data-anchor-id="are-the-directions-around-a-work-the-same-elsewhere">Are the directions around a work the same elsewhere?</h2>
 <div class="vp vp-side vp-sbs76 vp-lead vp-orient">
 <div class="visual-copy">
-<p>We fit a local subspace at the anchor on one half of the artists, and another at a random other work, a median of 58 degrees away, on the other half. We carry the first along the sphere to the second so their directions can be compared (<a href="#fig-shape-orient" class="quarto-xref">Figure&nbsp;5</a>). The <em>overlap</em> is how much of one lies inside the other. Even at the anchor the two halves’ fits overlap only in part. So we scale the overlap: 0 is what two unrelated subspaces give, and 1 is how well the two halves agree at the anchor. The result is the <em>scaled overlap</em>.</p>
+<p>We fit a local subspace at the anchor on one half of the artists, and another on the other half at a random other work (a median of 58 degrees away). We carry the first along the sphere to the second so their directions can be compared (<a href="#fig-shape-orient" class="quarto-xref">Figure&nbsp;5</a>). The <em>overlap</em> is how much of one lies inside the other. Even at the anchor the two halves’ fits overlap only in part. So we scale the overlap: 0 is what two unrelated subspaces give, and 1 is how well the two halves agree at the anchor. The result is the <em>scaled overlap</em>.</p>
 </div>
 <div id="fig-shape-orient" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Three drawn panels. First, a sphere with the anchor and another work about 58 degrees apart, each with a small flat patch, and an arrow carrying the anchor's patch to the other work. Second, the two patches overlaid at the other work, with the angle between them marked. Third, two limiting cases: the same directions give an overlap of 1, and unrelated directions give about 0.05 before scaling." data-mobile-src="figures/shape_orient_s-mobile.svg">
 <figure class="quarto-float quarto-float-fig figure">
@@ -407,18 +407,18 @@ Figure&nbsp;5: The overlap is 1 when the anchor’s directions, carried along th
 <img src="figures/smooth_turning.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/smooth_turning-mobile.svg" alt="Measured scaled local-subspace overlap: works near 0.37, 64 clumps near 0.41, Gaussian and noisy sheet near one. Hollow analytic values show the smooth-bend compression. The works versus clumps difference comes from the normalization ceiling rather than lower raw overlap.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-smooth-turning-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6: At a random other work, the works and the 64 clumps keep their directions only in part (scaled overlap about 0.4), while in the Gaussian cloud and the noisy sheet 2 places agree as well as two fits at one place do (about 1). Measured in CLIP. Hollow markers, the bent sheets’ true values, show that a smooth bend barely registers.
+Figure&nbsp;6: At a random other work, the works and the 64 clumps keep their directions only in part (scaled overlap about 0.4). In the Gaussian cloud and the noisy sheet, 2 places agree as well as 2 fits at one place do (about 1). Measured in CLIP. Hollow markers, the bent sheets’ true values, show that a smooth bend barely registers.
 </figcaption>
 </figure>
 </div>
 </div>
 </section>
-<section id="how-many-directions" class="level2">
-<h2 class="anchored" data-anchor-id="how-many-directions">How many directions?</h2>
+<section id="how-many-directions-do-the-works-use-around-a-work" class="level2">
+<h2 class="anchored" data-anchor-id="how-many-directions-do-the-works-use-around-a-work">How many directions do the works use around a work?</h2>
 <div class="vp vp-side vp-sbs88 vp-cols2 vp-capr vp-dim">
 <div class="visual-copy">
 <p>On a line, a ball twice as wide holds about twice as many points, on a sheet about 4 times as many, and in more directions the count grows faster still. So at each work we take its 20 nearest works by other artists and watch how fast the count of them in a ball grows as it widens. The number of directions that growth points to is the <em>local dimension</em> (<a href="#fig-shape-dim" class="quarto-xref">Figure&nbsp;7</a>).</p>
-<p><strong>C. Around a work, no flat sheet we tried, thin or thick, fits the works.</strong> The works read about 30 directions, the median over all 132,473, and the Gaussian cloud 75.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> The reading runs low: a flat sheet with 39 directions, spaced like the works, reads 30. So 39 is the size of our fits and sheets, not a dimension of the works. The 39-direction sheet holds 1 in A. The sheet with half a spacing of noise holds about what the works hold in A, but reads 56 here. This test cannot tell fewer directions from clumping.</p>
+<p><strong>C. Around a work, no flat sheet we tried, thin or thick, fits the works.</strong> The works read about 30 directions, the median over all 132,473, and the Gaussian cloud 75.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> A flat sheet with 39 directions, spaced like the works, also reads 30, but it holds 1 in A. The sheet with half a spacing of noise holds about what the works hold in A, but reads 56 here. The reading runs low, so 39 is the size of our fits and sheets, not a dimension of the works. This test cannot tell fewer directions from clumping.</p>
 </div>
 <div id="fig-shape-dim" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Three drawn panels, each with a ball of radius r and a ball of radius 2r around one work. On a line the wider ball holds 2 times as many works. On a sheet it holds 4 times as many. On the same sheet with the works clumped it holds 1.6 times as many. In d directions the wider ball holds 2 to the power d times as many." data-mobile-src="figures/shape_dim_s-mobile.svg">
 <figure class="quarto-float quarto-float-fig figure">
@@ -433,7 +433,7 @@ Figure&nbsp;7: The more directions the works use around a work, the faster the c
 </div>
 <div class="vp vp-duo vp-quad vp-mquad">
 <div class="vp-cell">
-<p>We also notice that the local dimension reads higher in later art, about 26 before 1900 and 35 from 1960 on.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> Twenty-six works from 1900 to 1969, repainted by the decoder from their own vectors, came out far from the works before 1900 and still pictures of what was asked (far and faithful, <a href="./04-0-far-faithful.html">Q7</a>). These 26 sit in sparser places among the works before 1900 than other works of their time do, at a similar angle from the average direction of the works before 1900.<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a></p>
+<p>We also notice that the local dimension reads higher in later art, about 26 before 1900 and 35 from 1960 on.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> Also, 26 works from 1900 to 1969, repainted by the decoder (the image generator the search paints with, <a href="./04-1-q7.html">Q8</a>) from their own vectors, came out far from the works before 1900 and came back near the vector we asked for (far and faithful, <a href="./04-0-far-faithful.html">Q7</a>). These 26 sit in sparser places among the works before 1900 than other works of their time do, at a similar angle from the average direction of the works before 1900.<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a></p>
 <p>We have no credible test for holes inside the region, as ours found none of the holes we planted.<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> Even at a known centre, the distance to the nearest work reads as unusual only once a hole empties everything within 1.2 to 1.3 spacings (CLIP).</p>
 </div>
 <section id="does-it-matter-which-works-we-leave-out" class="level2 vp-cell">
@@ -441,11 +441,11 @@ Figure&nbsp;7: The more directions the works use around a work, the faster the c
 <p>Everything above leaves out the anchor’s own artist and tests on artists the fit has not seen, so we also ran the tests with each choice changed.</p>
 </section>
 <div class="vp-cell">
-<p><strong>D. At these neighbourhood sizes, which works we leave out changes the readings above by about 0.03 or less, our tolerance.</strong> Keeping the anchor’s own artist in barely moves the share held or the overlap. Splitting the fit and the test by work, so that an artist’s works can fall on both sides, raises the share held from about 0.49 to 0.52, right at our tolerance (a smaller change counts as none), so we call that one unresolved.<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a></p>
+<p><span id="finding-d"></span><strong>D. At these neighbourhood sizes, which works we leave out changes the readings above by about 0.04 or less, close to our tolerance of 0.03.</strong> Keeping the anchor’s own artist in barely moves the share held or the overlap. Splitting the fit and the test by work, so that an artist’s works can fall on both sides, raises the share held from about 0.49 to 0.52, right at our tolerance (a smaller change counts as none), so we call that one unresolved.<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a></p>
 </div>
 <div class="vp-cell">
 <p>So in CLIP, at one spacing and farther, our rough model is that nearby works by different artists have about half of their spread along 39 directions fitted around each work. In this model those directions change from region to region.</p>
-<p>A search here has to try steps all around. By arithmetic (39 of 768 directions), only about 5 percent of a step in an evenly random direction lies in the 39 directions nearby works share most (<a href="./04-2-q8.html">Q10</a>). Next, <a href="./03-1-q1.html">Q2</a> asks the same question of whole groups of works, and <a href="./03-5-q5.html">Q5</a> comes back to this geometry.</p>
+<p>So we let a search try steps all around, a choice this layout suggests rather than forces. By arithmetic (39 of 768 directions), a step in an evenly random direction puts only about 5% of its squared length (i.e., about 23% of its length) in the 39 directions nearby works share most (<a href="./04-2-q8.html">Q10</a>). Next, <a href="./03-1-q1.html">Q2</a> asks the same question of whole groups of works, and <a href="./03-5-q5.html">Q5</a> comes back to this geometry.</p>
 </div>
 </div>
 
@@ -462,7 +462,7 @@ Levina, Elizaveta, and Peter J. Bickel. 2004. <span>“Maximum Likelihood Estima
 
 <ol>
 <li id="fn1"><p>Which works count as neighbours depends on the distance, so here is ours. It is the chord between unit-length CLIP vectors. The tests on this page use the chord only, and we have not run them under raw Euclidean, Mahalanobis or diffusion distance.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Of a work’s 15 nearest works in CLIP among the 172,171 kept works, the share by the same artist is 0.34, against 0.002 by chance. So an artist’s works sit together, though that does not make them copies of each other. With the artist kept in, the artist’s works are about 10% of a work’s 100 nearest and 5% of its 300, in the half of the artists that holds that artist (D).<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Of a work’s 15 nearest works in CLIP among the 172,171 kept works, the share by the same artist is 0.34, against 0.002 by chance. So an artist’s works sit together, though that does not make them copies of each other. With the artist kept in, the artist’s works are about 10% of a work’s 100 nearest and 5% of its 300, in the half of the artists that holds that artist (<a href="#finding-d">finding D</a>).<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>39 is not a measured dimension of the works (C). The share held uses each work’s 100 and 300 nearest works by other artists from each half, which lie about 41 and 43 degrees out, over three random splits of the artists. Every comparison cloud has the corpus’s 132,473 works and carries its artist labels, so the same leaving-out and split apply to it.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn4"><p>Scored on the works they were fitted on, the 39 directions hold 0.82 of the spread in the works, 0.70 in the Gaussian cloud and 0.75 in the 64 clumps (medians, CLIP, 100 neighbours). Keeping the anchor’s artist in gives the same 0.82.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn5"><p>We split by artist so that the test never repeats the artists of the fit. Offsets are measured along the sphere from the anchor (the log map). Each half’s offsets are centred on their own mean before the fit and before the test. So the fitted directions pass through the neighbours’ mean, and they need not pass through the anchor.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>

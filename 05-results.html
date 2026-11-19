@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-301992f14ddb7dd383e65fee4e2386cf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-9ee501170c19247828e23d73032166cb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -199,7 +199,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./04-3-why-search.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Q9 Can we get there with no search?</span></a>
+ <span class="menu-text">Q9 Can we get far and faithful pictures with no search?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -276,71 +276,81 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="vp vp-flow">
+<div class="vp vp-wide">
 <div class="visual-copy">
-<p>We asked whether we can find undiscovered artifacts when all we have is the archive of what was made (<a href="./01-intro.html">Introduction</a>). We froze the archive at 1900, searched from 5 works painted before it, and checked what we found against the art that came after. The answer is yes.</p>
-<p><strong>What we found</strong> (<a href="./05-2-q10.html">Q11</a>)</p>
+<p>We asked whether we can find undiscovered artifacts when all we have is the archive of what was made (<a href="./01-intro.html">Introduction</a>). We froze the archive at 1900, searched from 5 works painted before it, and checked what we found against the art that came after. Our answer is in the <a href="./01-intro.html#answer">Introduction</a>.</p>
+<p>This page reports what we found. What to make of it, we take up in the <a href="./06-discussion.html">Discussion</a>.</p>
+<p><strong>Does the search paint far and faithful pictures?</strong></p>
 <ul>
-<li><strong>4,380 of the 9,600 pictures DuROOM search painted are far from the works before 1900 and faithful</strong>, i.e., still pictures of what we asked for.</li>
-<li><strong>On the manifold: 4,049 of them have a real work within the manifold line</strong>, i.e., a pair of distances, one per observer (DINOv3 and SigLIP), set so that 99% of 2,048 repainted real works have their nearest real work within it in at least one observer. For 3,850 it is a work dated 1900 or later, with none dated before 1900: art went there only after 1900 (<a href="#fig-find-pair" class="quarto-xref">Figure&nbsp;1</a>, <a href="#fig-ov-split" class="quarto-xref">Figure&nbsp;2</a>).<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
-<li><strong>Off the manifold: 331 have no real work of any date within the manifold line.</strong> Their nearest real work sits at a median distance of 0.88 in DINOv3, where the line is 0.76.</li>
-<li><strong>1,314 of the 3,850 are also badly described by the art before 1900</strong>, i.e., have a large leftover share.</li>
-<li><strong>From 5 different works the search arrives at the same later works.</strong> 104 real later works are reached from 3 or more of the 5 starts, and 32 from all 5. The 104 hold 3,089 of the 3,850 pictures. Off the manifold the starts do not meet.</li>
-<li>The search’s pictures lean the way the century went as much as real works of 1900 to 1969 do, +0.25 against +0.20. Its controls’ pictures lean as much, +0.22 and +0.19.</li>
+<li><strong>46% of the pictures DuROOM search paints are far from the works before 1900 and faithful</strong>, i.e., come back near what we asked for.</li>
+<li><strong>Its 2 controls, the same loop told random scores, reach 16% with the step and 28% without it</strong> (<a href="#fig-ov-ways" class="quarto-xref">Figure&nbsp;1</a>).</li>
+<li>With no search, 0.5% of the pictures painted from the 6 kinds of request in <a href="./04-3-why-search.html">Q9</a> (like points between or near the works before 1900) are far and faithful. Of the pictures painted from requests read from noise images (i.e., we hand the decoder CLIP’s reading of a noise or plain image), 20% are (<a href="./04-0-far-faithful.html">Q7</a>).</li>
+<li>A single walk, which paints one picture at a time, reaches 25%.</li>
+<li>The free search, left to the score alone, paints none.</li>
 </ul>
 </div>
-<div id="fig-find-pair" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Three pictures side by side: Degas's seated woman pulling on her glove; the search's picture, vertical red, black and cream stripes; Gene Davis's Black Dahlia, vertical stripes in grey, pink, green and black." data-mobile-src="figures/search_find_pair_v2-mobile.svg">
+<div id="fig-ov-ways" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Vertical bars on one scale from 0 to 50%, far and faithful as a percent of the pictures each way of asking painted, the count under each name: no search, 6 kinds of request, 0.5% (6 of 1,270); lines aimed at real later works, hatched because they use later art, 28% (20 of 71); a single walk with selection 25% (2,446 of 9,600); the random-score loop 16% (1,534 of 9,600); the no-step loop 28% (2,708 of 9,600); DuROOM search 46% (4,380 of 9,600). Set apart, for scale, real works repainted, as open bars: before 1900, held out, 0.2% (2 of 1,000); 1900 to 1969 5.1% (26 of 512); from 1970 on 14% (94 of 663)." data-mobile-src="figures/ways_of_asking_vert_v2c-mobile.svg">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ov-ways-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ways_of_asking_vert_v2c.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/ways_of_asking_vert_v2c-mobile.svg" alt="Vertical bars on one scale from 0 to 50%, far and faithful as a percent of the pictures each way of asking painted, the count under each name: no search, 6 kinds of request, 0.5% (6 of 1,270); lines aimed at real later works, hatched because they use later art, 28% (20 of 71); a single walk with selection 25% (2,446 of 9,600); the random-score loop 16% (1,534 of 9,600); the no-step loop 28% (2,708 of 9,600); DuROOM search 46% (4,380 of 9,600). Set apart, for scale, real works repainted, as open bars: before 1900, held out, 0.2% (2 of 1,000); 1900 to 1969 5.1% (26 of 512); from 1970 on 14% (94 of 663).">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ov-ways-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: With no search, 0.5% of the pictures painted from the 6 kinds of request in Q9 are far and faithful. Of the pictures painted by the loops that restart from their own pictures, 16 to 46% are far and faithful. Far is read against the reference alone. Hatched: lines aimed at real later works, 28% of whose pictures are far and faithful. Open bars, for scale: real works repainted. Under each name, the count.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="vp vp-lead">
+<div class="visual-copy">
+<p><strong>Where do the far and faithful pictures land?</strong> (<a href="./05-2-q10.html">Q11</a>)</p>
+<ul>
+<li><strong>92% of the search’s far and faithful pictures are on the manifold</strong>, i.e., have a real work within the manifold line. The line is a distance per observer (DINOv3 and SigLIP), set so that 99% of 2,048 repainted real works have their nearest real work within it in at least one. <strong>For 88% of the far and faithful pictures that work is dated 1900 or later, and none is dated before 1900</strong> (<a href="#fig-find-pair" class="quarto-xref">Figure&nbsp;2</a>, <a href="#fig-ov-split" class="quarto-xref">Figure&nbsp;3</a>). We say these pictures sit <em>where art went only after 1900</em>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
+<li><strong>8% are off the manifold</strong>, with no real work of any date within the manifold line. Their nearest real work sits at a median distance of 0.88 in DINOv3, where the line is 0.76.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></li>
+<li><strong>30% of the far and faithful pictures have a large leftover share (i.e., the art before 1900 describes them badly) and a dated later work within the manifold line and no dated earlier one.</strong> With no condition on dates, 35% have a large leftover share.</li>
+<li><strong>Pictures from different starts often arrive at the same later works, and each start also keeps works of its own.</strong> Of its pictures where art went only after 1900, 80% are at real works reached from 3 or more of the 5 starts, and 32 real works are reached from all 5.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> Off the manifold the starts do not meet.</li>
+<li>The search’s pictures lean the way the century went (along the shift of <a href="./03-2-q2.html">Q3</a>) as much as real works of 1900 to 1969 do, +0.25 against +0.20. Its controls’ pictures lean as much, +0.22 and +0.19.</li>
+</ul>
+</div>
+<div id="fig-find-pair" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="One row of three pictures: the starting work, Edgar Degas, Seated Woman pulling her glove, 1890; the picture DuROOM search painted from it in round 15; and the real work shown, Gene Davis, Black Dahlia, 1971. Beside the pictures, a fact line: in DINOv3 the work shown is the nearest real work, 0.440 apart, within the line (0.763); in SigLIP the nearest real work is Gene Davis, Flamingo, 1965, 0.528 apart, within the line (0.830), and the work shown is 0.654, within; no work dated before 1900 within the line in either observer. The last line beside the pictures quotes my reading by eye: 'Red and black vertical stripes closely resemble the real work's stripe pattern despite different colours.'" data-mobile-src="figures/search_find_pair_v5-mobile.svg">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-find-pair-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figures/search_find_pair_v2.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/search_find_pair_v2-mobile.svg" alt="Three pictures side by side: Degas's seated woman pulling on her glove; the search's picture, vertical red, black and cream stripes; Gene Davis's Black Dahlia, vertical stripes in grey, pink, green and black.">
+<img src="figures/search_find_pair_v5.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/search_find_pair_v5-mobile.svg" alt="One row of three pictures: the starting work, Edgar Degas, Seated Woman pulling her glove, 1890; the picture DuROOM search painted from it in round 15; and the real work shown, Gene Davis, Black Dahlia, 1971. Beside the pictures, a fact line: in DINOv3 the work shown is the nearest real work, 0.440 apart, within the line (0.763); in SigLIP the nearest real work is Gene Davis, Flamingo, 1965, 0.528 apart, within the line (0.830), and the work shown is 0.654, within; no work dated before 1900 within the line in either observer. The last line beside the pictures quotes my reading by eye: 'Red and black vertical stripes closely resemble the real work's stripe pattern despite different colours.'">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-find-pair-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: A picture DuROOM search painted (middle), from a work of 1890, has a real work of 1971 within the manifold line of it, and no work dated before 1900. Left, the start, Edgar Degas’s <em>Seated Woman pulling her glove</em>; right, Gene Davis’s <em>Black Dahlia</em>. Chosen by eye, so it is an example and not a sample. WikiArt reproductions, shown as scholarly commentary.
+Figure&nbsp;2: A picture DuROOM search painted (middle), from a work of 1890, has a real work of 1971 within the manifold line of it, and no work dated before 1900. Left, the start, Edgar Degas’s <em>Seated Woman pulling her glove</em>; right, Gene Davis’s <em>Black Dahlia</em>. Beside the pictures: the round it was painted in, its nearest real work in each observer with the distance against the manifold line, and whether a work dated before 1900 lies within the line. The last line, in quotes, is how I read the picture by eye. I chose it by eye, so it is an example and not a sample. WikiArt reproductions, shown as scholarly commentary.
 </figcaption>
 </figure>
 </div>
 </div>
 <div class="vp vp-capr vp-q10conf">
-<div id="fig-ov-split" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Two panels of 4 strips, one per loop and one for the single walk, each split into 4 parts: a work dated before 1900 within the manifold line; none dated before 1900 within the manifold line and a work dated 1900 or later within the manifold line; only an undated work within the manifold line; no real work within the manifold line. All far and faithful pictures: the search, 4,380: 180, 3,850, 19 and 331; the random-score loop, 1,534: 66, 1,247, 34 and 187; the no-step loop, 2,708: 834, 1,714, 53 and 107; the single walk, 2,446: 60, 2,065, 44 and 277. Those with a large leftover share: the search, 1,538: 11, 1,314, 8 and 205; the random-score loop, 87: 0, 69, 2 and 16; the no-step loop, 36: 2, 13, 11 and 10; the single walk, 541: 412 in the second part and 129 left unsplit." data-mobile-src="figures/dated_split_v3-mobile.svg">
+<div id="fig-ov-split" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Two panels of four horizontal strips, one strip per loop and one for the single walk. Each strip is split by the real works within the manifold line: a work dated before 1900; none before 1900 and a work dated 1900 or later; only an undated work; no real work. Each part prints its percent of the loop's far and faithful pictures, with the count small. All far and faithful pictures: the search, 4,380: 4.1% (180), 88% (3,850), 0.4% (19), 7.6% (331); the random-score loop, 1,534: 4.3% (66), 81% (1,247), 2.2% (34), 12% (187); the no-step loop, 2,708: 31% (834), 63% (1,714), 2.0% (53), 4.0% (107); the single walk, 2,446: 2.5% (60), 84% (2,065), 1.8% (44), 11% (277). Those with a large leftover share: the search, 1,538: 0.7% (11), 85% (1,314), 0.5% (8), 13% (205); the random-score loop, 87: 0% (0), 79% (69), 2.3% (2), 18% (16); the no-step loop, 36: 5.6% (2), 36% (13), 31% (11), 28% (10); the single walk, 541: 76% (412) in the second part, and 24% (129) not split." data-mobile-src="figures/dated_split_v4-mobile.svg">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ov-split-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figures/dated_split_v3.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/dated_split_v3-mobile.svg" alt="Two panels of 4 strips, one per loop and one for the single walk, each split into 4 parts: a work dated before 1900 within the manifold line; none dated before 1900 within the manifold line and a work dated 1900 or later within the manifold line; only an undated work within the manifold line; no real work within the manifold line. All far and faithful pictures: the search, 4,380: 180, 3,850, 19 and 331; the random-score loop, 1,534: 66, 1,247, 34 and 187; the no-step loop, 2,708: 834, 1,714, 53 and 107; the single walk, 2,446: 60, 2,065, 44 and 277. Those with a large leftover share: the search, 1,538: 11, 1,314, 8 and 205; the random-score loop, 87: 0, 69, 2 and 16; the no-step loop, 36: 2, 13, 11 and 10; the single walk, 541: 412 in the second part and 129 left unsplit.">
+<img src="figures/dated_split_v4.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/dated_split_v4-mobile.svg" alt="Two panels of four horizontal strips, one strip per loop and one for the single walk. Each strip is split by the real works within the manifold line: a work dated before 1900; none before 1900 and a work dated 1900 or later; only an undated work; no real work. Each part prints its percent of the loop's far and faithful pictures, with the count small. All far and faithful pictures: the search, 4,380: 4.1% (180), 88% (3,850), 0.4% (19), 7.6% (331); the random-score loop, 1,534: 4.3% (66), 81% (1,247), 2.2% (34), 12% (187); the no-step loop, 2,708: 31% (834), 63% (1,714), 2.0% (53), 4.0% (107); the single walk, 2,446: 2.5% (60), 84% (2,065), 1.8% (44), 11% (277). Those with a large leftover share: the search, 1,538: 0.7% (11), 85% (1,314), 0.5% (8), 13% (205); the random-score loop, 87: 0% (0), 79% (69), 2.3% (2), 18% (16); the no-step loop, 36: 5.6% (2), 36% (13), 31% (11), 28% (10); the single walk, 541: 76% (412) in the second part, and 24% (129) not split.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ov-split-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: For every loop, and for the single walk, which paints one picture at a time (<a href="./05-3-controls.html">Q12</a>), most far and faithful pictures have a real work dated 1900 or later within the manifold line and none from before. Each strip is one loop’s far and faithful pictures, split by the dates of the real works within the manifold line of them. The second panel keeps those with a large leftover share.
+Figure&nbsp;3: For every loop, and for the single walk, which paints one picture at a time (<a href="./05-3-controls.html">Q12</a>), most far and faithful pictures have a real work dated 1900 or later within the manifold line and none from before. Each strip is one loop’s far and faithful pictures, split by the dates of the real works within the manifold line of them, and each part gives its percent of the strip. The second panel keeps those with a large leftover share.
 </figcaption>
 </figure>
 </div>
 </div>
 <div class="vp vp-flow">
 <div class="visual-copy">
-<p><strong>What the search adds</strong> (<a href="./05-3-controls.html">Q12</a>)</p>
+<p><strong>What does the search add over its controls?</strong> (<a href="./05-3-controls.html">Q12</a>)</p>
 <ul>
-<li>With no search, 6 of 1,270 pictures painted from simple requests are far and faithful (<a href="./04-3-why-search.html">Q9</a>). The <em>free search</em>, i.e., the search left to the score alone, with each picture’s fidelity only recorded (<a href="./04-2-q8.html">Q10</a>), paints 0 in 5,760.</li>
-<li>DuROOM search has 120 <em>hits</em>, i.e., distinct admitted pictures that are far and faithful and <em>covered</em> by later works (<a href="./05-3-controls.html">Q12</a> says how), against 65 for the <em>random-score loop</em>, the same loop told random scores, and 40 for the <em>no-step loop</em>, with no step and random scores. It has more at each of the 5 starts.</li>
-<li>Of all pictures painted, 4,380 are far and faithful, against 1,534 and 2,708 for the 2 controls (<a href="#fig-ov-ways" class="quarto-xref">Figure&nbsp;3</a>). 1,314 also have a large leftover share, with a work dated 1900 or later within the manifold line and none dated before, against 69 and 13.</li>
-<li>Off the manifold the search has 331, against 187 and 107, more in total, though not at every start.</li>
-<li>Restarted each round from its 1 best feasible picture in place of 4, the search has 283 hits, against 120 (<a href="./04-2-q8.html">Q10</a>). It also has 1,004 far and faithful pictures off the manifold, against 331.</li>
-<li>Under a bar per region in place of one bar, the search still paints more far and faithful pictures than either control (<a href="./05-3-controls.html">Q12</a>).</li>
+<li><strong>The search paints far and faithful pictures 2.9 and 1.6 times as often as the <em>random-score loop</em> and the <em>no-step loop</em>.</strong></li>
+<li><strong>Far and faithful, with a dated later work within the manifold line and no dated earlier one, and a large leftover share: 14% of the search’s pictures, against 0.7% and 0.1%.</strong><a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></li>
+<li><strong>Far and faithful and off the manifold: 3.4% of the search’s pictures, against 1.9% and 1.1%</strong>, more in total, though not at every start.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></li>
+<li><strong>About twice as many hits as the random-score loop and 3 times as many as the no-step loop</strong> (a <em>hit</em> is a distinct admitted picture that is far and faithful and covered by later works), more at each of the 5 starts.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></li>
+<li><strong>What the search does not add is where its pictures land.</strong> 88% of its far and faithful pictures sit where art went only after 1900. So do 81% of the random-score loop’s and 63% of the no-step loop’s.</li>
+<li>Restarted each round from its 1 best feasible picture in place of 4, the search has 2.4 times as many hits and 3 times as many far and faithful pictures off the manifold (<a href="./04-2-q8.html">Q10</a>).</li>
+<li>Under a bar per region in place of one bar, the search still paints more far and faithful pictures than either control in sum (<a href="./05-3-controls.html">Q12</a>).<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></li>
 </ul>
-</div>
-<div id="fig-ov-ways" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Horizontal bars on one scale from 0 to 50 in 100. Six kinds of request with no search are at or near zero, 6 of 1,270 in all; lines aimed at later works 20 of 71; a single walk with selection 2,446 of 9,600 pictures; the no-step loop 2,708, the random-score loop 1,534 and DuROOM search 4,380, of 9,600 pictures each; repainted real works 2 of 1,000, 26 of 512 and 94 of 663." data-mobile-src="figures/ways_of_asking_v4-mobile.svg">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-ov-ways-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figures/ways_of_asking_v4.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/ways_of_asking_v4-mobile.svg" alt="Horizontal bars on one scale from 0 to 50 in 100. Six kinds of request with no search are at or near zero, 6 of 1,270 in all; lines aimed at later works 20 of 71; a single walk with selection 2,446 of 9,600 pictures; the no-step loop 2,708, the random-score loop 1,534 and DuROOM search 4,380, of 9,600 pictures each; repainted real works 2 of 1,000, 26 of 512 and 94 of 663.">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ov-ways-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: With no search, requests not aimed at a later work are far and faithful 6 times in 1,270; the loops that restart from their own pictures paint thousands of the 9,600 they try. Far is read against the reference alone. Hatched: lines aimed at real later works (20 of 71). Open bars, for scale: real works repainted.
-</figcaption>
-</figure>
-</div>
-</div>
-<div class="vp vp-flow">
-<div class="visual-copy">
-<p><strong>What this does not show</strong> (<a href="./06-discussion.html">Discussion</a>)</p>
+<p><strong>What do these results not show?</strong> (<a href="./06-discussion.html">Discussion</a>)</p>
 <ul>
-<li>The decoder has seen art from after 1900. Of the 32 far and faithful pictures it paints from noise, 31 also have a work dated 1900 or later within the manifold line and none dated before.</li>
-<li>We also ran the 3 loops from 5 other starts, scored against <em>today’s reference</em>, 2,048 repainted works of every date, in place of the works before 1900. Of the search’s 9,600 pictures there, faithful or not, 1,716 are off the manifold, against 57 and 135 for its controls. We looked for a place off the manifold where pictures from 3 or more starts meet. There is none, for any loop. The same test finds none among real works from 1970 on either, so it cannot say whether such a place exists.</li>
+<li>The decoder was not limited to images from before 1900. Of the pictures it paints from requests read from noise images, with no search, 20% are far and faithful (above). All but one of those have a work dated 1900 or later within the manifold line and none dated before.</li>
+<li>We also ran the 3 loops from 5 other starts, scored against <em>today’s reference</em>, 2,048 repainted works of every date, in place of the works before 1900. There, 18% of the search’s pictures are faithful and off the manifold, against 0.6% and 1.4% for its controls. We looked for a place off the manifold where pictures from 3 or more starts meet. There is none, for any loop. The same rule finds none among the works from 1970 on that are far from the works before them, though it does find places among those that are not far (<a href="./05-2-q10.html">Q11</a>).</li>
+<li>Each count comes from one run per start and loop, so a loop’s 9,600 pictures are not 9,600 replications. On another type of graphics card, the same command from one other start admitted 66 pictures where it had admitted 30 (<a href="./04-2-q8.html">Q10</a>).</li>
 </ul>
 <p>Next, <a href="./05-2-q10.html">Q11</a> shows what we found in full.</p>
 </div>
@@ -352,7 +362,13 @@ Figure&nbsp;3: With no search, requests not aimed at a later work are far and fa
 <div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
-<li id="fn1"><p>This reads dated works only. 3,519 of the 3,850 also have an undated work within the manifold line.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>This reads dated works only. 91% of these pictures also have an undated work within the manifold line. With undated works dated by their artist, 87% sit where art went only after 1900, and with every picture that still has an undated work within the line set aside, 1,312 of the 4,380 do (<a href="./07-appendix.html#dated-counts">appendix</a>).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>69% of them come from one start, Fra Angelico’s (<a href="./05-2-q10.html">Q11</a>).<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>If the start made no difference to where a picture lands, about 174 works would be reached from 3 or more starts. The search has 104, so each start also keeps works of its own (<a href="./05-2-q10.html">Q11</a>).<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>The search is ahead of both controls (more at every start and a quarter more in sum) only at the 32 directions used here, with undated works dated by their artist and the pictures with a still-undated work within the manifold line set aside (<a href="./05-2-q10.html">Q11</a>).<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>As a share of each loop’s own far and faithful pictures, off the manifold is 8% for the search against 12% for the random-score loop and 4% for the no-step loop. The random-score loop paints fewer far and faithful pictures, and a larger part of them is off the manifold.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Without the covered condition the search would not have more hits at every start: at one start the search and the random-score loop both admit 11. Covered passes 96 to 98% of the far and faithful pictures and all 160 raw noise and plain images (<a href="./05-3-controls.html">Q12</a>).<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>By the rule of more at every start and a quarter more in sum, it is ahead of the random-score loop in 7 of the 10 draws of the regions and of the no-step loop in 4 (<a href="./05-3-controls.html">Q12</a>).<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> 
 <script id="quarto-html-after-body" type="application/javascript">

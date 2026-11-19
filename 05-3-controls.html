@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-301992f14ddb7dd383e65fee4e2386cf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-9ee501170c19247828e23d73032166cb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -199,7 +199,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./04-3-why-search.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Q9 Can we get there with no search?</span></a>
+ <span class="menu-text">Q9 Can we get far and faithful pictures with no search?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -278,20 +278,20 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="vp vp-flow">
 <div class="visual-copy">
-<p>DuROOM search does 3 things each round: it is told a score, it takes a step, and it restarts from where the decoder’s own pictures read back (<a href="./04-2-q8.html">Q10</a>). Which of them finds the pictures of <a href="./05-2-q10.html">Q11</a>? Two <em>controls</em> take parts away. The <em>random-score loop</em> is the same loop told random scores, at the same step sizes. The <em>no-step loop</em> takes no step and is told random scores. Each paints 1,920 pictures a run, 9,600 over 5 starts, with the same decoder.</p>
+<p>DuROOM search does 3 things each round: it is told a score, it restarts from where the decoder’s own pictures read back, and it takes a step (<a href="./04-2-q8.html">Q10</a>). Which of them finds the pictures of <a href="./05-2-q10.html">Q11</a>? Two <em>controls</em> take parts away. The <em>random-score loop</em> is the same loop told random scores, at the same step sizes. The <em>no-step loop</em> takes no step and is told random scores. Each paints 1,920 pictures a run, 9,600 over 5 starts, with the same decoder.</p>
 </div>
 </div>
 <section id="the-score" class="level2">
 <h2 class="anchored" data-anchor-id="the-score">The score</h2>
-<div class="vp vp-flow">
+<div class="vp vp-wide">
 <div class="visual-copy">
-<p><strong>Told the real score, the loop has about twice as many hits as with random scores, and more at every start.</strong> A loop <em>admits</em> a picture when it keeps it: the picture is far, faithful as the loop reads it, and apart from those already kept (<a href="./04-2-q8.html">Q10</a>). A <em>hit</em> is an admitted picture that is also <em>covered</em> by later works. A picture is covered when it is not far from <em>today’s reference</em>, 2,048 repainted works of every date, and most of its 15 nearest there are dated 1900 or later. Of the far and faithful pictures, 96 to 98 in 100 are covered.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> The search has 120 hits, the random-score loop 65 and the no-step loop 40 (<a href="#fig-confirm" class="quarto-xref">Figure&nbsp;1</a>, <a href="#fig-confirm-rounds" class="quarto-xref">Figure&nbsp;2</a>).<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Of its 120 hits, 97 are on the manifold with a work dated 1900 or later within the manifold line and none dated before, 16 are off the manifold, 6 have a work dated before 1900 within the manifold line and 1 only undated works.</p>
-<p>For every picture painted, admitted or not, we count the kinds of <a href="./05-2-q10.html">Q11</a> (<a href="#tbl-kinds" class="quarto-xref">Table&nbsp;1</a>). Beside the 2 controls we set a <em>single walk</em>, which paints one picture at a time and moves to it only when it scores higher, at the same budget:</p>
-<div class="tbl-span" style="column-span: all; overflow-x: auto;">
+<p><strong>Told the real score, the loop has about twice as many hits as with random scores, and more at every start.</strong> A <em>hit</em> is an admitted picture (far, faithful as the loop reads it, and apart from those already kept, <a href="./04-2-q8.html">Q10</a>) that later works also <em>cover</em>. A picture is covered when it is not far from <em>today’s reference</em> (2,048 repainted works of every date) and most of its 15 nearest there are dated 1900 or later. Of the far and faithful pictures, 96 to 98% are covered.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> DuROOM search also has 3 times as many hits as the no-step loop (<a href="#fig-confirm" class="quarto-xref">Figure&nbsp;1</a>, <a href="#fig-confirm-rounds" class="quarto-xref">Figure&nbsp;2</a>).<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Most of its hits, 81%, sit where art went only after 1900; 13% are off the manifold, 5% have a work dated before 1900 within the manifold line and under 1% only undated works.</p>
+<p>For every picture painted, admitted or not, we count the kinds of <a href="./05-2-q10.html">Q11</a> (far and faithful, where art went only after 1900, off the manifold; <a href="#tbl-kinds" class="quarto-xref">Table&nbsp;1</a>). Beside the 2 controls we set a <em>single walk</em>, which paints one picture at a time and moves to it only when it scores higher, at the same budget:</p>
+<div class="tbl-span heat" style="column-span: all; overflow-x: auto;">
 <div id="tbl-kinds" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-kinds-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;1: Every picture painted, admitted or not, by kind.
+Table&nbsp;1: Every picture painted, admitted or not, by kind, as a share of the 9,600 pictures each loop painted, with the count beneath.
 </figcaption>
 <div aria-describedby="tbl-kinds-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -314,31 +314,31 @@ Table&nbsp;1: Every picture painted, admitted or not, by kind.
 <tbody>
 <tr class="odd">
 <td>Far and faithful</td>
-<td>4,380</td>
-<td>1,534</td>
-<td>2,708</td>
-<td>2,446</td>
+<td style="background-color: rgba(150,58,39,0.500);" data-rate="46">46% <span class="n">4,380</span></td>
+<td style="background-color: rgba(150,58,39,0.207);" data-rate="16">16% <span class="n">1,534</span></td>
+<td style="background-color: rgba(150,58,39,0.324);" data-rate="28">28% <span class="n">2,708</span></td>
+<td style="background-color: rgba(150,58,39,0.295);" data-rate="25">25% <span class="n">2,446</span></td>
 </tr>
 <tr class="even">
 <td>On the manifold, a work dated 1900 or later within the manifold line and none dated before</td>
-<td>3,850</td>
-<td>1,247</td>
-<td>1,714</td>
-<td>2,065</td>
+<td style="background-color: rgba(150,58,39,0.441);" data-rate="40">40% <span class="n">3,850</span></td>
+<td style="background-color: rgba(150,58,39,0.177);" data-rate="13">13% <span class="n">1,247</span></td>
+<td style="background-color: rgba(150,58,39,0.226);" data-rate="18">18% <span class="n">1,714</span></td>
+<td style="background-color: rgba(150,58,39,0.265);" data-rate="22">22% <span class="n">2,065</span></td>
 </tr>
 <tr class="odd">
 <td>The same, with a large leftover share</td>
-<td>1,314</td>
-<td>69</td>
-<td>13</td>
-<td>412</td>
+<td style="background-color: rgba(150,58,39,0.187);" data-rate="14">14% <span class="n">1,314</span></td>
+<td style="background-color: rgba(150,58,39,0.057);" data-rate="0.7">0.7% <span class="n">69</span></td>
+<td style="background-color: rgba(150,58,39,0.051);" data-rate="0.1">0.1% <span class="n">13</span></td>
+<td style="background-color: rgba(150,58,39,0.092);" data-rate="4.3">4.3% <span class="n">412</span></td>
 </tr>
 <tr class="even">
 <td>Off the manifold</td>
-<td>331</td>
-<td>187</td>
-<td>107</td>
-<td>277</td>
+<td style="background-color: rgba(150,58,39,0.083);" data-rate="3.4">3.4% <span class="n">331</span></td>
+<td style="background-color: rgba(150,58,39,0.069);" data-rate="1.9">1.9% <span class="n">187</span></td>
+<td style="background-color: rgba(150,58,39,0.061);" data-rate="1.1">1.1% <span class="n">107</span></td>
+<td style="background-color: rgba(150,58,39,0.078);" data-rate="2.9">2.9% <span class="n">277</span></td>
 </tr>
 </tbody>
 </table>
@@ -346,13 +346,13 @@ Table&nbsp;1: Every picture painted, admitted or not, by kind.
 </figure>
 </div>
 </div>
-<p>On the second and third rows the search has more than both controls at every start. On far and faithful pictures it has more than the random-score loop at every start, and more than the no-step loop at 4 of the 5. Its pictures from different starts also arrive at the same later works: 3,089 of its 3,850 such pictures sit at works reached from 3 or more starts, against 516 of 1,247 for the random-score loop and 0 of 1,714 for the no-step loop (<a href="./05-2-q10.html">Q11</a>). Off the manifold it has more in sum, though not at every start.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a><a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a><a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a><a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></p>
-<p>Does this rest on the one bar? We scored every picture again under a bar per region (<a href="./04-0-far-faithful.html">Q7</a>). The search still paints more far and faithful pictures than either control, in every draw of the regions (<a href="#tbl-region-bars" class="quarto-xref">Table&nbsp;2</a>). By the rule of more at every start and a quarter more in sum, it is ahead of the random-score loop in 7 of the 10 draws and of the no-step loop in 4.</p>
-<div class="tbl-span" style="column-span: all; overflow-x: auto;">
+<p>On pictures where art went only after 1900 (the second and third rows), the search has more than both controls at every start.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> On far and faithful pictures it has more than the random-score loop at every start, and more than the no-step loop at 4 of the 5. Its pictures from different starts arrive at the same later works more often than the controls do. At equal size, 113 pictures from each start for each loop, 62% of its pictures where art went only after 1900 sit at works reached from 3 or more starts, against 37% for the random-score loop and 0% for the no-step loop (<a href="./05-2-q10.html">Q11</a>). Off the manifold it has more in sum, though not at every start.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a><a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a><a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a><a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> <a href="#fig-controls" class="quarto-xref">Figure&nbsp;3</a> shows one far and faithful picture from each control and from the single walk.</p>
+<p>Does the search’s lead rest on the one bar? We scored every picture again under a bar per region (<a href="./04-0-far-faithful.html">Q7</a>). The search still paints more far and faithful pictures in sum than either control, in every draw of the regions (<a href="#tbl-region-bars" class="quarto-xref">Table&nbsp;2</a>). By our rule for being ahead (more at every start and a quarter more in sum), it is ahead of the random-score loop in 7 of the 10 draws and of the no-step loop in 4.</p>
+<div class="tbl-span heat" style="column-span: all; overflow-x: auto;">
 <div id="tbl-region-bars" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-region-bars-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;2: Far and faithful pictures under one bar and under a bar per region. Ranges are over 5 draws of the regions. The pictures far under a bar per region are a different set, and not a part of those far under the one bar.
+Table&nbsp;2: Far and faithful pictures under one bar and under a bar per region, as a share of the 9,600 pictures each loop painted, with the count beneath. Ranges are over 5 draws of the regions. The pictures far under a bar per region are a different set, and not a part of those far under the one bar.
 </figcaption>
 <div aria-describedby="tbl-region-bars-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -373,21 +373,21 @@ Table&nbsp;2: Far and faithful pictures under one bar and under a bar per region
 <tbody>
 <tr class="odd">
 <td>One bar</td>
-<td>4,380</td>
-<td>1,534</td>
-<td>2,708</td>
+<td style="background-color: rgba(150,58,39,0.500);" data-rate="46">46% <span class="n">4,380</span></td>
+<td style="background-color: rgba(150,58,39,0.207);" data-rate="16">16% <span class="n">1,534</span></td>
+<td style="background-color: rgba(150,58,39,0.324);" data-rate="28">28% <span class="n">2,708</span></td>
 </tr>
 <tr class="even">
 <td>A bar per region, 4 regions</td>
-<td>1,153 to 3,303</td>
-<td>277 to 472</td>
-<td>516 to 1,301</td>
+<td style="background-color: rgba(150,58,39,0.383);" data-rate="34">12 to 34% <span class="n">1,153 to 3,303</span></td>
+<td style="background-color: rgba(150,58,39,0.098);" data-rate="4.9">2.9 to 4.9% <span class="n">277 to 472</span></td>
+<td style="background-color: rgba(150,58,39,0.187);" data-rate="14">5.4 to 14% <span class="n">516 to 1,301</span></td>
 </tr>
 <tr class="odd">
 <td>A bar per region, 8 regions</td>
-<td>432 to 518</td>
-<td>97 to 213</td>
-<td>156 to 429</td>
+<td style="background-color: rgba(150,58,39,0.103);" data-rate="5.4">4.5 to 5.4% <span class="n">432 to 518</span></td>
+<td style="background-color: rgba(150,58,39,0.072);" data-rate="2.2">1 to 2.2% <span class="n">97 to 213</span></td>
+<td style="background-color: rgba(150,58,39,0.094);" data-rate="4.5">1.6 to 4.5% <span class="n">156 to 429</span></td>
 </tr>
 </tbody>
 </table>
@@ -404,7 +404,7 @@ Table&nbsp;2: Far and faithful pictures under one bar and under a bar per region
 <img src="figures/q10_confirm_v4.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/q10_confirm_v4-mobile.svg" alt="A dot chart with 5 rows, one per starting work, and a totals row, each with 3 marks: the search, the random-score loop and the no-step loop. Distinct hits by start: Cossiers 23, 19 and 13; Fra Angelico 27, 18 and 6; Sisley 35, 12 and 4; van Gogh 24, 9 and 10; Degas 11, 7 and 7. All 5 starts: 120, 65 and 40.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-confirm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: DuROOM search has 120 hits, the random-score loop 65 and the no-step loop 40, and the search has more at every start. One run of each loop per start.
+Figure&nbsp;1: DuROOM search has about twice as many hits as the random-score loop and 3 times as many as the no-step loop, 120 against 65 and 40, and more at every start. One run of each loop per start.
 </figcaption>
 </figure>
 </div>
@@ -421,14 +421,26 @@ Figure&nbsp;2: At every start DuROOM search ends with more hits than either cont
 </figure>
 </div>
 </div>
+<div class="vp vp-capr vp-q10conf">
+<div id="fig-controls" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Three rows, one per procedure, each named at the left: the random-score loop, the no-step loop, the single walk. Each row has the starting work from before 1900, the picture the procedure painted, and the real work dated 1900 or later that places it, each credited. Beside the pictures (under them on a phone) is a fact line: the round; in each observer, the nearest real work and its distance against the manifold line; no work dated before 1900 within the line in either observer. The random-score loop: from Alfred Sisley, Two Women Walking along the riverbank, 1885, round 34, with Gene Davis, Jack-in-the-Box, 1969, the nearest real work in DINOv3, 0.419 against 0.763. The no-step loop: from Vincent van Gogh, Blossoming Branches, 1890, round 21, with Jan Groth, Tegning, 1973, the nearest in SigLIP, 0.810 against 0.830. The single walk: from Vincent van Gogh, Blossoming Branches, 1890, round 58, with Ellsworth Kelly, Study for Rebound, 1955, the nearest in SigLIP, 0.770 against 0.830. The no-step loop's and the single walk's rows end with my reading by eye. Each names work 1, the work shown, which is labelled (work 1)." data-mobile-src="figures/controls_main_v2-mobile.svg">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-controls-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/controls_main_v2.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/controls_main_v2-mobile.svg" alt="Three rows, one per procedure, each named at the left: the random-score loop, the no-step loop, the single walk. Each row has the starting work from before 1900, the picture the procedure painted, and the real work dated 1900 or later that places it, each credited. Beside the pictures (under them on a phone) is a fact line: the round; in each observer, the nearest real work and its distance against the manifold line; no work dated before 1900 within the line in either observer. The random-score loop: from Alfred Sisley, Two Women Walking along the riverbank, 1885, round 34, with Gene Davis, Jack-in-the-Box, 1969, the nearest real work in DINOv3, 0.419 against 0.763. The no-step loop: from Vincent van Gogh, Blossoming Branches, 1890, round 21, with Jan Groth, Tegning, 1973, the nearest in SigLIP, 0.810 against 0.830. The single walk: from Vincent van Gogh, Blossoming Branches, 1890, round 58, with Ellsworth Kelly, Study for Rebound, 1955, the nearest in SigLIP, 0.770 against 0.830. The no-step loop's and the single walk's rows end with my reading by eye. Each names work 1, the work shown, which is labelled (work 1).">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-controls-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: One far and faithful picture from each control and from the single walk, each sitting where art went only after 1900, beside its nearest real work in one observer, which lies within the manifold line. Each is drawn at random, so they are examples and not a sample. Beside each painted picture: the round it was painted in, its nearest real work in each observer with the distance against the manifold line, and whether a work dated before 1900 lies within the line. Where a last line stands in quotes, it is how I read the picture by eye. WikiArt reproductions, shown as scholarly commentary.
+</figcaption>
+</figure>
+</div>
+</div>
 </section>
 <section id="the-restart" class="level2">
 <h2 class="anchored" data-anchor-id="the-restart">The restart</h2>
 <div class="vp vp-flow">
 <div class="visual-copy">
-<p><strong>The restart, which all 3 loops share, moves the centre.</strong> Nearly every picture of every loop is faithful (9,352 to 9,597 of 9,600). Each round the restart moves the centre farther than CMA-ES’s own update would.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> The 3 centres end at about the same angle from the start (<a href="#fig-arms-moved" class="quarto-xref">Figure&nbsp;3</a>, <a href="#fig-centre-path" class="quarto-xref">Figure&nbsp;4</a>). The free search, with no restart, paints 79 faithful pictures in 5,760, none of them far. So, of the searches we ran, those that restart paint faithful pictures and the one that does not paints almost none.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></p>
-<p>Why restart? Left free, the search leaves the region where the vectors of real images lie, and none of its pictures is far and faithful (below). So DuROOM search restarts each round from where its 4 best feasible pictures read back.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> Restarted from 1 picture it has 283 hits against 120, and 1,004 far and faithful pictures off the manifold against 331 (<a href="./04-2-q8.html">Q10</a>).</p>
-<p>The no-step loop only repaints its centre and restarts, and is told random scores; it paints 2,708 far and faithful pictures. <strong>So a loop that only restarts, with no step and no real score, already paints more than half as many far and faithful pictures as DuROOM search.</strong></p>
+<p>Why restart the centre from its own pictures at all? Left free, the search leaves the region where the vectors of real images lie, and none of its pictures is far and faithful (below). So DuROOM search restarts each round from where its 4 best feasible pictures read back.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> Restarted from 1 picture it has 2.4 times as many hits and 3 times as many far and faithful pictures off the manifold (<a href="./04-2-q8.html">Q10</a>).</p>
+<p><strong>Of the searches we ran, those that restart paint faithful pictures, and the free search, which does not, paints almost none.</strong><a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> At least 97% of the pictures each loop paints are faithful. Each round the restart moves the centre farther than CMA-ES’s own update would.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> The 3 centres end at about the same angle from the start (<a href="#fig-arms-moved" class="quarto-xref">Figure&nbsp;4</a>, <a href="#fig-centre-path" class="quarto-xref">Figure&nbsp;5</a>). Of the pictures the free search paints, with no restart, 1.4% are faithful, and none of those is far.</p>
+<p>The no-step loop only repaints its centre and restarts, and is told random scores; 28% of the pictures it paints are far and faithful. <strong>So a loop that only restarts, with no step and no real score, already paints more than half as many far and faithful pictures as DuROOM search.</strong></p>
 </div>
 </div>
 <div class="vp vp-capr vp-q10conf">
@@ -438,7 +450,7 @@ Figure&nbsp;2: At every start DuROOM search ends with more hits than either cont
 <img src="figures/how_the_arms_moved_v3.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/how_the_arms_moved_v3-mobile.svg" alt="Three panels over rounds 0 to 59 with the search, the random-score loop and the no-step loop overlaid: the step asked, the centre's move into each round, and the centre's angle from the start, in degrees, each with a median line and a band from the lowest to the highest of the 5 starts. The step starts at 16 degrees in the search and the random-score loop and stays at 0.016 degrees in the no-step loop. The centre's angle from the start rises to about 58 to 61 degrees in all three.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-arms-moved-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: All 3 centres end about 60 degrees from the start, though the step differs. One panel per quantity, the 3 loops overlaid: the step asked, the centre’s move into each round, and its angle from the start, over rounds 0 to 59. Lines are medians over the 5 starts, and bands run from the lowest to the highest start, with one run per start. The bands overlap, as the 3 loops move alike.
+Figure&nbsp;4: All 3 centres end about 60 degrees from the start, though the step differs. One panel per quantity, the 3 loops overlaid: the step asked, the centre’s move into each round, and its angle from the start, over rounds 0 to 59. Lines are medians over the 5 starts, and bands run from the lowest to the highest start, with one run per start. The bands overlap, as the 3 loops move alike.
 </figcaption>
 </figure>
 </div>
@@ -450,7 +462,7 @@ Figure&nbsp;3: All 3 centres end about 60 degrees from the start, though the ste
 <img src="figures/centre_path_v2.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/centre_path_v2-mobile.svg" alt="A flat map for one start with 3 paths, one per loop, growing from the starting work over rounds 0 to 60, where distance from the middle is the centre's angle from the start. At the first start, after the last round, the centre ends 67.3 degrees from the start in the search, 60.6 in the random-score loop and 65.4 in the no-step loop.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-centre-path-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4: The 3 loops’ centres end at about the same angle from the starting work. Each path is one loop’s centre, start by start, round by round; distance from the middle is its angle from the start. With scripts on, Play grows the 3 paths round by round.
+Figure&nbsp;5: The 3 loops’ centres end at about the same angle from the starting work. Each path is one loop’s centre, start by start, round by round; distance from the middle is its angle from the start. With scripts on, Play grows the 3 paths round by round.
 </figcaption>
 </figure>
 </div>
@@ -461,28 +473,16 @@ Figure&nbsp;4: The 3 loops’ centres end at about the same angle from the start
 <h2 class="anchored" data-anchor-id="the-step">The step</h2>
 <div class="vp vp-flow">
 <div class="visual-copy">
-<p><strong>The score works through the restart, and what the step adds is not shown.</strong> A picture barely shows which request it came from: among the 32 requests of its round, its CLIP reading is nearest to its own 6 times in 100, where chance gives 3.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> So the search works as a ratchet on the decoder’s noise: of 32 paintings it takes the 4 farthest feasible ones and starts again from where they read back. Take the step away and keep the score: the no-step loop told the real score admits 117 pictures, against 47 when it is told random scores and 142 for DuROOM search. Between the no-step loop told the real score and DuROOM search, neither is ahead: without the step the loop has more at 2 starts and fewer at 3.<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a></p>
+<p><strong>Keep the score and take away the step, and neither the no-step loop told the real score nor DuROOM search is ahead.</strong> The no-step loop told the real score admits 2.5 times as many pictures as when it is told random scores, and about four fifths as many as DuROOM search. It has more than DuROOM search at 2 starts and fewer at 3. We also notice that a picture barely shows which request it came from: among the 32 requests of its round, its CLIP reading is nearest to its own request for 6% of the pictures, where chance gives 3%.<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a> We read the search as a ratchet on the decoder’s noise: of 32 paintings it takes the 4 farthest feasible ones and starts again from where they read back.<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a></p>
 </div>
 </div>
 </section>
 <section id="left-free" class="level2">
 <h2 class="anchored" data-anchor-id="left-free">Left free</h2>
-<div class="vp vp-cols2 vp-capr vp-flow vp-q10a">
+<div class="vp vp-lead vp-q10a">
 <div class="visual-copy">
-<p><strong>Left free, the search goes far, and none of its far pictures is faithful.</strong> The <em>free search</em> is DuROOM search with fidelity only recorded, no restart and a first step of about 30 degrees in place of 16 (<a href="./04-2-q8.html">Q10</a>). Its requests move away from the start a few degrees a round until they are nearly at right angles to it (<a href="#fig-trajectory" class="quarto-xref">Figure&nbsp;5</a>). It admits 31 to 43 percent of what it paints, and none of those pictures is faithful to its request (<a href="#fig-far-faithful" class="quarto-xref">Figure&nbsp;6</a>, <a href="#fig-sheets" class="quarto-xref">Figure&nbsp;8</a>).<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> The score still steers: told random scores, the same loop admits about 1 picture in 70 (by angle in <a href="#fig-angle-pass" class="quarto-xref">Figure&nbsp;7</a>).<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a> Of the dated real works nearest to its admitted pictures, 94 to 97 in 100 are from after 1900, by run.<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a></p>
+<p><strong>Left free, the search goes far, and none of its far pictures is faithful.</strong> The <em>free search</em> is DuROOM search with fidelity only recorded, no restart and a first step of about 30 degrees in place of 16 (<a href="./04-2-q8.html">Q10</a>). Its requests move away from the start a few degrees a round until they are nearly at right angles to it (<a href="./07-appendix.html#free-search-runs">appendix</a>). It admits 31 to 43% of what it paints, and none of those pictures is faithful to its request (<a href="#fig-far-faithful" class="quarto-xref">Figure&nbsp;6</a>).<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a> The score still steers: told random scores, the same loop admits about 1.4% of its pictures (by angle in the <a href="./07-appendix.html#free-search-runs">appendix</a>).<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a> Of the dated real works nearest to its admitted pictures, 94 to 97% are from after 1900, by run.<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a></p>
 </div>
-<div id="fig-trajectory" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="The angle of each round's mean request from the start, by round, for 3 free-search runs and 3 runs told random scores." data-mobile-src="figures/search_trajectory_v3-mobile.svg">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-trajectory-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figures/search_trajectory_v3.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/search_trajectory_v3-mobile.svg" alt="The angle of each round's mean request from the start, by round, for 3 free-search runs and 3 runs told random scores.">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-trajectory-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5: The free search’s requests move away from the start, a few degrees a round, until they are nearly at right angles to it (90 degrees means orthogonal to the start). Drawn: the angle of each round’s mean request from the start, after normalizing the mean vector, for 3 free-search runs and 3 runs told random scores.
-</figcaption>
-</figure>
-</div>
-</div>
-<div class="vp vp-capr vp-q10conf">
 <div id="fig-far-faithful" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Five scatter panels: the free search, the same loop told random scores, random directions at its angles, and 2 sets of repainted real works; each picture's fidelity across and its score as a multiple of the bar up." data-mobile-src="figures/search_fidelity_v3-mobile.svg">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-far-faithful-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -494,60 +494,36 @@ Figure&nbsp;6: No picture the free search admitted is under the faithful line. E
 </figure>
 </div>
 </div>
-<div class="vp vp-capr vp-q10conf">
-<div id="fig-angle-pass" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Admission rates by requested angle for search, random scores and random directions, 3 runs each." data-mobile-src="figures/search_angles_v5-mobile.svg">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-angle-pass-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figures/search_angles_v5.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/search_angles_v5-mobile.svg" alt="Admission rates by requested angle for search, random scores and random directions, 3 runs each.">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-angle-pass-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7: At 80 to 90 degrees the free search’s requests are admitted about 3 times as often as random directions at the same angle. Drawn: the admitted share in five-degree bins of requested angle, for the free search, its runs told random scores and random directions at the free search’s angles, each run drawn separately. Open markers flag bins with fewer than 20 pictures.
-</figcaption>
-</figure>
-</div>
-</div>
-<div class="vp vp-capr vp-q10conf">
-<div id="fig-sheets" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Decoded start and admitted pictures, browsable by run, with exact fidelity and requested angle." data-mobile-src="figures/search_sheets_v2-mobile.svg">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-sheets-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figures/search_sheets_v2.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/search_sheets_v2-mobile.svg" alt="Decoded start and admitted pictures, browsable by run, with exact fidelity and requested angle.">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sheets-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8: The free search’s pictures, not DuROOM search’s: none of them is a picture of what was asked for. DuROOM search’s pictures are in <a href="./05-2-q10.html">Q11</a>. Decoded pictures: the start repainted and 15 admitted pictures spaced through each run. On screen it opens on free-search run 2, started from an anonymous Orthodox icon, Saint Matthew, c.&nbsp;1350. The static plate shows the first 6 images from free-search run 1, started from Gilbert Stuart, Thomas Jefferson, 1821. Labels give exact fidelity (chord to the request, lower is closer): the faithful line is 0.78 and an unrelated picture is at 1. You can browse free-search runs 1 to 3, run 2 told random scores and random-directions run 1. One admitted picture is not shown.
-</figcaption>
-</figure>
-</div>
-</div>
 </section>
 <section id="the-decoder-alone" class="level2">
 <h2 class="anchored" data-anchor-id="the-decoder-alone">The decoder alone</h2>
-<div class="vp vp-cols2 vp-capr vp-flow vp-q10f">
+<div class="vp vp-lead vp-q10f">
 <div class="visual-copy">
-<p><strong>With no search at all, the decoder drifts toward later art and now and then lands far.</strong> Repainted and read back in CLIP 6 times, 4 of 48 works from before 1900 are far at the sixth trip, and the median date of their nearest real works moves past 1900 (<a href="#fig-chains" class="quarto-xref">Figure&nbsp;9</a>).<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> With no search, requests not aimed at a later work are far and faithful 6 times in 1,270 (<a href="./04-3-why-search.html">Q9</a>). So part of every result on this page is the decoder’s (<a href="./06-discussion.html">Discussion</a>).<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a></p>
+<p><strong>With no search at all, the decoder drifts toward later art and now and then lands far.</strong> Repainted and read back in CLIP 6 times, 8% of the 48 works from before 1900 are far at the sixth trip, and the median date of their nearest real works moves past 1900 (<a href="#fig-chains" class="quarto-xref">Figure&nbsp;7</a>).<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a> With no search, 0.5% of the pictures painted from the 6 kinds of request in <a href="./04-3-why-search.html">Q9</a> are far and faithful. With no decoder at all, following the score in CLIP from an earlier work does not lead toward later works.<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a> So part of every result on this page is the decoder’s (<a href="./06-discussion.html">Discussion</a>).<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a></p>
 </div>
-<div id="fig-chains" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Two charts over round trips 0 to 6 for 48 works repainted and read back. First: pictures far in both observers, 0, 0, 0, 0, 2, 0 and 4 of 48. Second: median year of the nearest real works, 1856, 1856, 1851, 1857, 1870, 1878 and 1905, with a dashed line at 1900." data-mobile-src="figures/search_chains_v2-mobile.svg">
+<div id="fig-chains" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Two panels over round trips 0 to 6 of 48 reference works repainted and read back. Far in both observers, as a percent of 48: 0% at trips 0 to 3, 4.2% (2) at trip 4, 0% at trip 5, 8.3% (4) at trip 6. The median year of the nearest real works: 1856, 1856, 1851, 1857, 1870, 1878, 1905, against a dashed line at 1900, where the corpus was frozen." data-mobile-src="figures/search_chains_v3-mobile.svg">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-chains-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figures/search_chains_v2.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/search_chains_v2-mobile.svg" alt="Two charts over round trips 0 to 6 for 48 works repainted and read back. First: pictures far in both observers, 0, 0, 0, 0, 2, 0 and 4 of 48. Second: median year of the nearest real works, 1856, 1856, 1851, 1857, 1870, 1878 and 1905, with a dashed line at 1900.">
+<img src="figures/search_chains_v3.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/search_chains_v3-mobile.svg" alt="Two panels over round trips 0 to 6 of 48 reference works repainted and read back. Far in both observers, as a percent of 48: 0% at trips 0 to 3, 4.2% (2) at trip 4, 0% at trip 5, 8.3% (4) at trip 6. The median year of the nearest real works: 1856, 1856, 1851, 1857, 1870, 1878, 1905, against a dashed line at 1900, where the corpus was frozen.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-chains-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;9: With no search, works repainted and read back drift: by the sixth round trip 4 of 48 are far, and the median year of their nearest real works has moved past 1900. 48 works from before 1900, one run; the dashed line is 1900.
+Figure&nbsp;7: With no search, works repainted and read back drift: by the sixth round trip 8.3% of them are far, 4 of 48, and the median year of their nearest real works has moved past 1900. 48 works from before 1900, one run; the dashed line is 1900.
 </figcaption>
 </figure>
 </div>
 </div>
 </section>
-<section id="the-other-encoders" class="level2">
-<h2 class="anchored" data-anchor-id="the-other-encoders">The other encoders</h2>
+<section id="the-observers-and-aimv2" class="level2">
+<h2 class="anchored" data-anchor-id="the-observers-and-aimv2">The observers and AIMv2</h2>
 <div class="vp vp-flow">
 <div class="visual-copy">
 <details>
 <summary>
 On the free search’s pictures, the 2 observers mostly agree.
 </summary>
-<p><strong>The 2 observers mostly agree on the free search’s pictures.</strong> Against the reference alone each puts about 8 in 10 of the free search’s pictures over its own bar, and 7 in 10 are over both.</p>
-<p><strong>They agree less on its runs told random scores.</strong> Under random scores one observer puts up to 3 in 10 of the pictures over its own bar in run 2 and about 1 in 10 or less in the other runs, and both together 1 in 7 at most.</p>
-<p>The held-out encoder, AIMv2, scored against the same reference with the same rule, calls 12.7 percent of the repainted 1900 to 1969 works far against 0.6 percent of the 1,000 held-out works before 1900, and agrees with the 2 observers on 23 of their 28 far calls. On the free search’s pictures it agrees with 56 to 76 percent of their far calls by run and calls 16 to 33 percent of their near calls far. The corpus has no AIMv2 embedding, so the nearest works above are read in DINOv3.</p>
+<p>Against the reference alone each puts about 80% of the free search’s pictures over its own bar, and 70% are over both.</p>
+<p><strong>They agree less on its runs told random scores.</strong> Under random scores one observer puts up to 30% of the pictures over its own bar in run 2 and about 10% or less in the other runs, and both together about 14% at most.</p>
+<p>The held-out encoder, AIMv2, scored against the same reference with the same rule, calls 12.7% of the repainted 1900 to 1969 works far against 0.6% of the 1,000 held-out works before 1900, and agrees with the 2 observers on 82% of their far calls. On the free search’s pictures it agrees with 56 to 76% of their far calls by run and calls 16 to 33% of their near calls far. The corpus has no AIMv2 embedding, so the nearest works above are read in DINOv3.</p>
 </details>
 <p>Next, the <a href="./06-discussion.html">Discussion</a>.</p>
 </div>
@@ -562,20 +538,22 @@ On the free search’s pictures, the 2 observers mostly agree.
 <ol>
 <li id="fn1"><p>Without the covered condition the search would not have more hits at every start, as at one start the search and the random-score loop both admit 11. All 160 raw noise and plain images, read as they are with no decoder, are covered too.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>All 15 runs ran on the same type of graphics card. Outside them, DuROOM search given the same command on another type admitted 66 pictures where it had admitted 30. The 2 runs differ from their second round on.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Of the 1,920 a run, DuROOM search has 679, 864, 896, 840 and 1,101 far and faithful pictures by start (Cossiers, Fra Angelico, Sisley, van Gogh, Degas). The random-score loop has 312, 380, 304, 149 and 389. The no-step loop has 545, 666, 214, 1,010 and 273.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Of each loop’s far and faithful pictures, 88, 81 and 63 in 100 have a work dated 1900 or later within the manifold line and none dated before 1900, so this count is mostly the far and faithful count carried through. With undated works dated by their artist, and the pictures with a still-undated work within the manifold line set aside, neither the search nor a control is ahead. The counts by start are in the <a href="./07-appendix.html#dated-counts">appendix</a>.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>One start carries 227 of the search’s 331 far and faithful pictures off the manifold. The search has 1 and 0 at 2 starts.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6"><p>The single walk is a greedy search of its own, with one walk per start, so it does not tell what painting 32 at once adds. It was read only at 32 directions, with undated works left undated. With both observers required for a work to count as within the manifold line, the 1,314 against 412 become 1,185 against 143, and neither is ahead, as at one start the walk has 2 more.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn7"><p>The restart moves the centre each round by a median of about 18 degrees in the search, 15 in the random-score loop and 13.5 in the no-step loop. CMA-ES’s own update would have moved it about 7, 7 and almost 0.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn8"><p>No run tests the restart alone. The free search also has no faithful check, takes a larger step and starts elsewhere. Past about 30 degrees a picture drifts from its request (<a href="./04-1-q7.html">Q8</a>).<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn9"><p>We ran the search with the restart from 1, from 16 and from every feasible picture of the 32 in place of 4, one run per number and start. The counts are in the <a href="./07-appendix.html#why-does-the-restart-use-four-pictures">appendix</a>.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn10"><p>The 6 in 100 comes from 2 other runs, from 1 start, and we have not measured it on the 15 runs counted here. The runs with no step and the real score, and with the restart from other numbers of pictures, have one run per start. With more pictures the centre also moves less each round, so these runs do not show whether the choice or the shorter move costs the pictures.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn11"><p>The real score does 3 things at once: it picks the 4 pictures that restart the centre, it drives CMA-ES’s update of the spread, and it gives a picture that is not feasible a middle rank. Equal step size is not equal requests, as each loop’s spread and centre are its own from the second round on. No loop varies the observers: in all 3, DINOv3 and SigLIP decide what is admitted.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn12"><p>Of 512 real works from 1900 to 1969, repainted through the same pipeline, 26 are far and faithful (5.1 percent, <a href="./07-appendix.html#which-far">appendix</a>). So pictures that are far and faithful exist within the decoder’s reach. The free search did not find them. Repainted twice more with fresh noise, 10 of the 512 are far and faithful on all 3 paintings (2.0 percent).<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn13"><p>Random directions, with angles drawn from the search’s own pictures and no selection, admitted 268, 222 and 227 of 1,920, about 1 time in 8. They are the fairer control if the runs told random scores keep their requests nearer the image region. With 3 runs each, 3 of 3 would come out this way by chance 1 time in 8.<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn14"><p>The nearest real work to an admitted picture has a median year of 1978, 1972 and 1969 by run. It is read in DINOv3, an observer that is part of the admission rule, so it is no independent check. Matches without a date, about 1 in 5, are left out.<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn15"><p>The median year is that of the 10 nearest real works. The chain’s own source picture and its artist’s other works are in the reference and not excluded, which can only lower a far count. The median year at each step is in the <a href="./07-appendix.html#round-trips">appendix</a>.<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn16"><p>The decoder is fine-tuned from Stable Diffusion v1, whose model card names LAION-2B and states no limit on the dates of its images. CLIP and the 2 observers were trained on later images. A decoder trained only on works before 1900 is specified and not built.<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Many of these pictures sit close to one another. Count only the pictures that lie apart: within each start, in the order painted, a picture counts only if it lies more than 0.575 in DINOv3 from every picture counted before it. Of the third row’s kind, the search then has 187, the single walk 217, the random-score loop 36 and the no-step loop 10. Of the far and faithful pictures off the manifold, they have 174, 205, 89 and 49. So the single walk paints fewer such pictures than the search, and more that lie apart (<a href="./07-appendix.html#does-the-search-reach-more-pictures-that-lie-apart">appendix</a>).<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Of the 1,920 a run, DuROOM search has 679, 864, 896, 840 and 1,101 far and faithful pictures by start (Cossiers, Fra Angelico, Sisley, van Gogh, Degas). The random-score loop has 312, 380, 304, 149 and 389. The no-step loop has 545, 666, 214, 1,010 and 273.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Of each loop’s far and faithful pictures, 88%, 81% and 63% have a work dated 1900 or later within the manifold line and none dated before 1900, so this count is mostly the far and faithful count carried through. With undated works dated by their artist, and the pictures with a still-undated work within the manifold line set aside, neither the search nor a control is ahead. The counts by start are in the <a href="./07-appendix.html#dated-counts">appendix</a>.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>One start carries 227 of the search’s 331 far and faithful pictures off the manifold. The search has 1 and 0 at 2 starts.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>The single walk is a greedy search of its own, with one walk per start, so it does not tell what painting 32 at once adds. It was read only at 32 directions, with undated works left undated. With both observers required for a work to count as within the manifold line, the 1,314 against 412 become 1,185 against 143, and neither is ahead, as at one start the walk has 2 more.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>We ran the search with the restart from 1, from 16 and from every feasible picture of the 32 in place of 4, one run per number and start. The counts are in the <a href="./07-appendix.html#why-does-the-restart-use-four-pictures">appendix</a>.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>No run tests the restart alone. The free search also has no faithful check, takes a larger step and starts elsewhere. Past about 30 degrees a picture drifts from its request (<a href="./04-1-q7.html">Q8</a>).<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>The restart moves the centre each round by a median of about 18 degrees in the search, 15 in the random-score loop and 13.5 in the no-step loop. CMA-ES’s own update would have moved it about 7, 7 and almost 0.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>The 6% comes from 2 other runs, from 1 start, and we have not measured it on the 15 runs counted here. The runs with no step and the real score, and with the restart from other numbers of pictures, have one run per start. With more pictures the centre also moves less each round, so these runs do not show whether the choice or the shorter move costs the pictures.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p>The runs do not show the ratchet, as the real score does 3 things at once: it picks the 4 pictures that restart the centre, it drives CMA-ES’s update of the spread, and it gives a picture that is not feasible a middle rank. Equal step size is not equal requests, as each loop’s spread and centre are its own from the second round on. No loop varies the observers: in all 3, DINOv3 and SigLIP decide what is admitted.<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p>Of 512 real works from 1900 to 1969, repainted through the same pipeline, 26 are far and faithful (5.1%, <a href="./07-appendix.html#which-far">appendix</a>). So pictures that are far and faithful exist within the decoder’s reach. The free search did not find them. Repainted twice more with fresh noise, 10 of the 512 are far and faithful on all 3 paintings (2.0%).<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14"><p>Random directions, with angles drawn from the search’s own pictures and no selection, admitted 12 to 14% of the 1,920 pictures of a run (268, 222 and 227). They are the fairer control if the runs told random scores keep their requests nearer the image region. With 3 runs each, 3 of 3 would come out this way by chance 1 time in 8.<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15"><p>The nearest real work to an admitted picture has a median year of 1978, 1972 and 1969 by run. It is read in DINOv3, an observer that is part of the admission rule, so it is no independent check. Matches without a date, about 20%, are left out.<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16"><p>The median year is that of the 10 nearest real works. The chain’s own source picture and its artist’s other works are in the reference and not excluded, which can only lower a far count. The median year at each step is in the <a href="./07-appendix.html#round-trips">appendix</a>.<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn17"><p>CMA-ES and 5 gradient methods each walked from an earlier work’s vector until its score was over a CLIP bar of the same kind. Share of later works among the 10 nearest real works at that point (held-out earlier and later works in equal numbers): 20 to 27% for every method, against 25% for a real earlier work and 73% for a real later one. No method beats an evenly random step by 5 points.<a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn18"><p>The decoder is fine-tuned from Stable Diffusion v1, whose model card names LAION-2B and states no limit on the dates of its images. No date limit is stated for the images CLIP and the 2 observers were trained on either. A decoder trained only on works before 1900 is specified and not built.<a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> 
 <script id="quarto-html-after-body" type="application/javascript">

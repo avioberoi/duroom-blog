@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-301992f14ddb7dd383e65fee4e2386cf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-9ee501170c19247828e23d73032166cb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -78,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar docked fullcontent quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+<body class="nav-sidebar docked landscape-data consistent-measure fullcontent quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -199,7 +199,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./04-3-why-search.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Q9 Can we get there with no search?</span></a>
+ <span class="menu-text">Q9 Can we get far and faithful pictures with no search?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -279,41 +279,102 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Discovering Unexplored Regions On and Off the Manifold</strong></p>
 <p>Avi Oberoi · MA thesis, Computational Social Science, University of Chicago, 2026</p>
 <p><a href="https://github.com/avioberoi/duroom"><i class="bi bi-github" aria-hidden="true"></i> GitHub</a> · <a href="https://drive.google.com/file/d/1MWGNzHnWCm87KMdSQ_5Dcx2Xiu3rZNSp/view?usp=sharing"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> View PDF</a></p>
-<p><em>Can the works a culture has already made tell us where it has not been, when all we measure is how far a candidate sits from them?</em> We freeze a corpus of artworks at 1900 and search a foundation model’s embedding space for pictures that sit far from the works before it. The works made after 1900 are held back, so we can check what the search brings back against a future we already know.</p>
-<ul>
-<li><a href="./01-intro.html">Introduction</a></li>
-<li><a href="./02-related-work.html">Related work</a></li>
-</ul>
-<p><strong>Data</strong></p>
-<ul>
-<li><a href="./03-data.html">Which encoders, and which works?</a></li>
-<li>Q1 <a href="./03-0-manifold.html">How are the works laid out?</a></li>
-<li>Q2 <a href="./03-1-q1.html">Can some works describe others?</a></li>
-<li>Q3 <a href="./03-2-q2.html">Where did later work go?</a></li>
-<li>Q4 <a href="./03-3-q3.html">What is left over?</a></li>
-<li>Q5 <a href="./03-5-q5.html">What does far mean?</a></li>
-<li>Q6 <a href="./05-1-q9.html">How do the later works score?</a></li>
-</ul>
-<p><strong>Methods</strong></p>
-<ul>
-<li><a href="./04-methods.html">Overview</a></li>
-<li>Q7 <a href="./04-0-far-faithful.html">What are we looking for?</a></li>
-<li>Q8 <a href="./04-1-q7.html">Does the decoder paint what we ask?</a></li>
-<li>Q9 <a href="./04-3-why-search.html">Can we get there with no search?</a></li>
-<li>Q10 <a href="./04-2-q8.html">How does the search work?</a></li>
-</ul>
-<p><strong>Results</strong></p>
-<ul>
-<li><a href="./05-results.html">Overview</a></li>
-<li>Q11 <a href="./05-2-q10.html">What did we find?</a></li>
-<li>Q12 <a href="./05-3-controls.html">What does the search add?</a></li>
-</ul>
-<ul>
-<li><a href="./06-discussion.html">Discussion</a></li>
-<li><a href="./07-appendix.html">Appendix: what we tested and settled</a></li>
-</ul>
+<section id="tldr" class="level2">
+<h2 class="anchored" data-anchor-id="tldr">TL;DR</h2>
+<section id="what-are-we-after" class="level3">
+<h3 class="anchored" data-anchor-id="what-are-we-after">What are we after?</h3>
+<p>We started with the question of finding undiscovered artifacts, given the archive of all artifacts produced and known to humans (at least the ones we have a record of). But how do you look for something nobody has made yet, when you have no example of it? One way is to stop the archive at an earlier date, so the works made after that date are the undiscovered ones, i.e., a future we already know. So <strong>we freeze a corpus of artworks (WikiArt, 172,171 works) at 1900</strong> and ask: <em>can the works a culture has already made tell us where it has not been, when all we measure is how far a candidate sits from them?</em> (A candidate is anything new, like a picture, that we want to place among the works.) The <a href="./01-intro.html">Introduction</a> sets this up in full.</p>
+</section>
+<section id="what-do-the-works-before-1900-tell-us" class="level3">
+<h3 class="anchored" data-anchor-id="what-do-the-works-before-1900-tell-us">What do the works before 1900 tell us?</h3>
+<div class="vp vp-flow">
+<div class="visual-copy">
+<p>To measure how far anything sits from the works, we first need the works as points, so we pass each one through encoders (CLIP, DINOv3 and SigLIP, i.e., models that turn an image into a vector), and each work becomes a point on a sphere (why these 3, see <a href="./03-data.html">Encoders and corpus</a>). The works spread along directions that change from place to place, so they give us no reliable rule for where something far will lie (we lay out how we tested this in <a href="./03-0-manifold.html">Q1</a>). <strong>The later works vary along directions the earlier ones barely use</strong> (<a href="./03-1-q1.html">Q2</a>). <strong>From 1900 to the 1960s each decade leaned further in one direction, and then held there.</strong> Along the way the decades moved first where Cubism and abstraction sit, then where Minimalism and installation sit (<a href="./03-2-q2.html">Q3</a> follows them decade by decade). Which works the others describe worst (i.e., most of the work is left over once we describe it by their main directions) depends on the past we measure them against (<a href="./03-3-q3.html">Q4</a>), and in CLIP far means 3 different things (far from its nearest works, far from the corpus’s centre, or far for its own neighbourhood), so which far we take decides what we call new (if you want to know why, see <a href="./03-5-q5.html">Q5</a>). So we take a work’s <em>score</em>, its mean distance to its 15 nearest works before 1900, and the <em>bar</em>, the score that 99% of the works before 1900 lie below. In CLIP about 26% of the works from 1960 on are over the bar, against 1% of the works before 1900 (the bar’s own setting), and <strong>most works from 1960 on sit in regions of CLIP where earlier works are almost absent</strong> (<a href="./05-1-q9.html">Q6</a> maps where they sit).</p>
+</div>
+</div>
+<div class="vp">
+<div id="fig-tldr-regions" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" data-mobile-src="figures/regions_map_v2-mobile.svg" alt="Thirty-two pies placed roughly by the angles between region centres, sized by the works in each and split by date, each with a ring for its share of work from before 1900: 8 regions under 1%, 7 from 1 to 10%, 8 from 10 to 50%, 9 at 50% and over. 17 regions are named by their two most common styles.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tldr-regions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/regions_map_v2.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/regions_map_v2-mobile.svg" alt="Thirty-two pies placed roughly by the angles between region centres, sized by the works in each and split by date, each with a ring for its share of work from before 1900: 8 regions under 1%, 7 from 1 to 10%, 8 from 10 to 50%, 9 at 50% and over. 17 regions are named by their two most common styles.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tldr-regions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Most works from 1960 on (red) sit in regions of CLIP that hold almost no works from before 1900 (thick red ring: under 1%, 8 regions). Each pie is one of 32 regions, sized by its works and sliced by date: pale before 1900, grey 1900 to 1959, red 1960 on. Placement keeps the angles between regions only roughly (<a href="./05-1-q9.html">Q6</a>).
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="so-can-we-go-looking-there-ourselves" class="level3">
+<h3 class="anchored" data-anchor-id="so-can-we-go-looking-there-ourselves">So can we go looking there ourselves?</h3>
+<div class="vp vp-side vp-sbs62 vp-tldrloop">
+<div class="visual-copy">
+<p>People in AI have been searching for a long time. A* heads for a goal, guided by a heuristic, and novelty search, which has no goal, keeps moving away from what it has already seen (the <a href="./02-related-work.html">Related work</a> page tells this story in more detail). <strong>We have no goal either, only the score as a heuristic, so we search by it.</strong> A <em>decoder</em> (an image generator that paints a picture from a CLIP vector) paints every point the search tries, so each point becomes a picture we can look at (does it paint what we ask? <a href="./04-1-q7.html">Q8</a> checks). A picture is <em>far</em> when its score is over the bar in both <em>observers</em> (DINOv3 and SigLIP, the 2 encoders that read the pictures, <a href="./04-0-far-faithful.html">Q7</a>). <strong>Far alone is not enough</strong>, as noise is far too. And because we search over vectors but look at pictures, we keep a picture only when it is also <em>faithful</em>, i.e., it comes back near what we asked for (<a href="./04-0-far-faithful.html">Q7</a>). Painting simple requests with no search (midpoints between works, steps past a work, random points and the like) almost never gets there (we tried, in <a href="./04-3-why-search.html">Q9</a>). <em>DuROOM search</em> starts from 5 works painted before 1900, and each round it paints 32 pictures, keeps the far ones that are faithful, and starts again from where its best pictures read back (the full loop, step by step, is in <a href="./04-2-q8.html">Q10</a>). To see what the search adds, we run the same loop told random scores, with its step (how far each request moves from where the search stands) and without it (our 2 controls, <a href="./05-3-controls.html">Q12</a>).</p>
+</div>
+<div id="fig-tldr-loop" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" data-mobile-src="figures/intro_loop_v5-mobile.svg" alt="A four-stage loop: request, paint, compare, remember. Two other encoders compare decoded pictures with the works before 1900 and with pictures already kept; the search then updates.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tldr-loop-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/intro_loop_v7.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/intro_loop_v5-mobile.svg" alt="A four-stage loop: request, paint, compare, remember. Two other encoders compare decoded pictures with the works before 1900 and with pictures already kept; the search then updates.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tldr-loop-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Each round the search tries a batch of CLIP vectors, paints them, and keeps the pictures that 2 other encoders read as far from the works before 1900. In DuROOM search, only faithful pictures can be kept. A diagram; <a href="./04-2-q8.html">Q10</a> gives the full loop.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="vp vp-side vp-sbs62 vp-flip vp-mc">
+<div class="visual-copy">
+<p>Afterwards we also ask of each picture whether it is on the <em>manifold</em> (the art we have, as an encoder reads it), i.e., whether some real work of any date sits close to it, i.e., within the <em>manifold line</em>, or off it, where none does (<a href="./04-0-far-faithful.html">Q7</a>).</p>
+</div>
+<div id="fig-tldr-manifold" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" data-mobile-src="figures/manifold_definition_v3-mobile.svg" alt="Drawn unit sphere and works cone beside three thick clumps linked by thinner stretches. Two example vectors each have a dashed ring, as large as the typical spacing between nearby works, and a line to their nearest work; one ring holds a work and the other, still inside the cone, does not. Geometry is illustrative, not measured.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tldr-manifold-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/manifold_definition_v3.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/manifold_definition_v3-mobile.svg" alt="Drawn unit sphere and works cone beside three thick clumps linked by thinner stretches. Two example vectors each have a dashed ring, as large as the typical spacing between nearby works, and a line to their nearest work; one ring holds a work and the other, still inside the cone, does not. Geometry is illustrative, not measured.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tldr-manifold-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: The works fill a lumpy region, the manifold, so a point can sit among them with no work close to it. The dashed ring around each example vector marks what is close to it, and only one ring holds a work. <a href="./04-0-far-faithful.html">Q7</a> sets the rule for on and off the manifold. Drawn, not measured.
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="what-did-we-find" class="level3">
+<h3 class="anchored" data-anchor-id="what-did-we-find">What did we find?</h3>
+<div class="vp vp-lead">
+<div class="visual-copy">
+<p>So, can the works before 1900 tell us where they have not been? <strong>Yes, in the sense we test it</strong>, i.e., a place is unexplored when a picture there is far from them (the full answer is in the <a href="./01-intro.html#answer">Introduction</a>). Later works are over the bar more often than earlier ones, as we saw (<a href="./05-1-q9.html">Q6</a>), and a search held to faithful pictures can paint there: <strong>46% of DuROOM search’s pictures are far and faithful, 2.9 and 1.6 times as often as our 2 controls</strong> (<a href="./05-3-controls.html">Q12</a>). With no search, 0.5% of the pictures from the 6 kinds of request in <a href="./04-3-why-search.html">Q9</a> are far and faithful, though requests read from noise images (CLIP’s reading of a noise or plain image) reach 20% (<a href="./04-0-far-faithful.html">Q7</a>). <strong>Most far and faithful pictures have a dated later work close to them, and so do the controls’</strong> (<a href="./05-2-q10.html">Q11</a> shows the pictures beside the real works nearest them).</p>
+</div>
+<div id="fig-tldr-ways" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" data-mobile-src="figures/ways_of_asking_vert_v2c-mobile.svg" alt="Vertical bars on one scale from 0 to 50%, far and faithful as a percent of the pictures each way of asking painted, the count under each name: no search, 6 kinds of request, 0.5% (6 of 1,270); lines aimed at real later works, hatched because they use later art, 28% (20 of 71); a single walk with selection 25% (2,446 of 9,600); the random-score loop 16% (1,534 of 9,600); the no-step loop 28% (2,708 of 9,600); DuROOM search 46% (4,380 of 9,600). Set apart, for scale, real works repainted, as open bars: before 1900, held out, 0.2% (2 of 1,000); 1900 to 1969 5.1% (26 of 512); from 1970 on 14% (94 of 663).">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tldr-ways-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/ways_of_asking_vert_v2c.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/ways_of_asking_vert_v2c-mobile.svg" alt="Vertical bars on one scale from 0 to 50%, far and faithful as a percent of the pictures each way of asking painted, the count under each name: no search, 6 kinds of request, 0.5% (6 of 1,270); lines aimed at real later works, hatched because they use later art, 28% (20 of 71); a single walk with selection 25% (2,446 of 9,600); the random-score loop 16% (1,534 of 9,600); the no-step loop 28% (2,708 of 9,600); DuROOM search 46% (4,380 of 9,600). Set apart, for scale, real works repainted, as open bars: before 1900, held out, 0.2% (2 of 1,000); 1900 to 1969 5.1% (26 of 512); from 1970 on 14% (94 of 663).">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tldr-ways-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: With no search, 0.5% of the pictures painted from the 6 kinds of request in Q9 are far and faithful. DuROOM search paints 46%, and our 2 controls 16% and 28%. Far is read against the works before 1900 alone. <a href="./05-2-q10.html">Q11</a> explains the other bars.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="vp">
+<div id="fig-tldr-find-pair" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" data-mobile-src="figures/search_find_pair_v5-mobile.svg" alt="One row of three pictures: the starting work, Edgar Degas, Seated Woman pulling her glove, 1890; the picture DuROOM search painted from it in round 15; and the real work shown, Gene Davis, Black Dahlia, 1971. Beside the pictures, a fact line: in DINOv3 the work shown is the nearest real work, 0.440 apart, within the line (0.763); in SigLIP the nearest real work is Gene Davis, Flamingo, 1965, 0.528 apart, within the line (0.830), and the work shown is 0.654, within; no work dated before 1900 within the line in either observer. The last line beside the pictures quotes my reading by eye: 'Red and black vertical stripes closely resemble the real work's stripe pattern despite different colours.'">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tldr-find-pair-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/search_find_pair_v5.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/search_find_pair_v5-mobile.svg" alt="One row of three pictures: the starting work, Edgar Degas, Seated Woman pulling her glove, 1890; the picture DuROOM search painted from it in round 15; and the real work shown, Gene Davis, Black Dahlia, 1971. Beside the pictures, a fact line: in DINOv3 the work shown is the nearest real work, 0.440 apart, within the line (0.763); in SigLIP the nearest real work is Gene Davis, Flamingo, 1965, 0.528 apart, within the line (0.830), and the work shown is 0.654, within; no work dated before 1900 within the line in either observer. The last line beside the pictures quotes my reading by eye: 'Red and black vertical stripes closely resemble the real work's stripe pattern despite different colours.'">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tldr-find-pair-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: A picture DuROOM search painted (middle), from a work of 1890, with a real work of 1971 within the manifold line of it. Most far and faithful pictures of every loop, the controls’ too, have a real work dated 1900 or later this close (<a href="./05-2-q10.html">Q11</a>). Left, the start, Edgar Degas’s <em>Seated Woman pulling her glove</em>; right, Gene Davis’s <em>Black Dahlia</em>. Beside the painted picture: the round it was painted in, its nearest real work in each observer with the distance against the manifold line, and whether a work dated before 1900 lies within the line. The last line, in quotes, is how I read the picture by eye. I chose it by eye, so it is an example and not a sample. WikiArt reproductions, shown as scholarly commentary.
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="what-cant-we-tell-yet" class="level3">
+<h3 class="anchored" data-anchor-id="what-cant-we-tell-yet">What can’t we tell yet?</h3>
+<p>The comparisons measure what the search adds with this one decoder, and the decoder was not limited to images from before 1900. So <strong>whether what it paints comes from the works or from what the decoder already knows stays open</strong>, and a decoder trained only on works before 1900 is the next test (we take this up in the <a href="./06-discussion.html">Discussion</a>). And maybe that is the question we should have started with, i.e., when a system frozen in the past finds something far from it, how would we tell a discovery from a recollection, without a future to check it against?</p>
 
 
+</section>
+</section>
 
 </main> 
 <script id="quarto-html-after-body" type="application/javascript">
