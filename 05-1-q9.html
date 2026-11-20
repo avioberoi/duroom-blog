@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-8fac4964f3f5d1d7e8f5a697880c16f6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-33db7d67dc863eda5614683ffa97e73d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -281,7 +281,7 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="./03-5-q5.html">Q5</a> left us with a kind of far that says a work has few others around it. Before we build on it, we ask: how do real works after 1900 score on it, measured against the works before 1900 alone? For each later work we find, in each encoder, its 15 nearest works before 1900 and take the mean of those distances, its <em>score</em>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> The <em>bar</em> (our cut-off on the score) is the score that 99% of the works before 1900 lie below (<a href="#fig-what-the-bar-is" class="quarto-xref">Figure&nbsp;2</a>).<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
 <p><strong>A. In CLIP, part of the century is over the bar, and more of it from the 1960s.</strong> In CLIP, about 5% of the works from 1900 to 1959 are over the bar, and about 26% of those from 1960 on (<a href="#fig-retro" class="quarto-xref">Figure&nbsp;1</a>).<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> In DINOv3 the share from 1960 on is larger, about 43% (<a href="#fig-what-the-bar-is" class="quarto-xref">Figure&nbsp;2</a>). So the century did move away from its past on this measure, though most later works are not over the bar.</p>
 </div>
-<div id="fig-retro" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Shares of later artworks above two distance bars by decade, cutoff 1900." data-mobile-src="figures/search_retro-mobile.svg">
+<div id="fig-retro" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" data-mobile-src="figures/search_retro-mobile.svg" alt="Shares of later artworks above two distance bars by decade, cutoff 1900.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-retro-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figures/search_retro.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/search_retro-mobile.svg" alt="Shares of later artworks above two distance bars by decade, cutoff 1900.">
@@ -293,7 +293,7 @@ Figure&nbsp;1: About 26% of the works from 1960 on are over the bar, against abo
 </div>
 </div>
 <div class="vp">
-<div id="fig-what-the-bar-is" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Two distributions of distance on one axis, DINOv3: 24,627 works before 1900 set aside, as a pale fill, and 33,594 works from 1960 on, as a line. A solid line at 0.894 has 247 set-aside works and 14,601 works from 1960 on above it; a dotted line at 0.775 has 1,232 and 27,463 above it." data-mobile-src="figures/what_the_bar_is-mobile.svg">
+<div id="fig-what-the-bar-is" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" data-mobile-src="figures/what_the_bar_is-mobile.svg" alt="Two distributions of distance on one axis, DINOv3: 24,627 works before 1900 set aside, as a pale fill, and 33,594 works from 1960 on, as a line. A solid line at 0.894 has 247 set-aside works and 14,601 works from 1960 on above it; a dotted line at 0.775 has 1,232 and 27,463 above it.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-what-the-bar-is-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figures/what_the_bar_is.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/what_the_bar_is-mobile.svg" alt="Two distributions of distance on one axis, DINOv3: 24,627 works before 1900 set aside, as a pale fill, and 33,594 works from 1960 on, as a line. A solid line at 0.894 has 247 set-aside works and 14,601 works from 1960 on above it; a dotted line at 0.775 has 1,232 and 27,463 above it.">
@@ -310,10 +310,10 @@ Figure&nbsp;2: The bar is the score that 99% of the earlier works lie below, and
 <p>As <a href="./03-5-q5.html">Q5</a> found over the whole corpus, far flags photographs, posters and installations. Installation and sculpture are also among the later works the basis from before 1900 describes worst (<a href="./03-3-q3.html">Q4</a>).<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> So against 1900 the score favours the same kinds of work, and a new medium (installation, photograph, poster) most of all.</p>
 <p>To this bar a new medium and a new date look the same, and what a search should find depends on what we call new.</p>
 </div>
-<div id="fig-retro-genres" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Measured pass rates for selected genres under a corpus frozen at 1900, with a real work of that genre dated 1900 or later shown with each bar except the nude bar." data-mobile-src="figures/search_genres_v3-mobile.svg">
+<div id="fig-retro-genres" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" data-mobile-src="figures/search_genres_v4-mobile.svg" alt="Measured pass rates for selected genres under a corpus frozen at 1900, with a real work of that genre dated 1900 or later shown with each bar except the nude bar.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-retro-genres-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figures/search_genres_v3.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/search_genres_v3-mobile.svg" alt="Measured pass rates for selected genres under a corpus frozen at 1900, with a real work of that genre dated 1900 or later shown with each bar except the nude bar.">
+<img src="figures/search_genres_v3.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/search_genres_v4-mobile.svg" alt="Measured pass rates for selected genres under a corpus frozen at 1900, with a real work of that genre dated 1900 or later shown with each bar except the nude bar.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-retro-genres-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;3: Installations, photographs, sculpture and posters are over the bar far more often than landscapes, nudes or religious paintings. WikiArt genres with at least 200 later works: the 4 highest, the 5 lowest, and abstract; the same bar as <a href="#fig-retro" class="quarto-xref">Figure&nbsp;1</a>. We chose the works shown with the bars by eye, so they are examples and not a sample. WikiArt reproductions, shown as scholarly commentary.
@@ -327,7 +327,7 @@ Figure&nbsp;3: Installations, photographs, sculpture and posters are over the ba
 </div>
 </div>
 <div class="vp">
-<div id="fig-far-definitions" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Dot plot of five far scores, each with three marks, CLIP, DINOv3 and SigLIP, on a scale of AUC. Distance to the 15 nearest earlier works: 0.858, 0.901, 0.904. Leftover: 0.861, 0.826, 0.879. Distance from the centre of earlier art: 0.718, 0.864, 0.849. Outside every earlier region: 0.772, 0.743, 0.853. Local ratio: 0.762, 0.742, 0.783." data-mobile-src="figures/far_definitions_three_spaces-mobile.svg">
+<div id="fig-far-definitions" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" data-mobile-src="figures/far_definitions_three_spaces-mobile.svg" alt="Dot plot of five far scores, each with three marks, CLIP, DINOv3 and SigLIP, on a scale of AUC. Distance to the 15 nearest earlier works: 0.858, 0.901, 0.904. Leftover: 0.861, 0.826, 0.879. Distance from the centre of earlier art: 0.718, 0.864, 0.849. Outside every earlier region: 0.772, 0.743, 0.853. Local ratio: 0.762, 0.742, 0.783.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-far-definitions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figures/far_definitions_three_spaces.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/far_definitions_three_spaces-mobile.svg" alt="Dot plot of five far scores, each with three marks, CLIP, DINOv3 and SigLIP, on a scale of AUC. Distance to the 15 nearest earlier works: 0.858, 0.901, 0.904. Leftover: 0.861, 0.826, 0.879. Distance from the centre of earlier art: 0.718, 0.864, 0.849. Outside every earlier region: 0.772, 0.743, 0.853. Local ratio: 0.762, 0.742, 0.783.">
@@ -346,7 +346,7 @@ Figure&nbsp;4: The search’s score tells later works from earlier ones best in 
 </div>
 </div>
 <div class="vp">
-<div id="fig-regions-map" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Thirty-two pies placed roughly by the angles between region centres, sized by the works in each and split by date, each with a ring for its share of work from before 1900: 8 regions under 1%, 7 from 1 to 10%, 8 from 10 to 50%, 9 at 50% and over. 17 regions are named by their two most common styles." data-mobile-src="figures/regions_map_v2-mobile.svg">
+<div id="fig-regions-map" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" data-mobile-src="figures/regions_map_v2-mobile.svg" alt="Thirty-two pies placed roughly by the angles between region centres, sized by the works in each and split by date, each with a ring for its share of work from before 1900: 8 regions under 1%, 7 from 1 to 10%, 8 from 10 to 50%, 9 at 50% and over. 17 regions are named by their two most common styles.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-regions-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figures/regions_map_v2.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/regions_map_v2-mobile.svg" alt="Thirty-two pies placed roughly by the angles between region centres, sized by the works in each and split by date, each with a ring for its share of work from before 1900: 8 regions under 1%, 7 from 1 to 10%, 8 from 10 to 50%, 9 at 50% and over. 17 regions are named by their two most common styles.">
@@ -358,7 +358,7 @@ Figure&nbsp;5: Most works from 1960 on (red) sit in regions of CLIP that hold al
 </div>
 </div>
 <div class="vp">
-<div id="fig-later-art-regions" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Four stacked bars, one per group of CLIP regions by share of work from before 1900. Of 33,594 works from 1960 on: 22,134 in the 8 regions under 1%, 8,318 in the 7 from 1 to 10%, 2,336 in the 8 from 10 to 50%, 806 in the 9 at 50% and over." data-mobile-src="figures/later_art_regions-mobile.svg">
+<div id="fig-later-art-regions" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" data-mobile-src="figures/later_art_regions-mobile.svg" alt="Four stacked bars, one per group of CLIP regions by share of work from before 1900. Of 33,594 works from 1960 on: 22,134 in the 8 regions under 1%, 8,318 in the 7 from 1 to 10%, 2,336 in the 8 from 10 to 50%, 806 in the 9 at 50% and over.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-later-art-regions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figures/later_art_regions.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/later_art_regions-mobile.svg" alt="Four stacked bars, one per group of CLIP regions by share of work from before 1900. Of 33,594 works from 1960 on: 22,134 in the 8 regions under 1%, 8,318 in the 7 from 1 to 10%, 2,336 in the 8 from 10 to 50%, 806 in the 9 at 50% and over.">
@@ -370,7 +370,7 @@ Figure&nbsp;6: Of the 33,594 works from 1960 on, 22,134 (66%) sit in the 8 regio
 </div>
 </div>
 <div class="vp">
-<div id="fig-map-from-the-past" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Two maps centred on the mean direction of art before 1900, with rings every 10 degrees. The first: pale shading for 53,031 works before 1900, red contours for 33,594 works from 1960 on, three rings at median angles of 42.1, 44.0 and 47.0 degrees, and dots for region centres. The second: cells shaded by the share of later works over the bar, 11,175 of 69,468 in all." data-mobile-src="figures/map_from_the_past-mobile.svg">
+<div id="fig-map-from-the-past" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" data-mobile-src="figures/map_from_the_past-mobile.svg" alt="Two maps centred on the mean direction of art before 1900, with rings every 10 degrees. The first: pale shading for 53,031 works before 1900, red contours for 33,594 works from 1960 on, three rings at median angles of 42.1, 44.0 and 47.0 degrees, and dots for region centres. The second: cells shaded by the share of later works over the bar, 11,175 of 69,468 in all.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-map-from-the-past-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figures/map_from_the_past.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/map_from_the_past-mobile.svg" alt="Two maps centred on the mean direction of art before 1900, with rings every 10 degrees. The first: pale shading for 53,031 works before 1900, red contours for 33,594 works from 1960 on, three rings at median angles of 42.1, 44.0 and 47.0 degrees, and dots for region centres. The second: cells shaded by the share of later works over the bar, 11,175 of 69,468 in all.">
@@ -387,7 +387,7 @@ Figure&nbsp;7: Seen from the centre of art before 1900, the median angle grows f
 </div>
 </div>
 <div class="vp">
-<div id="fig-retro-freezes" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="AUC by years after four different cutoff dates." data-mobile-src="figures/search_freezes_v2-mobile.svg">
+<div id="fig-retro-freezes" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" data-mobile-src="figures/search_freezes_v2-mobile.svg" alt="AUC by years after four different cutoff dates.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-retro-freezes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figures/search_freezes_v2.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/search_freezes_v2-mobile.svg" alt="AUC by years after four different cutoff dates.">

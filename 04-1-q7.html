@@ -65,7 +65,7 @@ div.csl-indent {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-8fac4964f3f5d1d7e8f5a697880c16f6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-33db7d67dc863eda5614683ffa97e73d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -306,7 +306,7 @@ div.csl-indent {
 <li>We read each picture back through CLIP and measure how far it moved along the direction, its <em>achieved angle</em>, and its <em>fidelity</em> (<a href="./04-0-far-faithful.html">Q7</a>), i.e., the chord between the reading and the request (about 0.5 to 0.6 for a work’s own repainting, about 1 for 2 unrelated pictures).<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> Fidelity is what the faithful line reads: we hand the decoder a vector and only ever see a picture, so the picture speaks for the vector only when it comes back near it. </li>
 </ol>
 </div>
-<div id="fig-walk" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Decoded images along a chosen direction, with measured achieved angles and fidelity chords." data-mobile-src="figures/search_walk-mobile.svg">
+<div id="fig-walk" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" data-mobile-src="figures/search_walk-mobile.svg" alt="Decoded images along a chosen direction, with measured achieved angles and fidelity chords.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-walk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figures/search_walk.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/search_walk-mobile.svg" alt="Decoded images along a chosen direction, with measured achieved angles and fidelity chords.">
@@ -318,7 +318,7 @@ Figure&nbsp;1: The picture moves less than we ask, and drifts from the request a
 </div>
 </div>
 <div class="vp">
-<div id="fig-walk-chord" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Two drawn panels. First: in the plane of the start and the direction, the request at 30 degrees on the unit circle, the picture's CLIP reading inside the circle and the start's own repainting, with 30 degrees asked against 13 achieved. Second: 2 unit vectors 41 degrees apart and the straight line between them, a chord of 0.70, above a scale that marks a work's own repainting at 0.5 to 0.6, the faithful line at 0.779, 2 unrelated pictures at about 1 and a right angle at 1.41." data-mobile-src="figures/walk_and_chord_v1-mobile.svg">
+<div id="fig-walk-chord" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" data-mobile-src="figures/walk_and_chord_v1-mobile.svg" alt="Two drawn panels. First: in the plane of the start and the direction, the request at 30 degrees on the unit circle, the picture's CLIP reading inside the circle and the start's own repainting, with 30 degrees asked against 13 achieved. Second: 2 unit vectors 41 degrees apart and the straight line between them, a chord of 0.70, above a scale that marks a work's own repainting at 0.5 to 0.6, the faithful line at 0.779, 2 unrelated pictures at about 1 and a right angle at 1.41.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-walk-chord-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figures/walk_and_chord_v1.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/walk_and_chord_v1-mobile.svg" alt="Two drawn panels. First: in the plane of the start and the direction, the request at 30 degrees on the unit circle, the picture's CLIP reading inside the circle and the start's own repainting, with 30 degrees asked against 13 achieved. Second: 2 unit vectors 41 degrees apart and the straight line between them, a chord of 0.70, above a scale that marks a work's own repainting at 0.5 to 0.6, the faithful line at 0.779, 2 unrelated pictures at about 1 and a right angle at 1.41.">
@@ -337,7 +337,7 @@ Figure&nbsp;2: The chord is the straight line between what we asked for and what
 <p>As no step along the corpus’s own directions makes the picture follow the request closely, the search of <a href="./04-2-q8.html">Q10</a> restarts each round from where its pictures read back, i.e., where the decoder did paint and not where it was asked to.</p>
 <p>We also notice that pictures along the shift and the 2 axes move away from the works before 1900 as the angle grows.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a></p>
 </div>
-<div id="fig-walk-response" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Measured achieved angles and request-to-image chords for 6 direction choices." data-mobile-src="figures/search_response_v2-mobile.svg">
+<div id="fig-walk-response" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" data-mobile-src="figures/search_response_v2-mobile.svg" alt="Measured achieved angles and request-to-image chords for 6 direction choices.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-walk-response-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figures/search_response_v2.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/search_response_v2-mobile.svg" alt="Measured achieved angles and request-to-image chords for 6 direction choices.">

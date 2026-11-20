@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="282.384pt" height="249.480562pt" viewBox="0 0 282.384 249.480562" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="325.336pt" height="281.188076pt" viewBox="0 0 325.336 281.188076" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-20T13:24:30.933569</dc:date>
+    <dc:date>2026-11-20T16:34:17.390039</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -21,49 +21,49 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 249.480562
-L 282.384 249.480562
-L 282.384 0
+   <path d="M 0 281.188076
+L 325.336 281.188076
+L 325.336 0
 L 0 0
-L 0 249.480562
+L 0 281.188076
 z
 " style="fill: none"/>
   </g>
   <g id="axes_1">
    <g id="patch_2">
-    <path d="M 34.488 200.304
-L 278.784 200.304
-L 278.784 87.696
-L 34.488 87.696
-L 34.488 200.304
+    <path d="M 7.464 217.69
+L 321.736 217.69
+L 321.736 97.69
+L 7.464 97.69
+L 7.464 217.69
 z
 " style="fill: none"/>
    </g>
    <g id="line2d_1">
-    <path d="M 34.488 200.304
-L 278.784 200.304
-" clip-path="url(#p497674a82b)" style="fill: none; stroke: #cfc5b3; stroke-width: 0.6; stroke-linecap: square"/>
+    <path d="M 7.464 217.69
+L 321.736 217.69
+" clip-path="url(#p294b738dc0)" style="fill: none; stroke: #cfc5b3; stroke-width: 0.6; stroke-linecap: square"/>
    </g>
    <g id="line2d_2">
-    <path d="M 34.488 150.032571
-L 278.784 150.032571
-" clip-path="url(#p497674a82b)" style="fill: none; stroke: #cfc5b3; stroke-width: 0.6; stroke-linecap: square"/>
+    <path d="M 7.464 164.118571
+L 321.736 164.118571
+" clip-path="url(#p294b738dc0)" style="fill: none; stroke: #cfc5b3; stroke-width: 0.6; stroke-linecap: square"/>
    </g>
    <g id="line2d_3">
-    <path d="M 34.488 99.761143
-L 278.784 99.761143
-" clip-path="url(#p497674a82b)" style="fill: none; stroke: #cfc5b3; stroke-width: 0.6; stroke-linecap: square"/>
+    <path d="M 7.464 110.547143
+L 321.736 110.547143
+" clip-path="url(#p294b738dc0)" style="fill: none; stroke: #cfc5b3; stroke-width: 0.6; stroke-linecap: square"/>
    </g>
    <g id="matplotlib.axis_1"/>
    <g id="matplotlib.axis_2"/>
    <g id="line2d_4">
-    <path d="M 34.488 200.304
-L 278.784 200.304
-" clip-path="url(#p497674a82b)" style="fill: none; stroke: #7a7062; stroke-width: 0.8; stroke-linecap: square"/>
+    <path d="M 7.464 217.69
+L 321.736 217.69
+" clip-path="url(#p294b738dc0)" style="fill: none; stroke: #7a7062; stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="text_1">
-    <!-- 0%  -->
-    <g style="fill: #7a7062" transform="translate(24.313 201.736812) scale(0.064 -0.064)">
+    <!-- 0% -->
+    <g style="fill: #7a7062" transform="translate(8.964 213.818711) scale(0.094 -0.094)">
      <defs>
       <path id="PalatinoLinotype-Roman-156" d="M 194 1909
 Q 194 2466 250 2911
@@ -149,16 +149,14 @@ Q 3803 1875 3640 1639
 Q 3478 1403 3478 938
 z
 " transform="scale(0.015625)"/>
-      <path id="PalatinoLinotype-Roman-231" transform="scale(0.015625)"/>
      </defs>
      <use xlink:href="#PalatinoLinotype-Roman-156"/>
      <use xlink:href="#PalatinoLinotype-Roman-196" transform="translate(50 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-231" transform="translate(133.984375 0)"/>
     </g>
    </g>
    <g id="text_2">
-    <!-- 25%  -->
-    <g style="fill: #7a7062" transform="translate(21.113 151.465384) scale(0.064 -0.064)">
+    <!-- 25% -->
+    <g style="fill: #7a7062" transform="translate(8.964 160.247282) scale(0.094 -0.094)">
      <defs>
       <path id="PalatinoLinotype-Roman-158" d="M 144 -31
 L 106 0
@@ -244,29 +242,27 @@ z
      <use xlink:href="#PalatinoLinotype-Roman-158"/>
      <use xlink:href="#PalatinoLinotype-Roman-15b" transform="translate(50 0)"/>
      <use xlink:href="#PalatinoLinotype-Roman-196" transform="translate(100 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-231" transform="translate(183.984375 0)"/>
     </g>
    </g>
    <g id="text_3">
-    <!-- 50%  -->
-    <g style="fill: #7a7062" transform="translate(21.113 101.193955) scale(0.064 -0.064)">
+    <!-- 50% -->
+    <g style="fill: #7a7062" transform="translate(8.964 106.675854) scale(0.094 -0.094)">
      <use xlink:href="#PalatinoLinotype-Roman-15b"/>
      <use xlink:href="#PalatinoLinotype-Roman-156" transform="translate(50 0)"/>
      <use xlink:href="#PalatinoLinotype-Roman-196" transform="translate(100 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-231" transform="translate(183.984375 0)"/>
     </g>
    </g>
    <g id="patch_3">
-    <path d="M 46.502557 200.304
-L 66.52682 200.304
-L 66.52682 199.353989
-L 46.502557 199.353989
+    <path d="M 22.92 217.69
+L 48.68 217.69
+L 48.68 216.677627
+L 22.92 216.677627
 z
-" clip-path="url(#p497674a82b)" style="fill: #231f1a"/>
+" clip-path="url(#p294b738dc0)" style="fill: #231f1a"/>
    </g>
    <g id="text_4">
     <!-- no search -->
-    <g style="fill: #231f1a" transform="translate(41.387939 210.825309) scale(0.072 -0.072)">
+    <g style="fill: #231f1a" transform="translate(16.051188 230.203931) scale(0.094 -0.094)">
      <defs>
       <path id="PalatinoLinotype-Roman-97" d="M 1069 2978
 L 1128 2938
@@ -361,6 +357,7 @@ M 1703 -188
 L 1703 -188
 z
 " transform="scale(0.015625)"/>
+      <path id="PalatinoLinotype-Roman-231" transform="scale(0.015625)"/>
       <path id="PalatinoLinotype-Roman-9c" d="M 316 919
 L 450 919
 L 478 891
@@ -656,7 +653,7 @@ z
    </g>
    <g id="text_5">
     <!-- 6 -->
-    <g style="fill: #7a7062" transform="translate(54.914689 237.795641) scale(0.064 -0.064)">
+    <g style="fill: #7a7062" transform="translate(33.45 265.713347) scale(0.094 -0.094)">
      <defs>
       <path id="PalatinoLinotype-Roman-15c" d="M 2700 4322
 L 2700 4284
@@ -701,7 +698,7 @@ z
      <use xlink:href="#PalatinoLinotype-Roman-15c"/>
     </g>
     <!-- of 1,270 -->
-    <g style="fill: #7a7062" transform="translate(45.702189 244.292922) scale(0.064 -0.064)">
+    <g style="fill: #7a7062" transform="translate(19.919141 275.256229) scale(0.094 -0.094)">
      <defs>
       <path id="PalatinoLinotype-Roman-8f" d="M 1800 159
 L 1825 134
@@ -849,16 +846,16 @@ z
     </g>
    </g>
    <g id="patch_4">
-    <path d="M 86.551082 200.304
-L 106.575344 200.304
-L 106.575344 149.069036
-L 86.551082 149.069036
+    <path d="M 74.44 217.69
+L 100.2 217.69
+L 100.2 163.091786
+L 74.44 163.091786
 z
-" clip-path="url(#p497674a82b)" style="fill: #231f1a"/>
+" clip-path="url(#p294b738dc0)" style="fill: #231f1a"/>
    </g>
    <g id="text_6">
     <!-- single -->
-    <g style="fill: #231f1a" transform="translate(87.119401 209.921934) scale(0.072 -0.072)">
+    <g style="fill: #231f1a" transform="translate(74.990578 229.024524) scale(0.094 -0.094)">
      <defs>
       <path id="PalatinoLinotype-Roman-92" d="M 900 4375
 Q 1047 4375 1150 4272
@@ -1017,7 +1014,7 @@ z
      <use xlink:href="#PalatinoLinotype-Roman-8e" transform="translate(214.421875 0)"/>
     </g>
     <!-- walk -->
-    <g style="fill: #231f1a" transform="translate(88.807463 218.872926) scale(0.072 -0.072)">
+    <g style="fill: #231f1a" transform="translate(77.194438 240.710542) scale(0.094 -0.094)">
      <defs>
       <path id="PalatinoLinotype-Roman-a0" d="M 1341 -59
 L 919 1341
@@ -1142,7 +1139,7 @@ z
    </g>
    <g id="text_7">
     <!-- 2,446 -->
-    <g style="fill: #7a7062" transform="translate(89.363213 237.364641) scale(0.064 -0.064)">
+    <g style="fill: #7a7062" transform="translate(76.745 265.080316) scale(0.094 -0.094)">
      <defs>
       <path id="PalatinoLinotype-Roman-15a" d="M 1028 -25
 L 1003 0
@@ -1195,7 +1192,7 @@ z
      <use xlink:href="#PalatinoLinotype-Roman-15c" transform="translate(175 0)"/>
     </g>
     <!-- of 9,600 -->
-    <g style="fill: #7a7062" transform="translate(85.750713 244.292922) scale(0.064 -0.064)">
+    <g style="fill: #7a7062" transform="translate(71.439141 275.256229) scale(0.094 -0.094)">
      <defs>
       <path id="PalatinoLinotype-Roman-15f" d="M 416 -25
 L 416 34
@@ -1240,16 +1237,16 @@ z
     </g>
    </g>
    <g id="patch_5">
-    <path d="M 126.599607 200.304
-L 146.623869 200.304
-L 146.623869 108.558643
-L 126.599607 108.558643
+    <path d="M 125.96 217.69
+L 151.72 217.69
+L 151.72 119.922143
+L 125.96 119.922143
 z
-" clip-path="url(#p497674a82b)" style="fill: #963a27"/>
+" clip-path="url(#p294b738dc0)" style="fill: #963a27"/>
    </g>
    <g id="text_8">
     <!-- DuROOM -->
-    <g style="fill: #231f1a" transform="translate(120.185613 210.835996) scale(0.072 -0.072)">
+    <g style="fill: #231f1a" transform="translate(117.394781 230.217884) scale(0.094 -0.094)">
      <defs>
       <path id="PalatinoLinotype-Roman-6" d="M 94 4394
 L 119 4416
@@ -1533,7 +1530,7 @@ z
      <use xlink:href="#PalatinoLinotype-Roman-f" transform="translate(361.703125 0)"/>
     </g>
     <!-- search -->
-    <g style="fill: #231f1a" transform="translate(126.445675 218.872926) scale(0.072 -0.072)">
+    <g style="fill: #231f1a" transform="translate(125.567641 240.710542) scale(0.094 -0.094)">
      <use xlink:href="#PalatinoLinotype-Roman-9c"/>
      <use xlink:href="#PalatinoLinotype-Roman-8e" transform="translate(42.390625 0)"/>
      <use xlink:href="#PalatinoLinotype-Roman-8a" transform="translate(90.296875 0)"/>
@@ -1544,7 +1541,7 @@ z
    </g>
    <g id="text_9">
     <!-- 4,380 -->
-    <g style="fill: #7a7062" transform="translate(129.411738 237.358641) scale(0.064 -0.064)">
+    <g style="fill: #7a7062" transform="translate(128.265 265.071503) scale(0.094 -0.094)">
      <defs>
       <path id="PalatinoLinotype-Roman-159" d="M 325 72
 Q 269 441 116 959
@@ -1641,7 +1638,7 @@ z
      <use xlink:href="#PalatinoLinotype-Roman-156" transform="translate(175 0)"/>
     </g>
     <!-- of 9,600 -->
-    <g style="fill: #7a7062" transform="translate(125.799238 244.292922) scale(0.064 -0.064)">
+    <g style="fill: #7a7062" transform="translate(122.959141 275.256229) scale(0.094 -0.094)">
      <use xlink:href="#PalatinoLinotype-Roman-98"/>
      <use xlink:href="#PalatinoLinotype-Roman-8f" transform="translate(54.59375 0)"/>
      <use xlink:href="#PalatinoLinotype-Roman-231" transform="translate(87.890625 0)"/>
@@ -1653,16 +1650,16 @@ z
     </g>
    </g>
    <g id="patch_6">
-    <path d="M 166.648131 200.304
-L 186.672393 200.304
-L 186.672393 108.914732
-L 166.648131 108.914732
+    <path d="M 177.48 217.69
+L 203.24 217.69
+L 203.24 120.301607
+L 177.48 120.301607
 z
-" clip-path="url(#p497674a82b)" style="fill: #c89b8d; stroke: #963a27; stroke-linejoin: miter"/>
+" clip-path="url(#p294b738dc0)" style="fill: #c89b8d; stroke: #963a27; stroke-linejoin: miter"/>
    </g>
    <g id="text_10">
     <!-- same -->
-    <g style="fill: #231f1a" transform="translate(168.43145 210.007996) scale(0.072 -0.072)">
+    <g style="fill: #231f1a" transform="translate(179.616828 229.136884) scale(0.094 -0.094)">
      <defs>
       <path id="PalatinoLinotype-Roman-96" d="M 1150 2978
 L 1209 2938
@@ -1764,7 +1761,7 @@ z
      <use xlink:href="#PalatinoLinotype-Roman-8e" transform="translate(180.671875 0)"/>
     </g>
     <!-- search, -->
-    <g style="fill: #231f1a" transform="translate(165.5942 218.428551) scale(0.072 -0.072)">
+    <g style="fill: #231f1a" transform="translate(175.912641 240.130386) scale(0.094 -0.094)">
      <use xlink:href="#PalatinoLinotype-Roman-9c"/>
      <use xlink:href="#PalatinoLinotype-Roman-8e" transform="translate(42.390625 0)"/>
      <use xlink:href="#PalatinoLinotype-Roman-8a" transform="translate(90.296875 0)"/>
@@ -1774,7 +1771,7 @@ z
      <use xlink:href="#PalatinoLinotype-Roman-1f0" transform="translate(282.390625 0)"/>
     </g>
     <!-- CLIP -->
-    <g style="fill: #231f1a" transform="translate(168.52145 226.93123) scale(0.072 -0.072)">
+    <g style="fill: #231f1a" transform="translate(179.734328 251.231106) scale(0.094 -0.094)">
      <defs>
       <path id="PalatinoLinotype-Roman-5" d="M 4359 528
 L 4241 238
@@ -1960,7 +1957,7 @@ z
    </g>
    <g id="text_11">
     <!-- 4,363 -->
-    <g style="fill: #7a7062" transform="translate(169.460262 237.364641) scale(0.064 -0.064)">
+    <g style="fill: #7a7062" transform="translate(179.785 265.080316) scale(0.094 -0.094)">
      <use xlink:href="#PalatinoLinotype-Roman-15a"/>
      <use xlink:href="#PalatinoLinotype-Roman-1f0" transform="translate(50 0)"/>
      <use xlink:href="#PalatinoLinotype-Roman-159" transform="translate(75 0)"/>
@@ -1968,7 +1965,7 @@ z
      <use xlink:href="#PalatinoLinotype-Roman-159" transform="translate(175 0)"/>
     </g>
     <!-- of 9,600 -->
-    <g style="fill: #7a7062" transform="translate(165.847762 244.292922) scale(0.064 -0.064)">
+    <g style="fill: #7a7062" transform="translate(174.479141 275.256229) scale(0.094 -0.094)">
      <use xlink:href="#PalatinoLinotype-Roman-98"/>
      <use xlink:href="#PalatinoLinotype-Roman-8f" transform="translate(54.59375 0)"/>
      <use xlink:href="#PalatinoLinotype-Roman-231" transform="translate(87.890625 0)"/>
@@ -1980,16 +1977,16 @@ z
     </g>
    </g>
    <g id="patch_7">
-    <path d="M 206.696656 200.304
-L 226.720918 200.304
-L 226.720918 168.172179
-L 206.696656 168.172179
+    <path d="M 229 217.69
+L 254.76 217.69
+L 254.76 183.448929
+L 229 183.448929
 z
-" clip-path="url(#p497674a82b)" style="fill: #231f1a"/>
+" clip-path="url(#p294b738dc0)" style="fill: #231f1a"/>
    </g>
    <g id="text_12">
     <!-- random- -->
-    <g style="fill: #231f1a" transform="translate(202.850474 210.825309) scale(0.072 -0.072)">
+    <g style="fill: #231f1a" transform="translate(223.787203 230.203931) scale(0.094 -0.094)">
      <defs>
       <path id="PalatinoLinotype-Roman-8d" d="M 2103 4238
 L 2103 4369
@@ -2062,7 +2059,7 @@ z
      <use xlink:href="#PalatinoLinotype-Roman-22c" transform="translate(351.65625 0)"/>
     </g>
     <!-- score loop -->
-    <g style="fill: #231f1a" transform="translate(200.430037 217.966176) scale(0.072 -0.072)">
+    <g style="fill: #231f1a" transform="translate(220.627188 239.526729) scale(0.094 -0.094)">
      <defs>
       <path id="PalatinoLinotype-Roman-99" d="M 1156 3016
 L 1216 2978
@@ -2144,7 +2141,7 @@ z
    </g>
    <g id="text_13">
     <!-- 1,534 -->
-    <g style="fill: #7a7062" transform="translate(209.508787 237.366141) scale(0.064 -0.064)">
+    <g style="fill: #7a7062" transform="translate(231.305 265.082519) scale(0.094 -0.094)">
      <use xlink:href="#PalatinoLinotype-Roman-157"/>
      <use xlink:href="#PalatinoLinotype-Roman-1f0" transform="translate(50 0)"/>
      <use xlink:href="#PalatinoLinotype-Roman-15b" transform="translate(75 0)"/>
@@ -2152,7 +2149,7 @@ z
      <use xlink:href="#PalatinoLinotype-Roman-15a" transform="translate(175 0)"/>
     </g>
     <!-- of 9,600 -->
-    <g style="fill: #7a7062" transform="translate(205.896287 244.292922) scale(0.064 -0.064)">
+    <g style="fill: #7a7062" transform="translate(225.999141 275.256229) scale(0.094 -0.094)">
      <use xlink:href="#PalatinoLinotype-Roman-98"/>
      <use xlink:href="#PalatinoLinotype-Roman-8f" transform="translate(54.59375 0)"/>
      <use xlink:href="#PalatinoLinotype-Roman-231" transform="translate(87.890625 0)"/>
@@ -2164,16 +2161,16 @@ z
     </g>
    </g>
    <g id="patch_8">
-    <path d="M 246.74518 200.304
-L 266.769443 200.304
-L 266.769443 143.581071
-L 246.74518 143.581071
+    <path d="M 280.52 217.69
+L 306.28 217.69
+L 306.28 157.243571
+L 280.52 157.243571
 z
-" clip-path="url(#p497674a82b)" style="fill: #231f1a"/>
+" clip-path="url(#p294b738dc0)" style="fill: #231f1a"/>
    </g>
    <g id="text_14">
     <!-- no-step -->
-    <g style="fill: #231f1a" transform="translate(244.908811 209.542246) scale(0.072 -0.072)">
+    <g style="fill: #231f1a" transform="translate(277.931125 228.528821) scale(0.094 -0.094)">
      <defs>
       <path id="PalatinoLinotype-Roman-9d" d="M 144 2453
 L 144 2534
@@ -2217,7 +2214,7 @@ z
      <use xlink:href="#PalatinoLinotype-Roman-99" transform="translate(269.015625 0)"/>
     </g>
     <!-- loop -->
-    <g style="fill: #231f1a" transform="translate(249.614686 217.966176) scale(0.072 -0.072)">
+    <g style="fill: #231f1a" transform="translate(284.074906 239.526729) scale(0.094 -0.094)">
      <use xlink:href="#PalatinoLinotype-Roman-95"/>
      <use xlink:href="#PalatinoLinotype-Roman-98" transform="translate(29.109375 0)"/>
      <use xlink:href="#PalatinoLinotype-Roman-98" transform="translate(83.703125 0)"/>
@@ -2226,7 +2223,7 @@ z
    </g>
    <g id="text_15">
     <!-- 2,708 -->
-    <g style="fill: #7a7062" transform="translate(249.557311 237.349141) scale(0.064 -0.064)">
+    <g style="fill: #7a7062" transform="translate(282.825 265.05755) scale(0.094 -0.094)">
      <use xlink:href="#PalatinoLinotype-Roman-158"/>
      <use xlink:href="#PalatinoLinotype-Roman-1f0" transform="translate(50 0)"/>
      <use xlink:href="#PalatinoLinotype-Roman-15d" transform="translate(75 0)"/>
@@ -2234,7 +2231,7 @@ z
      <use xlink:href="#PalatinoLinotype-Roman-15e" transform="translate(175 0)"/>
     </g>
     <!-- of 9,600 -->
-    <g style="fill: #7a7062" transform="translate(245.944811 244.292922) scale(0.064 -0.064)">
+    <g style="fill: #7a7062" transform="translate(277.519141 275.256229) scale(0.094 -0.094)">
      <use xlink:href="#PalatinoLinotype-Roman-98"/>
      <use xlink:href="#PalatinoLinotype-Roman-8f" transform="translate(54.59375 0)"/>
      <use xlink:href="#PalatinoLinotype-Roman-231" transform="translate(87.890625 0)"/>
@@ -2246,21 +2243,21 @@ z
     </g>
    </g>
    <g id="line2d_5">
-    <path d="M 46.502557 200.304
-L 66.52682 200.304
-" clip-path="url(#p497674a82b)" style="fill: none; stroke: #231f1a; stroke-width: 2.2"/>
+    <path d="M 22.92 217.69
+L 48.68 217.69
+" clip-path="url(#p294b738dc0)" style="fill: none; stroke: #231f1a; stroke-width: 2.2"/>
    </g>
    <g id="text_16">
     <g id="patch_9">
-     <path d="M 47.149345 196.925703
-L 65.880032 196.925703
-L 65.880032 187.214351
-L 47.149345 187.214351
+     <path d="M 24.971766 214.051341
+L 46.628234 214.051341
+L 46.628234 202.917431
+L 24.971766 202.917431
 z
 " style="fill: #f1ebe0"/>
     </g>
     <!-- 0.5% -->
-    <g style="fill: #231f1a" transform="translate(47.737345 193.950594) scale(0.084 -0.084)">
+    <g style="fill: #231f1a" transform="translate(25.559766 210.67838) scale(0.098 -0.098)">
      <defs>
       <path id="PalatinoLinotype-Roman-1ef" d="M 800 691
 Q 950 691 1061 584
@@ -2282,15 +2279,15 @@ z
    </g>
    <g id="text_17">
     <g id="patch_10">
-     <path d="M 88.247869 146.64075
-L 104.878557 146.64075
-L 104.878557 136.929398
-L 88.247869 136.929398
+     <path d="M 77.716766 160.4655
+L 96.923234 160.4655
+L 96.923234 149.33159
+L 77.716766 149.33159
 z
 " style="fill: #f1ebe0"/>
     </g>
     <!-- 25% -->
-    <g style="fill: #231f1a" transform="translate(88.835869 143.665641) scale(0.084 -0.084)">
+    <g style="fill: #231f1a" transform="translate(78.304766 157.092539) scale(0.098 -0.098)">
      <use xlink:href="#PalatinoLinotype-Roman-158"/>
      <use xlink:href="#PalatinoLinotype-Roman-15b" transform="translate(50 0)"/>
      <use xlink:href="#PalatinoLinotype-Roman-196" transform="translate(100 0)"/>
@@ -2298,15 +2295,15 @@ z
    </g>
    <g id="text_18">
     <g id="patch_11">
-     <path d="M 128.089019 106.130357
-L 145.134456 106.130357
-L 145.134456 96.419006
-L 128.089019 96.419006
+     <path d="M 128.994828 117.295857
+L 148.685172 117.295857
+L 148.685172 106.161947
+L 128.994828 106.161947
 z
 " style="fill: #f1ebe0"/>
     </g>
     <!-- 46% -->
-    <g style="fill: #231f1a" transform="translate(128.677019 103.155248) scale(0.084 -0.084)">
+    <g style="fill: #231f1a" transform="translate(129.582828 113.922896) scale(0.098 -0.098)">
      <defs>
       <path id="PalatinoLinotype-Bold-15a" d="M 3025 13
 L 2991 -25
@@ -2429,15 +2426,15 @@ z
    </g>
    <g id="text_19">
     <g id="patch_12">
-     <path d="M 168.344919 106.486446
-L 184.975606 106.486446
-L 184.975606 96.775095
-L 168.344919 96.775095
+     <path d="M 180.756766 117.675321
+L 199.963234 117.675321
+L 199.963234 106.541411
+L 180.756766 106.541411
 z
 " style="fill: #f1ebe0"/>
     </g>
     <!-- 45% -->
-    <g style="fill: #231f1a" transform="translate(168.932919 103.511337) scale(0.084 -0.084)">
+    <g style="fill: #231f1a" transform="translate(181.344766 114.30236) scale(0.098 -0.098)">
      <use xlink:href="#PalatinoLinotype-Roman-15a"/>
      <use xlink:href="#PalatinoLinotype-Roman-15b" transform="translate(50 0)"/>
      <use xlink:href="#PalatinoLinotype-Roman-196" transform="translate(100 0)"/>
@@ -2445,15 +2442,15 @@ z
    </g>
    <g id="text_20">
     <g id="patch_13">
-     <path d="M 208.393443 165.743893
-L 225.024131 165.743893
-L 225.024131 156.032541
-L 208.393443 156.032541
+     <path d="M 232.276766 180.822643
+L 251.483234 180.822643
+L 251.483234 169.688733
+L 232.276766 169.688733
 z
 " style="fill: #f1ebe0"/>
     </g>
     <!-- 16% -->
-    <g style="fill: #231f1a" transform="translate(208.981443 162.768783) scale(0.084 -0.084)">
+    <g style="fill: #231f1a" transform="translate(232.864766 177.449682) scale(0.098 -0.098)">
      <use xlink:href="#PalatinoLinotype-Roman-157"/>
      <use xlink:href="#PalatinoLinotype-Roman-15c" transform="translate(50 0)"/>
      <use xlink:href="#PalatinoLinotype-Roman-196" transform="translate(100 0)"/>
@@ -2461,15 +2458,15 @@ z
    </g>
    <g id="text_21">
     <g id="patch_14">
-     <path d="M 248.441968 141.152786
-L 265.072655 141.152786
-L 265.072655 131.441434
-L 248.441968 131.441434
+     <path d="M 283.796766 154.617286
+L 303.003234 154.617286
+L 303.003234 143.483376
+L 283.796766 143.483376
 z
 " style="fill: #f1ebe0"/>
     </g>
     <!-- 28% -->
-    <g style="fill: #231f1a" transform="translate(249.029968 138.177676) scale(0.084 -0.084)">
+    <g style="fill: #231f1a" transform="translate(284.384766 151.244325) scale(0.098 -0.098)">
      <use xlink:href="#PalatinoLinotype-Roman-158"/>
      <use xlink:href="#PalatinoLinotype-Roman-15e" transform="translate(50 0)"/>
      <use xlink:href="#PalatinoLinotype-Roman-196" transform="translate(100 0)"/>
@@ -2728,7 +2725,7 @@ z
   </g>
   <g id="text_23">
    <!-- Far and faithful, as a percent -->
-   <g style="fill: #7a7062" transform="translate(3.6 57.161391) scale(0.088 -0.088)">
+   <g style="fill: #7a7062" transform="translate(3.6 57.659895) scale(0.094 -0.094)">
     <defs>
      <path id="PalatinoLinotype-Roman-8" d="M 1363 2106
 L 1363 1472
@@ -2829,7 +2826,7 @@ z
     <use xlink:href="#PalatinoLinotype-Roman-9d" transform="translate(1230.734375 0)"/>
    </g>
    <!-- of the pictures each way of asking painted; -->
-   <g style="fill: #7a7062" transform="translate(3.6 67.891547) scale(0.088 -0.088)">
+   <g style="fill: #7a7062" transform="translate(3.6 69.121652) scale(0.094 -0.094)">
     <defs>
      <path id="PalatinoLinotype-Roman-a2" d="M 141 -1697
 Q 247 -1434 300 -1216
@@ -2938,7 +2935,7 @@ z
     <use xlink:href="#PalatinoLinotype-Roman-1f2" transform="translate(1862.625 0)"/>
    </g>
    <!-- the count under each name. -->
-   <g style="fill: #7a7062" transform="translate(3.6 79.727891) scale(0.088 -0.088)">
+   <g style="fill: #7a7062" transform="translate(3.6 81.76502) scale(0.094 -0.094)">
     <use xlink:href="#PalatinoLinotype-Roman-9d"/>
     <use xlink:href="#PalatinoLinotype-Roman-91" transform="translate(32.625 0)"/>
     <use xlink:href="#PalatinoLinotype-Roman-8e" transform="translate(90.828125 0)"/>
@@ -2969,8 +2966,8 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p497674a82b">
-   <rect x="34.488" y="87.696" width="244.296" height="112.608"/>
+  <clipPath id="p294b738dc0">
+   <rect x="7.464" y="97.69" width="314.272" height="120"/>
   </clipPath>
  </defs>
 </svg>
