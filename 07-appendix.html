@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9ee501170c19247828e23d73032166cb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-8fac4964f3f5d1d7e8f5a697880c16f6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -3499,13 +3499,775 @@ Table&nbsp;38: No loop paints a far and faithful picture in its first 4 rounds, 
 </div>
 </div>
 </section>
+<section id="where-the-loops-go" class="level3">
+<h3 class="anchored" data-anchor-id="where-the-loops-go">Where do the loops go?</h3>
+<div class="vp-tbl">
+<div id="tbl-centre-path" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-centre-path-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;39: Every run ends in the same region, Region 13, though the no-step loop’s run from Fra Angelico reaches it only in its last round. The region of the centre in each of the 60 rounds (rounds 0 to 59) of the 15 runs (3 loops, 5 starts), among the 32 regions of the CLIP reading, with the number of rounds in brackets; the centre is rebuilt from the loop’s readings. The 32 regions were fitted on 97,872 works (28,404 works from before 1900 and the 69,468 works from 1900 on), and every work was then assigned to its nearest region. The regions are listed in <a href="#tbl-path-regions" class="quarto-xref">Table&nbsp;41</a>.
+</figcaption>
+<div aria-describedby="tbl-centre-path-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Loop and start work</th>
+<th>Regions the centre is in, in order (rounds)</th>
+<th>Rounds in the last region</th>
+<th>First round in a region with under 10% of its works from before 1900</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>The search, Jan Cossiers, 1641</td>
+<td>15 (2), 23 (4), 13 (3), 11 (1), 13 (50)</td>
+<td>50</td>
+<td>6</td>
+</tr>
+<tr class="even">
+<td>The search, Fra Angelico, 1419</td>
+<td>15 (2), 12 (5), 25 (1), 11 (12), 13 (40)</td>
+<td>40</td>
+<td>7</td>
+</tr>
+<tr class="odd">
+<td>The search, Alfred Sisley, 1885</td>
+<td>14 (3), 18 (2), 6 (1), 13 (34), 24 (1), 13 (19)</td>
+<td>19</td>
+<td>6</td>
+</tr>
+<tr class="even">
+<td>The search, Vincent van Gogh, 1890</td>
+<td>3 (1), 13 (59)</td>
+<td>59</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>The search, Edgar Degas, 1890</td>
+<td>28 (1), 9 (3), 13 (56)</td>
+<td>56</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>Random-score loop, Jan Cossiers, 1641</td>
+<td>15 (1), 4 (1), 23 (5), 15 (1), 13 (5), 11 (1), 13 (46)</td>
+<td>46</td>
+<td>8</td>
+</tr>
+<tr class="odd">
+<td>Random-score loop, Fra Angelico, 1419</td>
+<td>15 (3), 12 (9), 11 (2), 25 (1), 11 (1), 25 (1), 11 (1), 25 (1), 11 (5), 13 (36)</td>
+<td>36</td>
+<td>12</td>
+</tr>
+<tr class="even">
+<td>Random-score loop, Alfred Sisley, 1885</td>
+<td>14 (4), 13 (56)</td>
+<td>56</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>Random-score loop, Vincent van Gogh, 1890</td>
+<td>3 (1), 6 (1), 13 (58)</td>
+<td>58</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>Random-score loop, Edgar Degas, 1890</td>
+<td>28 (1), 9 (5), 3 (3), 13 (51)</td>
+<td>51</td>
+<td>6</td>
+</tr>
+<tr class="odd">
+<td>No-step loop, Jan Cossiers, 1641</td>
+<td>15 (1), 4 (1), 23 (5), 15 (1), 4 (2), 13 (2), 11 (2), 25 (1), 11 (6), 13 (39)</td>
+<td>39</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>No-step loop, Fra Angelico, 1419</td>
+<td>15 (3), 12 (29), 11 (2), 25 (3), 11 (2), 25 (1), 11 (19), 13 (1)</td>
+<td>1</td>
+<td>32</td>
+</tr>
+<tr class="odd">
+<td>No-step loop, Alfred Sisley, 1885</td>
+<td>14 (3), 18 (1), 13 (23), 11 (8), 13 (25)</td>
+<td>25</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>No-step loop, Vincent van Gogh, 1890</td>
+<td>3 (1), 6 (1), 13 (58)</td>
+<td>58</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>No-step loop, Edgar Degas, 1890</td>
+<td>28 (1), 9 (5), 13 (3), 11 (27), 13 (3), 11 (3), 13 (6), 11 (5), 13 (7)</td>
+<td>7</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+<div class="vp-tbl">
+<div id="tbl-free-search-path" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-free-search-path-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;40: In all 3 runs of the free search the centre ends in the same region, Region 1 (95.8% of its works from before 1900), while 89% to 94% of the pictures lie in regions with under 10% of their works from before 1900 (1,752, 1,800 and 1,715 of 1,920). The free search has no restart, and its centre is the mean of a round’s requests. The region of the centre in each of the 60 rounds (rounds 0 to 59), with the number of rounds in brackets, and the pictures of the 60 rounds (32 a round, 1,920 a run) by the region class of the region their CLIP reading falls in. The regions and classes are those of <a href="#tbl-path-regions" class="quarto-xref">Table&nbsp;41</a>.
+</figcaption>
+<div aria-describedby="tbl-free-search-path-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Run of the free search</th>
+<th>Regions the centre is in, in order (rounds)</th>
+<th>First round in a region with under 10% of its works from before 1900</th>
+<th>Pictures in a region of under 1%</th>
+<th>1 to 10%</th>
+<th>10 to 50%</th>
+<th>50% and over</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Run 1</td>
+<td>1 (60)</td>
+<td>none</td>
+<td>833</td>
+<td>919</td>
+<td>31</td>
+<td>137</td>
+</tr>
+<tr class="even">
+<td>Run 2</td>
+<td>12 (21), 11 (1), 1 (38)</td>
+<td>21</td>
+<td>622</td>
+<td>1,178</td>
+<td>22</td>
+<td>98</td>
+</tr>
+<tr class="odd">
+<td>Run 3</td>
+<td>20 (7), 28 (2), 26 (6), 1 (4), 26 (1), 1 (40)</td>
+<td>none</td>
+<td>687</td>
+<td>1,028</td>
+<td>187</td>
+<td>18</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+<div class="vp-tbl">
+<div id="tbl-path-regions" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-path-regions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;41: Region 13, where every run of the search and its 2 controls ends, holds 3,950 of the fitted works, 1.6% of them from before 1900, and Region 1, where the 3 runs of the free search end, holds 3,575, 95.8% of them from before 1900. The 17 of the 32 regions that appear in a centre path of the 2 tables above, with the number of works each region was fitted on (the works from before 1900, from 1900 to 1959 and from 1960 on added) and the share of those works dated before 1900. The class is the share’s band. The 32 regions were fitted on 97,872 works (28,404 works from before 1900 and the 69,468 works from 1900 on), and every work was then assigned to its nearest region.
+</figcaption>
+<div aria-describedby="tbl-path-regions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Region</th>
+<th>Fitted works</th>
+<th>From before 1900</th>
+<th>Class of the region</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Region 1</td>
+<td>3,575</td>
+<td>95.8%</td>
+<td>50% and over</td>
+</tr>
+<tr class="even">
+<td>Region 3</td>
+<td>3,126</td>
+<td>1.3%</td>
+<td>1 to 10%</td>
+</tr>
+<tr class="odd">
+<td>Region 4</td>
+<td>2,755</td>
+<td>84.9%</td>
+<td>50% and over</td>
+</tr>
+<tr class="even">
+<td>Region 6</td>
+<td>2,153</td>
+<td>38.9%</td>
+<td>10 to 50%</td>
+</tr>
+<tr class="odd">
+<td>Region 9</td>
+<td>2,249</td>
+<td>14.0%</td>
+<td>10 to 50%</td>
+</tr>
+<tr class="even">
+<td>Region 11</td>
+<td>3,691</td>
+<td>0.4%</td>
+<td>Under 1%</td>
+</tr>
+<tr class="odd">
+<td>Region 12</td>
+<td>1,719</td>
+<td>75.7%</td>
+<td>50% and over</td>
+</tr>
+<tr class="even">
+<td>Region 13</td>
+<td>3,950</td>
+<td>1.6%</td>
+<td>1 to 10%</td>
+</tr>
+<tr class="odd">
+<td>Region 14</td>
+<td>4,329</td>
+<td>78.5%</td>
+<td>50% and over</td>
+</tr>
+<tr class="even">
+<td>Region 15</td>
+<td>3,709</td>
+<td>96.3%</td>
+<td>50% and over</td>
+</tr>
+<tr class="odd">
+<td>Region 18</td>
+<td>3,376</td>
+<td>68.5%</td>
+<td>50% and over</td>
+</tr>
+<tr class="even">
+<td>Region 20</td>
+<td>2,936</td>
+<td>11.1%</td>
+<td>10 to 50%</td>
+</tr>
+<tr class="odd">
+<td>Region 23</td>
+<td>2,914</td>
+<td>90.9%</td>
+<td>50% and over</td>
+</tr>
+<tr class="even">
+<td>Region 24</td>
+<td>5,053</td>
+<td>0.02%</td>
+<td>Under 1%</td>
+</tr>
+<tr class="odd">
+<td>Region 25</td>
+<td>3,057</td>
+<td>0.2%</td>
+<td>Under 1%</td>
+</tr>
+<tr class="even">
+<td>Region 26</td>
+<td>3,154</td>
+<td>35.9%</td>
+<td>10 to 50%</td>
+</tr>
+<tr class="odd">
+<td>Region 28</td>
+<td>3,832</td>
+<td>62.9%</td>
+<td>50% and over</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+<div class="vp-tbl">
+<div id="tbl-ff-by-region" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ff-by-region-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;42: All but 3 far and faithful pictures lie in a region with under 10% of its works from before 1900, and in each loop the far and faithful share is higher in the regions under 1% than in those of 1 to 10%. The 3 others lie in regions of 50% and over, 2 in the random-score loop and 1 in the no-step loop. Far and faithful pictures as a share of all pictures read in a region of that class, over the 9,600 pictures of each loop (5 starts, 60 rounds, 32 pictures a round), with the region of a picture the one its CLIP reading falls in. The classes are those of <a href="#tbl-path-regions" class="quarto-xref">Table&nbsp;41</a>.
+</figcaption>
+<div aria-describedby="tbl-ff-by-region-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Region class of the picture (share of its works from before 1900)</th>
+<th>The search</th>
+<th>Random-score loop</th>
+<th>No-step loop</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Under 1%</td>
+<td>555 of 703 (78.9%)</td>
+<td>186 of 719 (25.9%)</td>
+<td>1,017 of 2,613 (38.9%)</td>
+</tr>
+<tr class="even">
+<td>1 to 10%</td>
+<td>3,825 of 8,194 (46.7%)</td>
+<td>1,346 of 7,952 (16.9%)</td>
+<td>1,690 of 5,441 (31.1%)</td>
+</tr>
+<tr class="odd">
+<td>10 to 50%</td>
+<td>0 of 132 (0%)</td>
+<td>0 of 226 (0%)</td>
+<td>0 of 175 (0%)</td>
+</tr>
+<tr class="even">
+<td>50% and over</td>
+<td>0 of 571 (0%)</td>
+<td>2 of 703 (0.3%)</td>
+<td>1 of 1,371 (0.1%)</td>
+</tr>
+<tr class="odd">
+<td>Under 10%, the first 2 rows together</td>
+<td>4,380 of 8,897 (49.2%)</td>
+<td>1,532 of 8,671 (17.7%)</td>
+<td>2,707 of 8,054 (33.6%)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+<div class="vp-tbl">
+<div id="tbl-score-by-round" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-score-by-round-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;43: In all 3 loops the median score of the feasible pictures rises from between −1.08 and −1.04 at round 0 to between +2.42 and +2.63 at round 10 and stays between +2.09 and +2.83 at the later rounds listed, and only in the search are the 4 picked pictures higher than the round’s median. The score is the smaller of the 2 observers’ scores, in units of the reference’s spread; for the random-score and no-step loops it is the observers’ score of their pictures, not the score they were told. Each round row is the median over the 5 starts of each start’s median over the feasible pictures of the round. The last row is the median over the 5 starts of the median score of the 4 picked pictures, less the median over the 5 starts of the median score of all 32 pictures of the round, as a mean over the 60 rounds.
+</figcaption>
+<div aria-describedby="tbl-score-by-round-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Score</th>
+<th>The search</th>
+<th>Random-score loop</th>
+<th>No-step loop</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Round 0</td>
+<td>−1.08</td>
+<td>−1.08</td>
+<td>−1.04</td>
+</tr>
+<tr class="even">
+<td>Round 5</td>
+<td>+1.45</td>
+<td>+0.95</td>
+<td>+1.54</td>
+</tr>
+<tr class="odd">
+<td>Round 10</td>
+<td>+2.63</td>
+<td>+2.63</td>
+<td>+2.42</td>
+</tr>
+<tr class="even">
+<td>Round 15</td>
+<td>+2.29</td>
+<td>+2.45</td>
+<td>+2.17</td>
+</tr>
+<tr class="odd">
+<td>Round 20</td>
+<td>+2.53</td>
+<td>+2.82</td>
+<td>+2.62</td>
+</tr>
+<tr class="even">
+<td>Round 30</td>
+<td>+2.83</td>
+<td>+2.59</td>
+<td>+2.68</td>
+</tr>
+<tr class="odd">
+<td>Round 40</td>
+<td>+2.58</td>
+<td>+2.26</td>
+<td>+2.09</td>
+</tr>
+<tr class="even">
+<td>Round 50</td>
+<td>+2.43</td>
+<td>+2.74</td>
+<td>+2.18</td>
+</tr>
+<tr class="odd">
+<td>Round 59</td>
+<td>+2.54</td>
+<td>+2.38</td>
+<td>+2.16</td>
+</tr>
+<tr class="even">
+<td>The 4 picked, less the median of all 32 pictures of their round (mean over rounds)</td>
+<td>+0.79</td>
+<td>−0.01</td>
+<td>−0.03</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+<div class="vp-tbl">
+<div id="tbl-score-after-region-change" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-score-after-region-change-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;44: In all 3 loops the score rises more over the 3 rounds after the centre enters a new region than where it stays in its region, most in the search. A window is the rounds t−2 to t+3 around a round t from 3 to 55 (53 windows in each run, 265 in each loop over the 5 starts), and in a change the centre of round t+1 lies in another region than the centre of round t. The change is the mean score of rounds t+1 to t+3 less that of rounds t−2 to t, as a mean over the windows, where the score of a round is the median of its 32 pictures on the scale of <a href="#tbl-score-by-round" class="quarto-xref">Table&nbsp;43</a>.
+</figcaption>
+<div aria-describedby="tbl-score-after-region-change-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Change in the score over 3 rounds</th>
+<th>The search</th>
+<th>Random-score loop</th>
+<th>No-step loop</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>After the centre enters a new region</td>
+<td>+1.14 (11 changes)</td>
+<td>+0.54 (15 changes)</td>
+<td>+0.35 (22 changes)</td>
+</tr>
+<tr class="even">
+<td>Where the centre stays in its region</td>
+<td>+0.07 (254 windows)</td>
+<td>+0.10 (250 windows)</td>
+<td>+0.08 (243 windows)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+<div class="vp-tbl">
+<div id="tbl-local-directions" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-local-directions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;45: In all 3 loops a median of 22.3% to 24.7% of a centre move’s squared length lies in the 39 directions that the 100 works from before 1900 nearest to the centre share, against 5.1% for a random set of 39 directions, and the share is higher in rounds 0 to 9 (36.4% to 40.2%) than in rounds 50 to 58 (19.9% to 23.9%). The 100 works are the nearest to the centre before the move, by cosine in CLIP, among the 53,031 works from before 1900, and the 39 directions are the first 39 of an uncentred singular value decomposition of their offsets from the centre along the sphere. The moves of the 5 starts are pooled, and the median and percentiles are over those moves (rounds 0 to 58).
+</figcaption>
+<div aria-describedby="tbl-local-directions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Share of a centre move’s squared length in the 39 directions</th>
+<th>The search</th>
+<th>Random-score loop</th>
+<th>No-step loop</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>All rounds, median</td>
+<td>22.3%</td>
+<td>24.7%</td>
+<td>23.2%</td>
+</tr>
+<tr class="even">
+<td>All rounds, 10th to 90th percentile</td>
+<td>14.2% to 41.0%</td>
+<td>16.2% to 41.3%</td>
+<td>14.1% to 40.1%</td>
+</tr>
+<tr class="odd">
+<td>Rounds 0 to 9, median</td>
+<td>36.4%</td>
+<td>40.2%</td>
+<td>39.8%</td>
+</tr>
+<tr class="even">
+<td>Rounds 50 to 58, median</td>
+<td>20.4%</td>
+<td>23.9%</td>
+<td>19.9%</td>
+</tr>
+<tr class="odd">
+<td>A random set of 39 directions (39 of 768)</td>
+<td>5.1%</td>
+<td>5.1%</td>
+<td>5.1%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+<div class="vp-tbl">
+<div id="tbl-off-by-start" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-off-by-start-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;46: The search’s far and faithful pictures off the manifold come mostly from the run at Fra Angelico (227 of 331), and the random-score and no-step loops’ mostly from the run at Edgar Degas (149 of 187 and 68 of 107). The far and faithful pictures of each loop split by start, a picture being off the manifold when its nearest real work lies beyond the manifold line in both observers. The works within reach are the works of the corpus within a chord of 0.61 of the picture’s CLIP reading (<a href="./03-5-q5.html">Q5</a>’s reach); the medians are over the pictures of the cell. A start with no such picture has no median.
+</figcaption>
+<div aria-describedby="tbl-off-by-start-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Far and faithful pictures, count and kind</th>
+<th>Jan Cossiers, 1641</th>
+<th>Fra Angelico, 1419</th>
+<th>Alfred Sisley, 1885</th>
+<th>Vincent van Gogh, 1890</th>
+<th>Edgar Degas, 1890</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>The search, off the manifold</td>
+<td>60</td>
+<td>227</td>
+<td>43</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>The search, off the manifold: median round</td>
+<td>9</td>
+<td>20</td>
+<td>21</td>
+<td>7</td>
+<td>none</td>
+</tr>
+<tr class="odd">
+<td>The search, off the manifold: median number of works within reach</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>none</td>
+</tr>
+<tr class="even">
+<td>The search, on the manifold</td>
+<td>619</td>
+<td>637</td>
+<td>853</td>
+<td>839</td>
+<td>1,101</td>
+</tr>
+<tr class="odd">
+<td>The search, on the manifold: median round</td>
+<td>32</td>
+<td>26</td>
+<td>38</td>
+<td>31</td>
+<td>35</td>
+</tr>
+<tr class="even">
+<td>The search, on the manifold: median number of works within reach</td>
+<td>1</td>
+<td>0</td>
+<td>4</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>Random-score loop, off the manifold</td>
+<td>14</td>
+<td>22</td>
+<td>2</td>
+<td>0</td>
+<td>149</td>
+</tr>
+<tr class="even">
+<td>Random-score loop, on the manifold</td>
+<td>298</td>
+<td>358</td>
+<td>302</td>
+<td>149</td>
+<td>240</td>
+</tr>
+<tr class="odd">
+<td>No-step loop, off the manifold</td>
+<td>9</td>
+<td>12</td>
+<td>9</td>
+<td>9</td>
+<td>68</td>
+</tr>
+<tr class="even">
+<td>No-step loop, on the manifold</td>
+<td>536</td>
+<td>654</td>
+<td>205</td>
+<td>1,001</td>
+<td>205</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+<div class="vp-tbl">
+<div id="tbl-off-fra-angelico" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-off-fra-angelico-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;47: All 227 far and faithful pictures off the manifold of the search’s run at Fra Angelico are painted in 22 consecutive rounds, 8 to 29, 101 while the centre is in the region with 0.4% of its works from before 1900 and 126 while it is in the region where every run ends. The pictures are counted by the region of the round’s centre and by the region the picture’s CLIP reading falls in. The works are the works each region was fitted on, as in <a href="#tbl-path-regions" class="quarto-xref">Table&nbsp;41</a>.
+</figcaption>
+<div aria-describedby="tbl-off-fra-angelico-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Region</th>
+<th>Works</th>
+<th>From before 1900</th>
+<th>Pictures painted while the centre was in it (rounds)</th>
+<th>Pictures lying in it</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Region 11</td>
+<td>3,691</td>
+<td>0.4%</td>
+<td>101 (rounds 8 to 19)</td>
+<td>122</td>
+</tr>
+<tr class="even">
+<td>Region 13</td>
+<td>3,950</td>
+<td>1.6%</td>
+<td>126 (rounds 20 to 29)</td>
+<td>102</td>
+</tr>
+<tr class="odd">
+<td>Region 25</td>
+<td>3,057</td>
+<td>0.2%</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>All</td>
+<td></td>
+<td></td>
+<td>227 (rounds 8 to 29)</td>
+<td>227</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+<div class="vp-tbl">
+<div id="tbl-yardstick" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-yardstick-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;48: A repainted reference work’s reading lies in the region of its original for 1,571 of 2,048 works (76.7%) and in the class of its original’s region for 1,830 of 2,048 (89.4%). The 2,048 repainted works of the reference, each read on the CLIP reading and assigned to the same 32 regions and 4 classes as the pictures above, which <a href="#tbl-path-regions" class="quarto-xref">Table&nbsp;41</a> lists.
+</figcaption>
+<div aria-describedby="tbl-yardstick-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Reference works, repainted</th>
+<th>Count</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Repainted works of the reference</td>
+<td>2,048</td>
+</tr>
+<tr class="even">
+<td>Read in the region of the original</td>
+<td>1,571 of 2,048 (76.7%)</td>
+</tr>
+<tr class="odd">
+<td>Read in the region class of the original</td>
+<td>1,830 of 2,048 (89.4%)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</div>
+</section>
 <section id="are-the-far-pictures-far-from-all-art-or-only-from-art-before-1900" class="level3">
 <h3 class="anchored" data-anchor-id="are-the-far-pictures-far-from-all-art-or-only-from-art-before-1900">Are the far pictures far from all art, or only from art before 1900?</h3>
 <div class="vp-tbl">
 <div id="tbl-today-not-far" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-today-not-far-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;39: Nearly every far and faithful picture of the 3 loops is not far from today’s reference, 4,221 of the search’s 4,380. The far and faithful pictures of the 3 loops, scored against today’s 2,048 repainted works at the 1900 bars.
+Table&nbsp;49: Nearly every far and faithful picture of the 3 loops is not far from today’s reference, 4,221 of the search’s 4,380. The far and faithful pictures of the 3 loops, scored against today’s 2,048 repainted works at the 1900 bars.
 </figcaption>
 <div aria-describedby="tbl-today-not-far-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -3546,7 +4308,7 @@ Table&nbsp;39: Nearly every far and faithful picture of the 3 loops is not far f
 <div id="tbl-today-bars" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-today-bars-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;40: Under today’s own bar, 1 of the 26 far and faithful later works, 0 calibration works and 343, 126 and 403 of the free search’s admitted pictures are still far against today’s reference. Pictures that are still far against today’s reference, under 3 bars. None of the free search’s admitted pictures is faithful.
+Table&nbsp;50: Under today’s own bar, 1 of the 26 far and faithful later works, 0 calibration works and 343, 126 and 403 of the free search’s admitted pictures are still far against today’s reference. Pictures that are still far against today’s reference, under 3 bars. None of the free search’s admitted pictures is faithful.
 </figcaption>
 <div aria-describedby="tbl-today-bars-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -3605,7 +4367,7 @@ Table&nbsp;40: Under today’s own bar, 1 of the 26 far and faithful later works
 <div id="tbl-dated-by-start" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-dated-by-start-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;41: 88% of the search’s far and faithful pictures have a work dated 1900 or later within the manifold line and none dated before 1900, against 81% of the random-score loop’s, 63% of the no-step loop’s and 84% of the single walk’s. Off the manifold the search has more than either control in all, though fewer at 1 start than the random-score loop and at 2 than the no-step loop. The far and faithful pictures of each procedure by start and by kind, at 1,920 pictures a start, with the work within the manifold line in at least one observer. The 4 kinds add up to the far and faithful pictures.
+Table&nbsp;51: 88% of the search’s far and faithful pictures have a work dated 1900 or later within the manifold line and none dated before 1900, against 81% of the random-score loop’s, 63% of the no-step loop’s and 84% of the single walk’s. Off the manifold the search has more than either control in all, though fewer at 1 start than the random-score loop and at 2 than the no-step loop. The far and faithful pictures of each procedure by start and by kind, at 1,920 pictures a start, with the work within the manifold line in at least one observer. The 4 kinds add up to the far and faithful pictures.
 </figcaption>
 <div aria-describedby="tbl-dated-by-start-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -3820,7 +4582,7 @@ Table&nbsp;41: 88% of the search’s far and faithful pictures have a work dated
 <div id="tbl-dated-readings" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-dated-readings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;42: A work dated before 1900 lies within the manifold line of 180 of the search’s far and faithful pictures, 66 of the random-score loop’s and 834 of the no-step loop’s. The far and faithful pictures of each loop under each reading of the dates. Rows 3 and 4 are counted among the pictures of row 2, and rows 5 and 6 are the count of row 2 under the other readings of the undated works.
+Table&nbsp;52: A work dated before 1900 lies within the manifold line of 180 of the search’s far and faithful pictures, 66 of the random-score loop’s and 834 of the no-step loop’s. The far and faithful pictures of each loop under each reading of the dates. Rows 3 and 4 are counted among the pictures of row 2, and rows 5 and 6 are the count of row 2 under the other readings of the undated works.
 </figcaption>
 <div aria-describedby="tbl-dated-readings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -3885,7 +4647,7 @@ Table&nbsp;42: A work dated before 1900 lies within the manifold line of 180 of 
 <div id="tbl-dated-by-artist-start" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-dated-by-artist-start-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;43: With undated works dated by their artist and the pictures that have a still-undated work within the line set aside, neither the search nor a control is ahead. The search has fewer pictures than the random-score loop at Degas and fewer than the no-step loop at 3 starts. The count is the far and faithful pictures with a work dated 1900 or later within the manifold line and none dated before 1900, by start. Without setting the still-undated aside, the search has more than both controls at every start (3,810 against 1,265 and 1,640).
+Table&nbsp;53: With undated works dated by their artist and the pictures that have a still-undated work within the line set aside, neither the search nor a control is ahead. The search has fewer pictures than the random-score loop at Degas and fewer than the no-step loop at 3 starts. The count is the far and faithful pictures with a work dated 1900 or later within the manifold line and none dated before 1900, by start. Without setting the still-undated aside, the search has more than both controls at every start (3,810 against 1,265 and 1,640).
 </figcaption>
 <div aria-describedby="tbl-dated-by-artist-start-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -3974,7 +4736,7 @@ Table&nbsp;43: With undated works dated by their artist and the pictures that ha
 <div id="tbl-real-work-observers" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-real-work-observers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;44: Counting a real work, dated or not, 331 of the search’s far and faithful pictures, 187 of the random-score loop’s and 107 of the no-step loop’s have none within the manifold line in either observer. The far and faithful pictures by the observers in which a real work lies within the manifold line. Leaving out the start work changes none of these counts.
+Table&nbsp;54: Counting a real work, dated or not, 331 of the search’s far and faithful pictures, 187 of the random-score loop’s and 107 of the no-step loop’s have none within the manifold line in either observer. The far and faithful pictures by the observers in which a real work lies within the manifold line. Leaving out the start work changes none of these counts.
 </figcaption>
 <div aria-describedby="tbl-real-work-observers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -4021,7 +4783,7 @@ Table&nbsp;44: Counting a real work, dated or not, 331 of the search’s far and
 <div id="tbl-off-distances" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-off-distances-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;45: Off the manifold the search’s pictures sit farther from their nearest real work than the controls’ pictures do, at a median of 0.88 in DINOv3 against 0.81 and 0.80. The median distance from a far and faithful picture off the manifold to its nearest real work, in each observer, with nothing left out.
+Table&nbsp;55: Off the manifold the search’s pictures sit farther from their nearest real work than the controls’ pictures do, at a median of 0.88 in DINOv3 against 0.81 and 0.80. The median distance from a far and faithful picture off the manifold to its nearest real work, in each observer, with nothing left out.
 </figcaption>
 <div aria-describedby="tbl-off-distances-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -4077,7 +4839,7 @@ Table&nbsp;45: Off the manifold the search’s pictures sit farther from their n
 <div id="tbl-rule-readings" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-rule-readings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;46: The nearest original work within the manifold line is the only one of the 3 readings that keeps nearly every real work on and can still say a picture is off. Each cell is on : off among the pictures of that set with a large leftover share, their number in the heading.
+Table&nbsp;56: The nearest original work within the manifold line is the only one of the 3 readings that keeps nearly every real work on and can still say a picture is off. Each cell is on : off among the pictures of that set with a large leftover share, their number in the heading.
 </figcaption>
 <div aria-describedby="tbl-rule-readings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -4122,7 +4884,7 @@ Table&nbsp;46: The nearest original work within the manifold line is the only on
 <div id="tbl-rule-sets" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-rule-sets-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;47: The nearest original work within the manifold line says nearly all the pictures of a set are on, real works, noise pictures and random requests alike, and off for only a few. The pictures of 4 sets with a real work within the manifold line in both observers, in 1 and in neither, with nothing left out.
+Table&nbsp;57: The nearest original work within the manifold line says nearly all the pictures of a set are on, real works, noise pictures and random requests alike, and off for only a few. The pictures of 4 sets with a real work within the manifold line in both observers, in 1 and in neither, with nothing left out.
 </figcaption>
 <div aria-describedby="tbl-rule-sets-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -4175,7 +4937,7 @@ Table&nbsp;47: The nearest original work within the manifold line says nearly al
 <div id="tbl-known-kinds" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-known-kinds-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;48: 5% of the far and faithful repainted works from 1970 on are off the manifold, against 8% of the search’s far and faithful pictures. 87% of those works have a work dated 1900 or later within the manifold line and none dated before 1900, and so do all but one of the 32 far and faithful pictures painted from noise. The far and faithful pictures of 4 sets whose origin we know, by kind, with a repaint’s own original and its near-duplicates left out, and the search’s beside them.
+Table&nbsp;58: 5% of the far and faithful repainted works from 1970 on are off the manifold, against 8% of the search’s far and faithful pictures. 87% of those works have a work dated 1900 or later within the manifold line and none dated before 1900, and so do all but one of the 32 far and faithful pictures painted from noise. The far and faithful pictures of 4 sets whose origin we know, by kind, with a repaint’s own original and its near-duplicates left out, and the search’s beside them.
 </figcaption>
 <div aria-describedby="tbl-known-kinds-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -4251,7 +5013,7 @@ Table&nbsp;48: 5% of the far and faithful repainted works from 1970 on are off t
 <div id="tbl-leftover-line" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-leftover-line-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;49: With a second split of the artists the line moves by 0.01 in DINOv3 and 0.005 in SigLIP. The search still has more pictures of this kind than either control, 1,383 against 57 and 13. The line is the share that 99% of the 2,048 reference pictures lie below, each scored by directions fitted without its artist, in 5 folds of artists. A split is one random division of the artists into folds, and only the line changes between splits. An empty cell is a count not on record.
+Table&nbsp;59: With a second split of the artists the line moves by 0.01 in DINOv3 and 0.005 in SigLIP. The search still has more pictures of this kind than either control, 1,383 against 57 and 13. The line is the share that 99% of the 2,048 reference pictures lie below, each scored by directions fitted without its artist, in 5 folds of artists. A split is one random division of the artists into folds, and only the line changes between splits. An empty cell is a count not on record.
 </figcaption>
 <div aria-describedby="tbl-leftover-line-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -4298,7 +5060,7 @@ Table&nbsp;49: With a second split of the artists the line moves by 0.01 in DINO
 <div id="tbl-leftover-directions" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-leftover-directions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;50: Read by dates or with undated works dated by their artist, the search has more of this count than both controls in sum at each of the 5 numbers of directions for the leftover. By start, read by dates, it has more at 16, 32 and 64 directions (the next table). The count is the far and faithful pictures with a large leftover share and a work dated 1900 or later within the manifold line, none dated before 1900.
+Table&nbsp;60: Read by dates or with undated works dated by their artist, the search has more of this count than both controls in sum at each of the 5 numbers of directions for the leftover. By start, read by dates, it has more at 16, 32 and 64 directions (the next table). The count is the far and faithful pictures with a large leftover share and a work dated 1900 or later within the manifold line, none dated before 1900.
 </figcaption>
 <div aria-describedby="tbl-leftover-directions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -4345,7 +5107,7 @@ Table&nbsp;50: Read by dates or with undated works dated by their artist, the se
 <div id="tbl-leftover-by-start" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-leftover-by-start-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;51: With the pictures that have a still-undated work within the manifold line also set aside, the count at 32 directions is 232 / 36 / 22. The count of the table above by start, in the same order of loops, at 16, 32 and 64 directions and, in the last column, at 32 directions with undated works dated by their artist and those pictures set aside.
+Table&nbsp;61: With the pictures that have a still-undated work within the manifold line also set aside, the count at 32 directions is 232 / 36 / 22. The count of the table above by start, in the same order of loops, at 16, 32 and 64 directions and, in the last column, at 32 directions with undated works dated by their artist and those pictures set aside.
 </figcaption>
 <div aria-describedby="tbl-leftover-by-start-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -4414,7 +5176,7 @@ Table&nbsp;51: With the pictures that have a still-undated work within the manif
 <div id="tbl-today-places" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-today-places-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;52: No place off the manifold holds eligible pictures from 3 or more starts for the search. The 2 controls have 5 or more eligible pictures at one start at most, so the rule cannot find a place for them. 18% of the search’s pictures are faithful and off the manifold, against 0.6% of the random-score loop’s and 1.4% of the no-step loop’s. Run on real works, the same rule finds no place among far ones, and finds places among as many that are not far (<a href="#tbl-real-places" class="quarto-xref">Table&nbsp;53</a>). Counts by start for the 15 runs against today’s reference, 1,920 pictures a run.
+Table&nbsp;62: No place off the manifold holds eligible pictures from 3 or more starts for the search. The 2 controls have 5 or more eligible pictures at one start at most, so the rule cannot find a place for them. 18% of the search’s pictures are faithful and off the manifold, against 0.6% of the random-score loop’s and 1.4% of the no-step loop’s. Run on real works, the same rule finds no place among far ones, and finds places among as many that are not far (<a href="#tbl-real-places" class="quarto-xref">Table&nbsp;63</a>). Counts by start for the 15 runs against today’s reference, 1,920 pictures a run.
 </figcaption>
 <div aria-describedby="tbl-today-places-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -4503,7 +5265,7 @@ Table&nbsp;52: No place off the manifold holds eligible pictures from 3 or more 
 <div id="tbl-real-places" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-real-places-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;53: Places by the search’s rule among real works from 1970 on, against the art before 1970, with 5 groups of artists in place of starts. The smaller radius is the search’s own. The works that are not far come from more artists than the 682 of the far ones, so their places show that the rule can find a place, not a matched comparison.
+Table&nbsp;63: Places by the search’s rule among real works from 1970 on, against the art before 1970, with 5 groups of artists in place of starts. The smaller radius is the search’s own. The works that are not far come from more artists than the 682 of the far ones, so their places show that the rule can find a place, not a matched comparison.
 </figcaption>
 <div aria-describedby="tbl-real-places-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -4571,7 +5333,7 @@ Table&nbsp;53: Places by the search’s rule among real works from 1970 on, agai
 <div id="tbl-decoder-size" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-decoder-size-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;54: Downsampled to 128 pixels and re-embedded, 33 of the 512 real later works and 2 of the 1,000 calibration works are far and faithful under recomputed bars. At 64 pixels the faithful line is too close to the unrelated level to be useful.
+Table&nbsp;64: Downsampled to 128 pixels and re-embedded, 33 of the 512 real later works and 2 of the 1,000 calibration works are far and faithful under recomputed bars. At 64 pixels the faithful line is too close to the unrelated level to be useful.
 </figcaption>
 <div aria-describedby="tbl-decoder-size-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -4614,7 +5376,7 @@ Table&nbsp;54: Downsampled to 128 pixels and re-embedded, 33 of the 512 real lat
 <div id="tbl-rules" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-rules-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;55: How 5 rules on these pages are set.
+Table&nbsp;65: How 5 rules on these pages are set.
 </figcaption>
 <div aria-describedby="tbl-rules-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -4662,7 +5424,7 @@ Table&nbsp;55: How 5 rules on these pages are set.
 <div id="tbl-lumps-steps" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-lumps-steps-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;56: The 3 steps of the test of lumps, in CLIP.
+Table&nbsp;66: The 3 steps of the test of lumps, in CLIP.
 </figcaption>
 <div aria-describedby="tbl-lumps-steps-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -4765,7 +5527,7 @@ Figure&nbsp;14: One lump explains less of a typical work from 1900 on than befor
 <div id="tbl-centre-angles" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-centre-angles-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;57: The restart sets the centre in 60 of 60 rounds of every run. The angle of CMA-ES’s own update and the angle from one round’s centre to the next after the restart, from pycma replayed on the saved told values. Restarting from 4 pictures is our choice, and no run has the restart off with the faithful condition kept (the free search has neither).
+Table&nbsp;67: The restart sets the centre in 60 of 60 rounds of every run. The angle of CMA-ES’s own update and the angle from one round’s centre to the next after the restart, from pycma replayed on the saved told values. Restarting from 4 pictures is our choice, and no run has the restart off with the faithful condition kept (the free search has neither).
 </figcaption>
 <div aria-describedby="tbl-centre-angles-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -4815,7 +5577,7 @@ Table&nbsp;57: The restart sets the centre in 60 of 60 rounds of every run. The 
 <div id="tbl-crowd-gap" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-crowd-gap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;58: In run 1 of the free search, 628 of the 1,377 pictures that exceed the bar against the reference alone failed only because earlier admitted pictures sat in their neighbourhood. The minimum-gap rule’s 0.575, the distances among the free search’s admitted pictures, and the calibration works that pass. We have not checked 0.575 on today’s reference, and the calibration works are not a denominator for the admissions of the free search’s runs told random scores.
+Table&nbsp;68: In run 1 of the free search, 628 of the 1,377 pictures that exceed the bar against the reference alone failed only because earlier admitted pictures sat in their neighbourhood. The minimum-gap rule’s 0.575, the distances among the free search’s admitted pictures, and the calibration works that pass. We have not checked 0.575 on today’s reference, and the calibration works are not a denominator for the admissions of the free search’s runs told random scores.
 </figcaption>
 <div aria-describedby="tbl-crowd-gap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -4879,7 +5641,7 @@ Table&nbsp;58: In run 1 of the free search, 628 of the 1,377 pictures that excee
 <div id="tbl-loop-checks" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-loop-checks-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;59: The count’s replay of the admission rule admits the same pictures as every run did, and the loop’s CLIP reading has a median cosine of 1.0000 to the stored one in all 15 runs. Each check of the loop as it runs and what it gave.
+Table&nbsp;69: The count’s replay of the admission rule admits the same pictures as every run did, and the loop’s CLIP reading has a median cosine of 1.0000 to the stored one in all 15 runs. Each check of the loop as it runs and what it gave.
 </figcaption>
 <div aria-describedby="tbl-loop-checks-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -4960,7 +5722,7 @@ Table&nbsp;59: The count’s replay of the admission rule admits the same pictur
 <div id="tbl-free-search-runs" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-free-search-runs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;60: In the free search the requests move away from the reference’s requests over a run. The cosine of the requests to the nearest reference request, the rounds in which sigma hit its cap, and the ratios and the fidelity per angle bin at other angles than <a href="./05-3-controls.html">Q12</a> has. The free search differs from DuROOM search in 4 ways at once (every picture is feasible, CMA-ES moves the centre, its first step is about 30 degrees, and it starts from 3 other works).
+Table&nbsp;70: In the free search the requests move away from the reference’s requests over a run. The cosine of the requests to the nearest reference request, the rounds in which sigma hit its cap, and the ratios and the fidelity per angle bin at other angles than <a href="./05-3-controls.html">Q12</a> has. The free search differs from DuROOM search in 4 ways at once (every picture is feasible, CMA-ES moves the centre, its first step is about 30 degrees, and it starts from 3 other works).
 </figcaption>
 <div aria-describedby="tbl-free-search-runs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -5059,7 +5821,7 @@ Figure&nbsp;17: The free search’s admitted pictures, not DuROOM search’s: no
 <div id="tbl-free-search-new-seeds" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-free-search-new-seeds-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;61: From the same start the free search’s counts repeat, with 759, 829 and 817 of 1,920 pictures admitted against 749 in the first run, and 69 to 73% of the pictures far in the 3 new runs. All 3 new runs start from the Gilbert Stuart portrait and ran on another type of graphics card than the first run.
+Table&nbsp;71: From the same start the free search’s counts repeat, with 759, 829 and 817 of 1,920 pictures admitted against 749 in the first run, and 69 to 73% of the pictures far in the 3 new runs. All 3 new runs start from the Gilbert Stuart portrait and ran on another type of graphics card than the first run.
 </figcaption>
 <div aria-describedby="tbl-free-search-new-seeds-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -5118,7 +5880,7 @@ Table&nbsp;61: From the same start the free search’s counts repeat, with 759, 
 <div id="tbl-observers-real-works" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-observers-real-works-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;62: With each measure cut so that it calls far 71 of 24,627 held-out works before 1900, far in both observers calls far 11,181 of 69,468 later works. Later works called far by each measure, on real works. In a new run we have not tested one observer, the mean of the two or the larger of the two in place of the smaller.
+Table&nbsp;72: With each measure cut so that it calls far 71 of 24,627 held-out works before 1900, far in both observers calls far 11,181 of 69,468 later works. Later works called far by each measure, on real works. In a new run we have not tested one observer, the mean of the two or the larger of the two in place of the smaller.
 </figcaption>
 <div aria-describedby="tbl-observers-real-works-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -5163,7 +5925,7 @@ Table&nbsp;62: With each measure cut so that it calls far 71 of 24,627 held-out 
 <div id="tbl-not-tested" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-not-tested-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;63: What we have not tested in a new run, and what we have not counted on data we already have. The leftover was tried only as the score.
+Table&nbsp;73: What we have not tested in a new run, and what we have not counted on data we already have. The leftover was tried only as the score.
 </figcaption>
 <div aria-describedby="tbl-not-tested-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -5207,7 +5969,7 @@ Table&nbsp;63: What we have not tested in a new run, and what we have not counte
 <td>A new run</td>
 </tr>
 <tr class="odd">
-<td>More than 1 counted run per loop per start (the no-step loop has a second run at each start and the search one pair, <a href="#tbl-real-score-no-step">above</a> and <a href="#tbl-loop-checks">above</a>)</td>
+<td>More than 1 counted run per loop per start (the no-step loop has a second run at each start and the search one pair, <a href="#tbl-real-score-no-step">the no-step table</a> and <a href="#tbl-loop-checks">the loop checks</a>)</td>
 <td>A new run</td>
 </tr>
 <tr class="even">

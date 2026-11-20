@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="634.464pt" height="144.965968pt" viewBox="0 0 634.464 144.965968" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="634.464pt" height="155.765968pt" viewBox="0 0 634.464 155.765968" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-19T13:35:25.497609</dc:date>
+    <dc:date>2026-11-20T13:24:30.449267</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -21,11 +21,11 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 144.965968
-L 634.464 144.965968
+   <path d="M 0 155.765968
+L 634.464 155.765968
 L 634.464 0
 L 0 0
-L 0 144.965968
+L 0 155.765968
 z
 " style="fill: none"/>
   </g>
@@ -42,24 +42,24 @@ z
    <g id="line2d_1">
     <path d="M 41.616 116.244
 L 630.864 116.244
-" clip-path="url(#pb82874f8a1)" style="fill: none; stroke: #cfc5b3; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#p234afdf61d)" style="fill: none; stroke: #cfc5b3; stroke-width: 0.6; stroke-linecap: square"/>
    </g>
    <g id="line2d_2">
     <path d="M 41.616 82.494
 L 630.864 82.494
-" clip-path="url(#pb82874f8a1)" style="fill: none; stroke: #cfc5b3; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#p234afdf61d)" style="fill: none; stroke: #cfc5b3; stroke-width: 0.6; stroke-linecap: square"/>
    </g>
    <g id="line2d_3">
     <path d="M 41.616 48.744
 L 630.864 48.744
-" clip-path="url(#pb82874f8a1)" style="fill: none; stroke: #cfc5b3; stroke-width: 0.6; stroke-linecap: square"/>
+" clip-path="url(#p234afdf61d)" style="fill: none; stroke: #cfc5b3; stroke-width: 0.6; stroke-linecap: square"/>
    </g>
    <g id="matplotlib.axis_1"/>
    <g id="matplotlib.axis_2"/>
    <g id="line2d_4">
     <path d="M 41.616 116.244
 L 630.864 116.244
-" clip-path="url(#pb82874f8a1)" style="fill: none; stroke: #7a7062; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#p234afdf61d)" style="fill: none; stroke: #7a7062; stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="text_1">
     <!-- 0%  -->
@@ -257,16 +257,16 @@ z
     </g>
    </g>
    <g id="patch_3">
-    <path d="M 80.8992 116.244
-L 129.425506 116.244
-L 129.425506 115.606205
-L 80.8992 115.606205
+    <path d="M 74.459331 116.244
+L 115.030505 116.244
+L 115.030505 115.606205
+L 74.459331 115.606205
 z
-" clip-path="url(#pb82874f8a1)" style="fill: #231f1a"/>
+" clip-path="url(#p234afdf61d)" style="fill: #231f1a"/>
    </g>
    <g id="text_4">
     <!-- no search, 6 kinds -->
-    <g style="fill: #231f1a" transform="translate(69.541337 127.840167) scale(0.09 -0.09)">
+    <g style="fill: #231f1a" transform="translate(59.123902 127.840167) scale(0.09 -0.09)">
      <defs>
       <path id="PalatinoLinotype-Roman-97" d="M 1069 2978
 L 1128 2938
@@ -874,7 +874,7 @@ z
    </g>
    <g id="text_5">
     <!-- 6 of 1,270 -->
-    <g style="fill: #7a7062" transform="translate(89.059619 139.431031) scale(0.078 -0.078)">
+    <g style="fill: #7a7062" transform="translate(78.642184 150.231031) scale(0.078 -0.078)">
      <defs>
       <path id="PalatinoLinotype-Roman-8f" d="M 1800 159
 L 1825 134
@@ -1011,16 +1011,16 @@ z
     </g>
    </g>
    <g id="patch_4">
-    <path d="M 196.438024 116.244
-L 244.964329 116.244
-L 244.964329 81.847125
-L 196.438024 81.847125
+    <path d="M 171.057364 116.244
+L 211.628538 116.244
+L 211.628538 81.847125
+L 171.057364 81.847125
 z
-" clip-path="url(#pb82874f8a1)" style="fill: #231f1a"/>
+" clip-path="url(#p234afdf61d)" style="fill: #231f1a"/>
    </g>
    <g id="text_6">
     <!-- single walk -->
-    <g style="fill: #231f1a" transform="translate(198.076723 127.266417) scale(0.09 -0.09)">
+    <g style="fill: #231f1a" transform="translate(168.718498 127.266417) scale(0.09 -0.09)">
      <defs>
       <path id="PalatinoLinotype-Roman-90" d="M 3447 2763
 L 3472 2706
@@ -1195,7 +1195,7 @@ z
    </g>
    <g id="text_7">
     <!-- 2,446 of 9,600 -->
-    <g style="fill: #7a7062" transform="translate(197.773442 139.431031) scale(0.078 -0.078)">
+    <g style="fill: #7a7062" transform="translate(168.415216 150.231031) scale(0.078 -0.078)">
      <defs>
       <path id="PalatinoLinotype-Roman-15a" d="M 1028 -25
 L 1003 0
@@ -1289,403 +1289,16 @@ z
     </g>
    </g>
    <g id="patch_5">
-    <path d="M 311.976847 116.244
-L 360.503153 116.244
-L 360.503153 94.672125
-L 311.976847 94.672125
+    <path d="M 267.655397 116.244
+L 308.22657 116.244
+L 308.22657 54.65025
+L 267.655397 54.65025
 z
-" clip-path="url(#pb82874f8a1)" style="fill: #231f1a"/>
+" clip-path="url(#p234afdf61d)" style="fill: #963a27"/>
    </g>
    <g id="text_8">
-    <!-- random-score loop -->
-    <g style="fill: #231f1a" transform="translate(298.568672 127.262198) scale(0.09 -0.09)">
-     <defs>
-      <path id="PalatinoLinotype-Roman-96" d="M 1150 2978
-L 1209 2938
-Q 1191 2731 1184 2444
-L 1481 2716
-Q 1606 2831 1647 2864
-Q 1688 2897 1838 2940
-Q 1988 2984 2153 2984
-Q 2466 2984 2700 2829
-Q 2934 2675 3047 2403
-Q 3469 2803 3539 2847
-Q 3609 2891 3762 2936
-Q 3916 2981 4069 2981
-Q 4316 2981 4522 2875
-Q 4728 2769 4850 2597
-Q 4972 2425 4992 2225
-Q 5013 2025 5013 1675
-L 5013 1347
-Q 5013 1294 5031 569
-Q 5038 272 5097 215
-Q 5156 159 5481 159
-L 5506 134
-L 5506 0
-L 5481 -25
-Q 5084 0 4944 0
-Q 4866 0 4491 -25
-L 4450 9
-Q 4491 416 4491 1069
-L 4491 1444
-Q 4491 1941 4444 2139
-Q 4397 2338 4225 2464
-Q 4053 2591 3816 2591
-Q 3647 2591 3500 2523
-Q 3353 2456 3236 2323
-Q 3119 2191 3106 2077
-Q 3094 1963 3094 1656
-L 3094 1266
-Q 3094 1128 3106 750
-Q 3119 372 3133 309
-Q 3147 247 3176 220
-Q 3206 194 3245 186
-Q 3284 178 3581 159
-L 3609 134
-L 3609 3
-L 3584 -25
-Q 3194 0 2831 0
-Q 2497 0 2081 -25
-L 2053 3
-L 2053 134
-L 2081 159
-Q 2384 178 2423 187
-Q 2463 197 2492 226
-Q 2522 256 2533 317
-Q 2544 378 2558 720
-Q 2572 1063 2572 1238
-L 2572 1594
-Q 2572 1947 2523 2137
-Q 2475 2328 2315 2459
-Q 2156 2591 1916 2591
-Q 1728 2591 1573 2517
-Q 1419 2444 1320 2336
-Q 1222 2228 1198 2134
-Q 1175 2041 1175 1728
-L 1175 1266
-Q 1175 1128 1187 750
-Q 1200 372 1214 309
-Q 1228 247 1258 220
-Q 1288 194 1327 186
-Q 1366 178 1663 159
-L 1691 134
-L 1691 3
-L 1666 -25
-Q 1275 0 913 0
-Q 553 0 163 -25
-L 134 3
-L 134 134
-L 163 159
-Q 466 178 505 187
-Q 544 197 573 226
-Q 603 256 614 317
-Q 625 378 639 720
-Q 653 1063 653 1238
-L 653 1853
-Q 653 1978 640 2193
-Q 628 2409 620 2459
-Q 613 2509 572 2532
-Q 531 2556 409 2556
-L 147 2559
-L 119 2584
-L 119 2719
-L 144 2744
-Q 741 2816 1150 2978
-z
-" transform="scale(0.015625)"/>
-      <path id="PalatinoLinotype-Roman-22c" d="M 141 1344
-L 141 1388
-L 281 1806
-L 1953 1806
-L 1953 1759
-L 1803 1344
-L 141 1344
-z
-" transform="scale(0.015625)"/>
-      <path id="PalatinoLinotype-Roman-99" d="M 1156 3016
-L 1216 2978
-Q 1184 2622 1181 2347
-Q 1606 2734 1773 2859
-Q 1941 2984 2350 2984
-Q 2606 2984 2815 2914
-Q 3025 2844 3203 2683
-Q 3381 2522 3484 2280
-Q 3588 2038 3588 1719
-Q 3588 1494 3516 1262
-Q 3444 1031 3326 834
-Q 3209 638 3139 573
-Q 3069 509 2850 381
-Q 2653 263 2459 125
-Q 2325 28 2272 0
-Q 2219 -28 2094 -56
-Q 1969 -84 1828 -84
-Q 1503 -84 1181 81
-L 1181 -584
-Q 1181 -653 1193 -1026
-Q 1206 -1400 1220 -1462
-Q 1234 -1525 1262 -1553
-Q 1291 -1581 1331 -1589
-Q 1372 -1597 1669 -1616
-L 1697 -1641
-L 1697 -1772
-L 1672 -1800
-Q 1281 -1775 922 -1775
-Q 563 -1775 172 -1800
-L 144 -1772
-L 144 -1641
-L 172 -1616
-Q 472 -1597 512 -1587
-Q 553 -1578 583 -1548
-Q 613 -1519 623 -1453
-Q 634 -1388 648 -1034
-Q 663 -681 663 -503
-L 663 1891
-Q 663 2053 648 2267
-Q 634 2481 625 2515
-Q 616 2550 580 2572
-Q 544 2594 419 2594
-L 156 2597
-L 128 2622
-L 128 2756
-L 153 2781
-Q 750 2853 1156 3016
-z
-M 1181 619
-Q 1325 472 1537 364
-Q 1750 256 2006 256
-Q 2309 256 2542 409
-Q 2775 563 2903 858
-Q 3031 1153 3031 1513
-Q 3031 1803 2917 2053
-Q 2803 2303 2564 2447
-Q 2325 2591 2056 2591
-Q 1891 2591 1734 2533
-Q 1578 2475 1442 2362
-Q 1306 2250 1247 2148
-Q 1188 2047 1184 1980
-Q 1181 1913 1181 1831
-L 1181 619
-z
-" transform="scale(0.015625)"/>
-     </defs>
-     <use xlink:href="#PalatinoLinotype-Roman-9b"/>
-     <use xlink:href="#PalatinoLinotype-Roman-8a" transform="translate(39.5 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-97" transform="translate(89.5 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-8d" transform="translate(147.703125 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-98" transform="translate(208.78125 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-96" transform="translate(263.375 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-22c" transform="translate(351.65625 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-9c" transform="translate(384.953125 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-8c" transform="translate(427.34375 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-98" transform="translate(471.734375 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-9b" transform="translate(526.328125 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-8e" transform="translate(565.828125 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-231" transform="translate(613.734375 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-95" transform="translate(638.734375 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-98" transform="translate(667.84375 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-98" transform="translate(722.4375 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-99" transform="translate(777.03125 0)"/>
-    </g>
-   </g>
-   <g id="text_9">
-    <!-- 1,534 of 9,600 -->
-    <g style="fill: #7a7062" transform="translate(313.312266 139.431031) scale(0.078 -0.078)">
-     <defs>
-      <path id="PalatinoLinotype-Roman-159" d="M 325 72
-Q 269 441 116 959
-L 131 1006
-L 247 1050
-L 291 1028
-Q 400 741 525 553
-Q 650 366 884 266
-Q 1119 166 1391 166
-Q 1734 166 1936 309
-Q 2138 453 2247 700
-Q 2356 947 2356 1256
-Q 2356 1672 2139 1909
-Q 1922 2147 1538 2147
-Q 1406 2147 1303 2122
-Q 1200 2097 984 2009
-L 950 2041
-L 1019 2381
-Q 1272 2366 1356 2366
-Q 1722 2366 1936 2625
-Q 2150 2884 2150 3238
-Q 2150 3547 1926 3756
-Q 1703 3966 1375 3966
-Q 1159 3966 967 3878
-Q 775 3791 650 3666
-Q 597 3559 481 3247
-L 450 3219
-L 309 3219
-L 284 3247
-L 472 3972
-Q 863 4413 1531 4413
-Q 2041 4413 2355 4142
-Q 2669 3872 2669 3463
-Q 2669 3150 2484 2889
-Q 2300 2628 1972 2397
-Q 2513 2331 2733 2073
-Q 2953 1816 2953 1450
-Q 2953 850 2409 370
-Q 1866 -109 1153 -109
-Q 941 -109 756 -73
-Q 572 -38 325 72
-z
-" transform="scale(0.015625)"/>
-     </defs>
-     <use xlink:href="#PalatinoLinotype-Roman-157"/>
-     <use xlink:href="#PalatinoLinotype-Roman-1f0" transform="translate(50 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-15b" transform="translate(75 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-159" transform="translate(125 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-15a" transform="translate(175 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-231" transform="translate(225 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-98" transform="translate(250 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-8f" transform="translate(304.59375 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-231" transform="translate(337.890625 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-15f" transform="translate(362.890625 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-1f0" transform="translate(412.890625 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-15c" transform="translate(437.890625 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-156" transform="translate(487.890625 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-156" transform="translate(537.890625 0)"/>
-    </g>
-   </g>
-   <g id="patch_6">
-    <path d="M 427.515671 116.244
-L 476.041976 116.244
-L 476.041976 78.16275
-L 427.515671 78.16275
-z
-" clip-path="url(#pb82874f8a1)" style="fill: #231f1a"/>
-   </g>
-   <g id="text_10">
-    <!-- no-step loop -->
-    <g style="fill: #231f1a" transform="translate(426.914917 127.262198) scale(0.09 -0.09)">
-     <defs>
-      <path id="PalatinoLinotype-Roman-9d" d="M 144 2453
-L 144 2534
-L 166 2566
-Q 459 2675 641 2769
-Q 641 3584 622 3719
-Q 944 3831 1150 3959
-L 1225 3897
-Q 1194 3700 1150 2753
-Q 1306 2750 1488 2750
-Q 1856 2750 2016 2769
-L 2038 2747
-L 1978 2484
-L 1953 2456
-Q 1794 2459 1600 2459
-Q 1425 2459 1150 2456
-L 1131 1184
-Q 1131 744 1151 608
-Q 1172 472 1264 395
-Q 1356 319 1538 319
-Q 1747 319 1925 428
-L 2000 316
-Q 1925 263 1641 3
-Q 1478 -72 1309 -72
-Q 606 -72 606 609
-Q 606 859 619 1034
-Q 622 1088 622 1144
-L 622 2441
-L 494 2441
-Q 353 2441 172 2428
-L 144 2453
-z
-" transform="scale(0.015625)"/>
-     </defs>
-     <use xlink:href="#PalatinoLinotype-Roman-97"/>
-     <use xlink:href="#PalatinoLinotype-Roman-98" transform="translate(58.203125 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-22c" transform="translate(112.796875 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-9c" transform="translate(146.09375 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-9d" transform="translate(188.484375 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-8e" transform="translate(221.109375 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-99" transform="translate(269.015625 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-231" transform="translate(329.125 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-95" transform="translate(354.125 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-98" transform="translate(383.234375 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-98" transform="translate(437.828125 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-99" transform="translate(492.421875 0)"/>
-    </g>
-   </g>
-   <g id="text_11">
-    <!-- 2,708 of 9,600 -->
-    <g style="fill: #7a7062" transform="translate(428.851089 139.431031) scale(0.078 -0.078)">
-     <defs>
-      <path id="PalatinoLinotype-Roman-15e" d="M 1050 2216
-Q 703 2400 523 2639
-Q 344 2878 344 3219
-Q 344 3697 697 4039
-Q 1050 4381 1659 4381
-Q 1969 4381 2233 4273
-Q 2497 4166 2640 3952
-Q 2784 3738 2784 3475
-Q 2784 3200 2615 2948
-Q 2447 2697 2019 2438
-L 2019 2409
-Q 2384 2234 2561 2112
-Q 2738 1991 2850 1783
-Q 2963 1575 2963 1303
-Q 2963 931 2748 589
-Q 2534 247 2184 69
-Q 1834 -109 1459 -109
-Q 913 -109 556 197
-Q 200 503 200 1013
-Q 200 1425 445 1723
-Q 691 2022 1050 2188
-L 1050 2216
-z
-M 1778 2516
-Q 2113 2725 2231 2936
-Q 2350 3147 2350 3391
-Q 2350 3750 2144 3959
-Q 1938 4169 1591 4169
-Q 1259 4169 1040 3983
-Q 822 3797 822 3463
-Q 822 3209 964 3023
-Q 1106 2838 1778 2516
-z
-M 1303 2103
-Q 934 1884 790 1632
-Q 647 1381 647 1063
-Q 647 616 897 361
-Q 1147 106 1541 106
-Q 1809 106 2028 231
-Q 2247 356 2355 573
-Q 2463 791 2463 1047
-Q 2463 1416 2205 1622
-Q 1947 1828 1303 2103
-z
-" transform="scale(0.015625)"/>
-     </defs>
-     <use xlink:href="#PalatinoLinotype-Roman-158"/>
-     <use xlink:href="#PalatinoLinotype-Roman-1f0" transform="translate(50 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-15d" transform="translate(75 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-156" transform="translate(125 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-15e" transform="translate(175 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-231" transform="translate(225 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-98" transform="translate(250 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-8f" transform="translate(304.59375 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-231" transform="translate(337.890625 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-15f" transform="translate(362.890625 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-1f0" transform="translate(412.890625 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-15c" transform="translate(437.890625 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-156" transform="translate(487.890625 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-156" transform="translate(537.890625 0)"/>
-    </g>
-   </g>
-   <g id="patch_7">
-    <path d="M 543.054494 116.244
-L 591.5808 116.244
-L 591.5808 54.65025
-L 543.054494 54.65025
-z
-" clip-path="url(#pb82874f8a1)" style="fill: #963a27"/>
-   </g>
-   <g id="text_12">
     <!-- DuROOM search -->
-    <g style="fill: #231f1a" transform="translate(532.952413 128.408995) scale(0.09 -0.09)">
+    <g style="fill: #231f1a" transform="translate(253.575749 128.408995) scale(0.09 -0.09)">
      <defs>
       <path id="PalatinoLinotype-Roman-6" d="M 94 4394
 L 119 4416
@@ -1976,9 +1589,98 @@ z
      <use xlink:href="#PalatinoLinotype-Roman-91" transform="translate(705.46875 0)"/>
     </g>
    </g>
-   <g id="text_13">
+   <g id="text_9">
     <!-- 4,380 of 9,600 -->
-    <g style="fill: #7a7062" transform="translate(544.389913 139.431031) scale(0.078 -0.078)">
+    <g style="fill: #7a7062" transform="translate(265.013249 150.231031) scale(0.078 -0.078)">
+     <defs>
+      <path id="PalatinoLinotype-Roman-159" d="M 325 72
+Q 269 441 116 959
+L 131 1006
+L 247 1050
+L 291 1028
+Q 400 741 525 553
+Q 650 366 884 266
+Q 1119 166 1391 166
+Q 1734 166 1936 309
+Q 2138 453 2247 700
+Q 2356 947 2356 1256
+Q 2356 1672 2139 1909
+Q 1922 2147 1538 2147
+Q 1406 2147 1303 2122
+Q 1200 2097 984 2009
+L 950 2041
+L 1019 2381
+Q 1272 2366 1356 2366
+Q 1722 2366 1936 2625
+Q 2150 2884 2150 3238
+Q 2150 3547 1926 3756
+Q 1703 3966 1375 3966
+Q 1159 3966 967 3878
+Q 775 3791 650 3666
+Q 597 3559 481 3247
+L 450 3219
+L 309 3219
+L 284 3247
+L 472 3972
+Q 863 4413 1531 4413
+Q 2041 4413 2355 4142
+Q 2669 3872 2669 3463
+Q 2669 3150 2484 2889
+Q 2300 2628 1972 2397
+Q 2513 2331 2733 2073
+Q 2953 1816 2953 1450
+Q 2953 850 2409 370
+Q 1866 -109 1153 -109
+Q 941 -109 756 -73
+Q 572 -38 325 72
+z
+" transform="scale(0.015625)"/>
+      <path id="PalatinoLinotype-Roman-15e" d="M 1050 2216
+Q 703 2400 523 2639
+Q 344 2878 344 3219
+Q 344 3697 697 4039
+Q 1050 4381 1659 4381
+Q 1969 4381 2233 4273
+Q 2497 4166 2640 3952
+Q 2784 3738 2784 3475
+Q 2784 3200 2615 2948
+Q 2447 2697 2019 2438
+L 2019 2409
+Q 2384 2234 2561 2112
+Q 2738 1991 2850 1783
+Q 2963 1575 2963 1303
+Q 2963 931 2748 589
+Q 2534 247 2184 69
+Q 1834 -109 1459 -109
+Q 913 -109 556 197
+Q 200 503 200 1013
+Q 200 1425 445 1723
+Q 691 2022 1050 2188
+L 1050 2216
+z
+M 1778 2516
+Q 2113 2725 2231 2936
+Q 2350 3147 2350 3391
+Q 2350 3750 2144 3959
+Q 1938 4169 1591 4169
+Q 1259 4169 1040 3983
+Q 822 3797 822 3463
+Q 822 3209 964 3023
+Q 1106 2838 1778 2516
+z
+M 1303 2103
+Q 934 1884 790 1632
+Q 647 1381 647 1063
+Q 647 616 897 361
+Q 1147 106 1541 106
+Q 1809 106 2028 231
+Q 2247 356 2355 573
+Q 2463 791 2463 1047
+Q 2463 1416 2205 1622
+Q 1947 1828 1303 2103
+z
+" transform="scale(0.015625)"/>
+     </defs>
      <use xlink:href="#PalatinoLinotype-Roman-15a"/>
      <use xlink:href="#PalatinoLinotype-Roman-1f0" transform="translate(50 0)"/>
      <use xlink:href="#PalatinoLinotype-Roman-159" transform="translate(75 0)"/>
@@ -1995,22 +1697,564 @@ z
      <use xlink:href="#PalatinoLinotype-Roman-156" transform="translate(537.890625 0)"/>
     </g>
    </g>
-   <g id="line2d_5">
-    <path d="M 80.8992 116.244
-L 129.425506 116.244
-" clip-path="url(#pb82874f8a1)" style="fill: none; stroke: #231f1a; stroke-width: 2.2"/>
+   <g id="patch_6">
+    <path d="M 364.25343 116.244
+L 404.824603 116.244
+L 404.824603 54.889313
+L 364.25343 54.889313
+z
+" clip-path="url(#p234afdf61d)" style="fill: #c89b8d; stroke: #963a27; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_10">
+    <!-- the same search, -->
+    <g style="fill: #231f1a" transform="translate(351.927376 127.840167) scale(0.09 -0.09)">
+     <defs>
+      <path id="PalatinoLinotype-Roman-9d" d="M 144 2453
+L 144 2534
+L 166 2566
+Q 459 2675 641 2769
+Q 641 3584 622 3719
+Q 944 3831 1150 3959
+L 1225 3897
+Q 1194 3700 1150 2753
+Q 1306 2750 1488 2750
+Q 1856 2750 2016 2769
+L 2038 2747
+L 1978 2484
+L 1953 2456
+Q 1794 2459 1600 2459
+Q 1425 2459 1150 2456
+L 1131 1184
+Q 1131 744 1151 608
+Q 1172 472 1264 395
+Q 1356 319 1538 319
+Q 1747 319 1925 428
+L 2000 316
+Q 1925 263 1641 3
+Q 1478 -72 1309 -72
+Q 606 -72 606 609
+Q 606 859 619 1034
+Q 622 1088 622 1144
+L 622 2441
+L 494 2441
+Q 353 2441 172 2428
+L 144 2453
+z
+" transform="scale(0.015625)"/>
+      <path id="PalatinoLinotype-Roman-96" d="M 1150 2978
+L 1209 2938
+Q 1191 2731 1184 2444
+L 1481 2716
+Q 1606 2831 1647 2864
+Q 1688 2897 1838 2940
+Q 1988 2984 2153 2984
+Q 2466 2984 2700 2829
+Q 2934 2675 3047 2403
+Q 3469 2803 3539 2847
+Q 3609 2891 3762 2936
+Q 3916 2981 4069 2981
+Q 4316 2981 4522 2875
+Q 4728 2769 4850 2597
+Q 4972 2425 4992 2225
+Q 5013 2025 5013 1675
+L 5013 1347
+Q 5013 1294 5031 569
+Q 5038 272 5097 215
+Q 5156 159 5481 159
+L 5506 134
+L 5506 0
+L 5481 -25
+Q 5084 0 4944 0
+Q 4866 0 4491 -25
+L 4450 9
+Q 4491 416 4491 1069
+L 4491 1444
+Q 4491 1941 4444 2139
+Q 4397 2338 4225 2464
+Q 4053 2591 3816 2591
+Q 3647 2591 3500 2523
+Q 3353 2456 3236 2323
+Q 3119 2191 3106 2077
+Q 3094 1963 3094 1656
+L 3094 1266
+Q 3094 1128 3106 750
+Q 3119 372 3133 309
+Q 3147 247 3176 220
+Q 3206 194 3245 186
+Q 3284 178 3581 159
+L 3609 134
+L 3609 3
+L 3584 -25
+Q 3194 0 2831 0
+Q 2497 0 2081 -25
+L 2053 3
+L 2053 134
+L 2081 159
+Q 2384 178 2423 187
+Q 2463 197 2492 226
+Q 2522 256 2533 317
+Q 2544 378 2558 720
+Q 2572 1063 2572 1238
+L 2572 1594
+Q 2572 1947 2523 2137
+Q 2475 2328 2315 2459
+Q 2156 2591 1916 2591
+Q 1728 2591 1573 2517
+Q 1419 2444 1320 2336
+Q 1222 2228 1198 2134
+Q 1175 2041 1175 1728
+L 1175 1266
+Q 1175 1128 1187 750
+Q 1200 372 1214 309
+Q 1228 247 1258 220
+Q 1288 194 1327 186
+Q 1366 178 1663 159
+L 1691 134
+L 1691 3
+L 1666 -25
+Q 1275 0 913 0
+Q 553 0 163 -25
+L 134 3
+L 134 134
+L 163 159
+Q 466 178 505 187
+Q 544 197 573 226
+Q 603 256 614 317
+Q 625 378 639 720
+Q 653 1063 653 1238
+L 653 1853
+Q 653 1978 640 2193
+Q 628 2409 620 2459
+Q 613 2509 572 2532
+Q 531 2556 409 2556
+L 147 2559
+L 119 2584
+L 119 2719
+L 144 2744
+Q 741 2816 1150 2978
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#PalatinoLinotype-Roman-9d"/>
+     <use xlink:href="#PalatinoLinotype-Roman-91" transform="translate(32.625 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-8e" transform="translate(90.828125 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-231" transform="translate(138.734375 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-9c" transform="translate(163.734375 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-8a" transform="translate(206.125 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-96" transform="translate(256.125 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-8e" transform="translate(344.40625 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-231" transform="translate(392.3125 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-9c" transform="translate(417.3125 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-8e" transform="translate(459.703125 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-8a" transform="translate(507.609375 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-9b" transform="translate(557.609375 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-8c" transform="translate(597.109375 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-91" transform="translate(641.5 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-1f0" transform="translate(699.703125 0)"/>
+    </g>
+    <!-- far scored in CLIP -->
+    <g style="fill: #231f1a" transform="translate(348.491907 138.468517) scale(0.09 -0.09)">
+     <defs>
+      <path id="PalatinoLinotype-Roman-5" d="M 4359 528
+L 4241 238
+Q 3547 -116 2759 -116
+Q 1631 -116 926 525
+Q 222 1166 222 2200
+Q 222 2913 573 3445
+Q 925 3978 1501 4242
+Q 2078 4506 2797 4506
+Q 3213 4506 3619 4418
+Q 4025 4331 4297 4209
+L 4319 4178
+Q 4247 4003 4184 3313
+L 4163 3288
+L 4016 3288
+L 3991 3313
+L 3959 3844
+Q 3731 4025 3407 4126
+Q 3084 4228 2734 4228
+Q 2206 4228 1787 4001
+Q 1369 3775 1137 3345
+Q 906 2916 906 2294
+Q 906 1669 1178 1197
+Q 1450 725 1920 472
+Q 2391 219 3019 219
+Q 3297 219 3553 272
+Q 3809 325 3979 403
+Q 4150 481 4306 594
+L 4359 528
+z
+" transform="scale(0.015625)"/>
+      <path id="PalatinoLinotype-Roman-e" d="M 116 4394
+L 141 4416
+Q 916 4391 1034 4391
+Q 1141 4391 1931 4416
+L 1956 4394
+L 1956 4238
+L 1931 4216
+Q 1716 4209 1598 4196
+Q 1481 4184 1428 4150
+Q 1375 4116 1358 3989
+Q 1341 3863 1341 3638
+L 1334 2919
+L 1334 1538
+Q 1334 1019 1341 813
+L 1356 272
+L 1994 272
+Q 2756 272 2945 290
+Q 3134 309 3309 381
+Q 3344 459 3408 740
+Q 3472 1022 3475 1066
+L 3503 1091
+L 3656 1091
+L 3678 1066
+Q 3653 941 3626 581
+Q 3600 222 3600 0
+L 3575 -25
+Q 2981 -6 2016 -6
+L 1103 0
+Q 791 0 466 -25
+L 441 0
+L 441 103
+L 466 134
+Q 659 234 678 256
+Q 697 278 717 659
+Q 738 1041 738 1578
+L 738 2919
+L 731 3528
+Q 728 3884 714 3987
+Q 700 4091 670 4125
+Q 641 4159 556 4181
+Q 472 4203 141 4216
+L 116 4238
+L 116 4394
+z
+" transform="scale(0.015625)"/>
+      <path id="PalatinoLinotype-Roman-b" d="M 184 4416
+L 575 4403
+Q 959 4391 1078 4391
+Q 1184 4391 1975 4416
+L 2000 4394
+L 2000 4238
+L 1975 4216
+Q 1759 4209 1642 4196
+Q 1525 4184 1472 4150
+Q 1419 4116 1401 3989
+Q 1384 3863 1384 3638
+L 1378 2919
+L 1378 1472
+L 1381 863
+Q 1384 509 1400 406
+Q 1416 303 1445 268
+Q 1475 234 1559 211
+Q 1644 188 1975 175
+L 2000 156
+L 2000 0
+L 1975 -25
+Q 1959 -25 1425 -6
+Q 1203 0 1078 0
+Q 981 0 184 -25
+L 159 0
+L 159 156
+L 184 175
+Q 475 188 572 206
+Q 669 225 701 254
+Q 734 284 754 381
+Q 775 478 778 813
+L 781 1472
+L 781 2919
+L 775 3528
+Q 772 3884 758 3987
+Q 744 4091 714 4125
+Q 684 4159 600 4181
+Q 516 4203 184 4216
+L 159 4238
+L 159 4394
+L 184 4416
+z
+M 1122 4647
+L 1122 4647
+z
+M 1078 -188
+L 1078 -188
+z
+" transform="scale(0.015625)"/>
+      <path id="PalatinoLinotype-Roman-12" d="M 184 4416
+Q 972 4391 1188 4391
+Q 1481 4391 1847 4406
+Q 2234 4419 2325 4419
+Q 2763 4419 3048 4328
+Q 3334 4238 3521 3997
+Q 3709 3756 3709 3416
+Q 3709 3134 3578 2871
+Q 3447 2609 3212 2425
+Q 2978 2241 2737 2161
+Q 2497 2081 2238 2081
+Q 2044 2081 1806 2125
+L 1753 2316
+L 1781 2347
+Q 2016 2294 2163 2294
+Q 2572 2294 2820 2564
+Q 3069 2834 3069 3256
+Q 3069 3681 2811 3934
+Q 2553 4188 2031 4188
+Q 1747 4188 1406 4081
+Q 1378 3841 1378 2919
+L 1378 1472
+L 1381 863
+Q 1384 509 1400 406
+Q 1416 303 1445 268
+Q 1475 234 1559 211
+Q 1644 188 1975 175
+L 2000 156
+L 2000 0
+L 1975 -25
+Q 1178 0 1078 0
+Q 972 0 184 -25
+L 159 0
+L 159 156
+L 184 175
+Q 475 188 572 206
+Q 669 225 701 254
+Q 734 284 754 381
+Q 775 478 778 813
+L 781 1472
+L 781 2919
+L 775 3528
+Q 772 3884 758 3987
+Q 744 4091 714 4125
+Q 684 4159 600 4181
+Q 516 4203 184 4216
+L 159 4238
+L 159 4394
+L 184 4416
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#PalatinoLinotype-Roman-8f"/>
+     <use xlink:href="#PalatinoLinotype-Roman-8a" transform="translate(33.296875 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-9b" transform="translate(83.296875 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-231" transform="translate(122.796875 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-9c" transform="translate(147.796875 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-8c" transform="translate(190.1875 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-98" transform="translate(234.578125 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-9b" transform="translate(289.171875 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-8e" transform="translate(328.671875 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-8d" transform="translate(376.578125 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-231" transform="translate(437.65625 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-92" transform="translate(462.65625 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-97" transform="translate(491.765625 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-231" transform="translate(549.96875 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-5" transform="translate(574.96875 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-e" transform="translate(645.875 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-b" transform="translate(706.953125 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-12" transform="translate(740.640625 0)"/>
+    </g>
+   </g>
+   <g id="text_11">
+    <!-- 4,363 of 9,600 -->
+    <g style="fill: #7a7062" transform="translate(361.611282 150.231031) scale(0.078 -0.078)">
+     <use xlink:href="#PalatinoLinotype-Roman-15a"/>
+     <use xlink:href="#PalatinoLinotype-Roman-1f0" transform="translate(50 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-159" transform="translate(75 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-15c" transform="translate(125 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-159" transform="translate(175 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-231" transform="translate(225 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-98" transform="translate(250 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-8f" transform="translate(304.59375 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-231" transform="translate(337.890625 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-15f" transform="translate(362.890625 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-1f0" transform="translate(412.890625 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-15c" transform="translate(437.890625 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-156" transform="translate(487.890625 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-156" transform="translate(537.890625 0)"/>
+    </g>
+   </g>
+   <g id="patch_7">
+    <path d="M 460.851462 116.244
+L 501.422636 116.244
+L 501.422636 94.672125
+L 460.851462 94.672125
+z
+" clip-path="url(#p234afdf61d)" style="fill: #231f1a"/>
+   </g>
+   <g id="text_12">
+    <!-- random-score loop -->
+    <g style="fill: #231f1a" transform="translate(443.465721 127.262198) scale(0.09 -0.09)">
+     <defs>
+      <path id="PalatinoLinotype-Roman-22c" d="M 141 1344
+L 141 1388
+L 281 1806
+L 1953 1806
+L 1953 1759
+L 1803 1344
+L 141 1344
+z
+" transform="scale(0.015625)"/>
+      <path id="PalatinoLinotype-Roman-99" d="M 1156 3016
+L 1216 2978
+Q 1184 2622 1181 2347
+Q 1606 2734 1773 2859
+Q 1941 2984 2350 2984
+Q 2606 2984 2815 2914
+Q 3025 2844 3203 2683
+Q 3381 2522 3484 2280
+Q 3588 2038 3588 1719
+Q 3588 1494 3516 1262
+Q 3444 1031 3326 834
+Q 3209 638 3139 573
+Q 3069 509 2850 381
+Q 2653 263 2459 125
+Q 2325 28 2272 0
+Q 2219 -28 2094 -56
+Q 1969 -84 1828 -84
+Q 1503 -84 1181 81
+L 1181 -584
+Q 1181 -653 1193 -1026
+Q 1206 -1400 1220 -1462
+Q 1234 -1525 1262 -1553
+Q 1291 -1581 1331 -1589
+Q 1372 -1597 1669 -1616
+L 1697 -1641
+L 1697 -1772
+L 1672 -1800
+Q 1281 -1775 922 -1775
+Q 563 -1775 172 -1800
+L 144 -1772
+L 144 -1641
+L 172 -1616
+Q 472 -1597 512 -1587
+Q 553 -1578 583 -1548
+Q 613 -1519 623 -1453
+Q 634 -1388 648 -1034
+Q 663 -681 663 -503
+L 663 1891
+Q 663 2053 648 2267
+Q 634 2481 625 2515
+Q 616 2550 580 2572
+Q 544 2594 419 2594
+L 156 2597
+L 128 2622
+L 128 2756
+L 153 2781
+Q 750 2853 1156 3016
+z
+M 1181 619
+Q 1325 472 1537 364
+Q 1750 256 2006 256
+Q 2309 256 2542 409
+Q 2775 563 2903 858
+Q 3031 1153 3031 1513
+Q 3031 1803 2917 2053
+Q 2803 2303 2564 2447
+Q 2325 2591 2056 2591
+Q 1891 2591 1734 2533
+Q 1578 2475 1442 2362
+Q 1306 2250 1247 2148
+Q 1188 2047 1184 1980
+Q 1181 1913 1181 1831
+L 1181 619
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#PalatinoLinotype-Roman-9b"/>
+     <use xlink:href="#PalatinoLinotype-Roman-8a" transform="translate(39.5 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-97" transform="translate(89.5 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-8d" transform="translate(147.703125 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-98" transform="translate(208.78125 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-96" transform="translate(263.375 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-22c" transform="translate(351.65625 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-9c" transform="translate(384.953125 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-8c" transform="translate(427.34375 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-98" transform="translate(471.734375 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-9b" transform="translate(526.328125 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-8e" transform="translate(565.828125 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-231" transform="translate(613.734375 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-95" transform="translate(638.734375 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-98" transform="translate(667.84375 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-98" transform="translate(722.4375 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-99" transform="translate(777.03125 0)"/>
+    </g>
+   </g>
+   <g id="text_13">
+    <!-- 1,534 of 9,600 -->
+    <g style="fill: #7a7062" transform="translate(458.209315 150.231031) scale(0.078 -0.078)">
+     <use xlink:href="#PalatinoLinotype-Roman-157"/>
+     <use xlink:href="#PalatinoLinotype-Roman-1f0" transform="translate(50 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-15b" transform="translate(75 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-159" transform="translate(125 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-15a" transform="translate(175 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-231" transform="translate(225 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-98" transform="translate(250 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-8f" transform="translate(304.59375 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-231" transform="translate(337.890625 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-15f" transform="translate(362.890625 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-1f0" transform="translate(412.890625 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-15c" transform="translate(437.890625 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-156" transform="translate(487.890625 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-156" transform="translate(537.890625 0)"/>
+    </g>
+   </g>
+   <g id="patch_8">
+    <path d="M 557.449495 116.244
+L 598.020669 116.244
+L 598.020669 78.16275
+L 557.449495 78.16275
+z
+" clip-path="url(#p234afdf61d)" style="fill: #231f1a"/>
    </g>
    <g id="text_14">
-    <g id="patch_8">
-     <path d="M 94.555103 114.157205
-L 115.769603 114.157205
-L 115.769603 103.250517
-L 94.555103 103.250517
+    <!-- no-step loop -->
+    <g style="fill: #231f1a" transform="translate(552.871176 127.262198) scale(0.09 -0.09)">
+     <use xlink:href="#PalatinoLinotype-Roman-97"/>
+     <use xlink:href="#PalatinoLinotype-Roman-98" transform="translate(58.203125 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-22c" transform="translate(112.796875 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-9c" transform="translate(146.09375 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-9d" transform="translate(188.484375 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-8e" transform="translate(221.109375 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-99" transform="translate(269.015625 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-231" transform="translate(329.125 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-95" transform="translate(354.125 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-98" transform="translate(383.234375 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-98" transform="translate(437.828125 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-99" transform="translate(492.421875 0)"/>
+    </g>
+   </g>
+   <g id="text_15">
+    <!-- 2,708 of 9,600 -->
+    <g style="fill: #7a7062" transform="translate(554.807348 150.231031) scale(0.078 -0.078)">
+     <use xlink:href="#PalatinoLinotype-Roman-158"/>
+     <use xlink:href="#PalatinoLinotype-Roman-1f0" transform="translate(50 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-15d" transform="translate(75 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-156" transform="translate(125 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-15e" transform="translate(175 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-231" transform="translate(225 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-98" transform="translate(250 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-8f" transform="translate(304.59375 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-231" transform="translate(337.890625 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-15f" transform="translate(362.890625 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-1f0" transform="translate(412.890625 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-15c" transform="translate(437.890625 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-156" transform="translate(487.890625 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-156" transform="translate(537.890625 0)"/>
+    </g>
+   </g>
+   <g id="line2d_5">
+    <path d="M 74.459331 116.244
+L 115.030505 116.244
+" clip-path="url(#p234afdf61d)" style="fill: none; stroke: #231f1a; stroke-width: 2.2"/>
+   </g>
+   <g id="text_16">
+    <g id="patch_9">
+     <path d="M 84.137668 114.157205
+L 105.352168 114.157205
+L 105.352168 103.250517
+L 84.137668 103.250517
 z
 " style="fill: #f1ebe0"/>
     </g>
     <!-- 0.5% -->
-    <g style="fill: #231f1a" transform="translate(95.131103 110.85308) scale(0.096 -0.096)">
+    <g style="fill: #231f1a" transform="translate(84.713668 110.85308) scale(0.096 -0.096)">
      <defs>
       <path id="PalatinoLinotype-Roman-1ef" d="M 800 691
 Q 950 691 1061 584
@@ -2030,65 +2274,33 @@ z
      <use xlink:href="#PalatinoLinotype-Roman-196" transform="translate(125 0)"/>
     </g>
    </g>
-   <g id="text_15">
-    <g id="patch_9">
-     <path d="M 211.293926 80.398125
-L 230.108426 80.398125
-L 230.108426 69.491437
-L 211.293926 69.491437
+   <g id="text_17">
+    <g id="patch_10">
+     <path d="M 181.935701 80.398125
+L 200.750201 80.398125
+L 200.750201 69.491438
+L 181.935701 69.491438
 z
 " style="fill: #f1ebe0"/>
     </g>
     <!-- 25% -->
-    <g style="fill: #231f1a" transform="translate(211.869926 77.094) scale(0.096 -0.096)">
+    <g style="fill: #231f1a" transform="translate(182.511701 77.094) scale(0.096 -0.096)">
      <use xlink:href="#PalatinoLinotype-Roman-158"/>
      <use xlink:href="#PalatinoLinotype-Roman-15b" transform="translate(50 0)"/>
      <use xlink:href="#PalatinoLinotype-Roman-196" transform="translate(100 0)"/>
     </g>
    </g>
-   <g id="text_16">
-    <g id="patch_10">
-     <path d="M 326.83275 93.223125
-L 345.64725 93.223125
-L 345.64725 82.316437
-L 326.83275 82.316437
-z
-" style="fill: #f1ebe0"/>
-    </g>
-    <!-- 16% -->
-    <g style="fill: #231f1a" transform="translate(327.40875 89.919) scale(0.096 -0.096)">
-     <use xlink:href="#PalatinoLinotype-Roman-157"/>
-     <use xlink:href="#PalatinoLinotype-Roman-15c" transform="translate(50 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-196" transform="translate(100 0)"/>
-    </g>
-   </g>
-   <g id="text_17">
-    <g id="patch_11">
-     <path d="M 442.371574 76.71375
-L 461.186074 76.71375
-L 461.186074 65.807062
-L 442.371574 65.807062
-z
-" style="fill: #f1ebe0"/>
-    </g>
-    <!-- 28% -->
-    <g style="fill: #231f1a" transform="translate(442.947574 73.409625) scale(0.096 -0.096)">
-     <use xlink:href="#PalatinoLinotype-Roman-158"/>
-     <use xlink:href="#PalatinoLinotype-Roman-15e" transform="translate(50 0)"/>
-     <use xlink:href="#PalatinoLinotype-Roman-196" transform="translate(100 0)"/>
-    </g>
-   </g>
    <g id="text_18">
-    <g id="patch_12">
-     <path d="M 557.673397 53.20125
-L 576.961897 53.20125
-L 576.961897 42.294562
-L 557.673397 42.294562
+    <g id="patch_11">
+     <path d="M 278.296734 53.20125
+L 297.585234 53.20125
+L 297.585234 42.294562
+L 278.296734 42.294562
 z
 " style="fill: #f1ebe0"/>
     </g>
     <!-- 46% -->
-    <g style="fill: #231f1a" transform="translate(558.249397 49.897125) scale(0.096 -0.096)">
+    <g style="fill: #231f1a" transform="translate(278.872734 49.897125) scale(0.096 -0.096)">
      <defs>
       <path id="PalatinoLinotype-Bold-15a" d="M 3025 13
 L 2991 -25
@@ -2209,8 +2421,56 @@ z
      <use xlink:href="#PalatinoLinotype-Bold-196" transform="translate(100 0)"/>
     </g>
    </g>
+   <g id="text_19">
+    <g id="patch_12">
+     <path d="M 375.131766 53.440313
+L 393.946266 53.440313
+L 393.946266 42.533625
+L 375.131766 42.533625
+z
+" style="fill: #f1ebe0"/>
+    </g>
+    <!-- 45% -->
+    <g style="fill: #231f1a" transform="translate(375.707766 50.136188) scale(0.096 -0.096)">
+     <use xlink:href="#PalatinoLinotype-Roman-15a"/>
+     <use xlink:href="#PalatinoLinotype-Roman-15b" transform="translate(50 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-196" transform="translate(100 0)"/>
+    </g>
+   </g>
+   <g id="text_20">
+    <g id="patch_13">
+     <path d="M 471.729799 93.223125
+L 490.544299 93.223125
+L 490.544299 82.316438
+L 471.729799 82.316438
+z
+" style="fill: #f1ebe0"/>
+    </g>
+    <!-- 16% -->
+    <g style="fill: #231f1a" transform="translate(472.305799 89.919) scale(0.096 -0.096)">
+     <use xlink:href="#PalatinoLinotype-Roman-157"/>
+     <use xlink:href="#PalatinoLinotype-Roman-15c" transform="translate(50 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-196" transform="translate(100 0)"/>
+    </g>
+   </g>
+   <g id="text_21">
+    <g id="patch_14">
+     <path d="M 568.327832 76.71375
+L 587.142332 76.71375
+L 587.142332 65.807063
+L 568.327832 65.807063
+z
+" style="fill: #f1ebe0"/>
+    </g>
+    <!-- 28% -->
+    <g style="fill: #231f1a" transform="translate(568.903832 73.409625) scale(0.096 -0.096)">
+     <use xlink:href="#PalatinoLinotype-Roman-158"/>
+     <use xlink:href="#PalatinoLinotype-Roman-15e" transform="translate(50 0)"/>
+     <use xlink:href="#PalatinoLinotype-Roman-196" transform="translate(100 0)"/>
+    </g>
+   </g>
   </g>
-  <g id="text_19">
+  <g id="text_22">
    <!-- With the 6 kinds of request and no search, 0.5% of the pictures are far and faithful; DuROOM search paints 46% -->
    <g style="fill: #231f1a" transform="translate(3.6 13.280244) scale(0.12 -0.12)">
     <defs>
@@ -2454,7 +2714,7 @@ z
     <use xlink:href="#PalatinoLinotype-Roman-196" transform="translate(4840.078125 0)"/>
    </g>
   </g>
-  <g id="text_20">
+  <g id="text_23">
    <!-- Far and faithful, as a percent of the pictures each way of asking painted; the count under each name. -->
    <g style="fill: #7a7062" transform="translate(3.6 30.911391) scale(0.088 -0.088)">
     <defs>
@@ -2691,7 +2951,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pb82874f8a1">
+  <clipPath id="p234afdf61d">
    <rect x="41.616" y="40.644" width="589.248" height="75.6"/>
   </clipPath>
  </defs>
