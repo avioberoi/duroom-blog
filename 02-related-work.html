@@ -65,7 +65,7 @@ div.csl-indent {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-33db7d67dc863eda5614683ffa97e73d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-afc7eccfe5c58eb788e91529493c0bad.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -320,7 +320,7 @@ div.csl-indent {
 <h2 class="anchored" data-anchor-id="how-does-cma-es-search">How does CMA-ES search?</h2>
 <p>Novelty only ranks the pictures a search has tried, and it does not say where to try next. The classical searches of the Introduction, A* among them, move between states they can list. Ours moves among CLIP vectors, 768 numbers each, and at any vector the search can only paint that vector and score the picture. <strong>The search sees no slope of the score, only its value at the points it tries.</strong> This is <em>black-box</em> search. CMA-ES (the covariance matrix adaptation evolution strategy) is a randomized method for black-box search over continuous numbers <span class="citation" data-cites="hansen2016tutorial">(<a href="#ref-hansen2016tutorial" role="doc-biblioref">Hansen 2016</a>)</span>, and it is the one we chose.</p>
 <p>The method keeps a <em>centre</em> and a <em>spread</em> around it, i.e., a normal distribution, and each round samples a batch of points from it (<a href="#fig-cmaes-round" class="quarto-xref">Figure&nbsp;1</a>). In our search each point is a request, and its score is read in 2 other encoders on the picture the decoder paints (<a href="./04-2-q8.html">Q10</a>). The method ranks the points by score, moves the centre toward the better half, and reshapes and resizes the spread from the steps those points took <span class="citation" data-cites="hansen2003cmaes hansen2016tutorial">(<a href="#ref-hansen2003cmaes" role="doc-biblioref">Hansen et al. 2003</a>; <a href="#ref-hansen2016tutorial" role="doc-biblioref">Hansen 2016</a>)</span>.<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a> It uses only the order of the scores, so any change to the score that keeps the order leaves the search the same.</p>
-<div id="fig-cmaes-round" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" alt="Three panels: 32 dots inside two axis-aligned ellipses around a cross; the same dots with the better half filled; the cross moved toward the filled dots, with new red ellipses." data-mobile-src="figures/cmaes_one_round-mobile.svg">
+<div id="fig-cmaes-round" class="figure-wide quarto-float quarto-figure quarto-figure-center anchored" data-mobile-src="figures/cmaes_one_round-mobile.svg" alt="Three panels: 32 dots inside two axis-aligned ellipses around a cross; the same dots with the better half filled; the cross moved toward the filled dots, with new red ellipses.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-cmaes-round-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figures/cmaes_one_round.svg" class="figure-wide img-fluid figure-img" data-mobile-src="figures/cmaes_one_round-mobile.svg" alt="Three panels: 32 dots inside two axis-aligned ellipses around a cross; the same dots with the better half filled; the cross moved toward the filled dots, with new red ellipses.">
@@ -870,7 +870,7 @@ Zhu, Jun-Yan, Philipp Krähenbühl, Eli Shechtman, and Alexei A Efros. 2016. <sp
   window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
   </script>
 </div> 
-<script src="figures/responsive.js" defer=""></script><script src="figures/pixel-demo.js" defer=""></script><script src="figures/direction-demo.js" defer=""></script><script src="figures/work-explorer.js" defer=""></script><script src="figures/evidence-explorer.js" defer=""></script><script src="figures/search-explorer.js" defer=""></script><script src="figures/q2-geometry.js" defer=""></script><script src="figures/intro-support.js" defer=""></script><script src="figures/q3_fan.js" defer=""></script><script src="figures/q4_grid.js" defer=""></script><script src="figures/q5_route.js" defer=""></script><script src="figures/q3-encoders.js" defer=""></script><script src="footnotes.js" defer=""></script>
+<script src="figures/responsive_v2.js" defer=""></script><script src="figures/pixel-demo.js" defer=""></script><script src="figures/direction-demo.js" defer=""></script><script src="figures/work-explorer.js" defer=""></script><script src="figures/evidence-explorer.js" defer=""></script><script src="figures/search-explorer.js" defer=""></script><script src="figures/q2-geometry.js" defer=""></script><script src="figures/intro-support.js" defer=""></script><script src="figures/q3_fan.js" defer=""></script><script src="figures/q4_grid.js" defer=""></script><script src="figures/q5_route.js" defer=""></script><script src="figures/q3-encoders.js" defer=""></script><script src="footnotes.js" defer=""></script>
 
 
 
